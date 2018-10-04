@@ -289,8 +289,6 @@ img {
 @media (max-width: 800px) and (min-width: 600px) {
   .side {
     padding-left: 40%;
-    -ms-grid-columns: 2fr;
-        grid-template-columns: 2fr;
   }
   h3 {
     font-size: 60%;
@@ -355,6 +353,7 @@ img {
     text-transform: uppercase;
     padding-left: 16%;
     padding-right: 10%;
+    margin-top: 15%;
     z-index: 1;
   }
   .text-9 {
