@@ -25,12 +25,13 @@
     grid-row: 1/2;
     grid-template-rows: .25fr .25fr .25fr;
     grid-template-columns: 1fr 1fr 1fr;
-    font-size: .5em;
+
 }
 
 .text-1 {
     grid-column: 1/2;
     grid-row: 1/2;
+    font-size: 100%;
 }
 
 .text-2 {
@@ -38,12 +39,14 @@
     grid-row: 1/2;
     text-align: right;
     margin-right: 5%;
+    font-size: 100%;
 }
 
 .text-3 {
     grid-column: 3/4;
     grid-row: 1/2;
     text-align: right;
+    font-size: 100%;
 }
 
 .top-subtext {
@@ -51,6 +54,7 @@
     grid-row: 2/3;
     text-align: left;
     margin-left: 40%;
+    font-size: 75%;
 }
 
 .side {
@@ -62,6 +66,7 @@
     grid-template-rows: .12fr .12fr .12fr .12fr .12fr;
     background-color: transparent;
     margin-left: 5%;
+
 }
 
 .text-4 {
@@ -69,6 +74,7 @@
     grid-row: 5/6;
     transform: rotate(-90deg);
     padding: 5%;
+    font-size: 80%;
 }
 
 .text-5 {
@@ -76,6 +82,7 @@
     grid-row: 4/5;
     transform: rotate(-90deg);
     padding: 5%;
+    font-size: 80%;
 }
 
 .text-6 {
@@ -83,6 +90,7 @@
     grid-row: 3/4;
     transform: rotate(-90deg);
     padding: 5%;
+    font-size: 80%;
 }
 
 .text-7 {
@@ -90,6 +98,7 @@
     grid-row: 2/3;
     transform: rotate(-90deg);
     padding: 5%;
+    font-size: 80%;
 }
 
 .text-8 {
@@ -97,6 +106,7 @@
     grid-row: 1/2;
     transform: rotate(-90deg);
     padding: 5%;
+    font-size: 80%;
 }
 
 .image {
@@ -112,7 +122,7 @@
     grid-row: 3/4;
     grid-template-columns: .25fr .25fr;
     grid-template-rows: .1fr .1fr .1fr .1fr;
-    font-size: 40em;
+
     text-transform: uppercase;
     padding-left: 5%;
     z-index: 0;
@@ -122,52 +132,60 @@
     grid-column: 1/2;
     grid-row: 1/2;
     padding-right: 5%;
+    font-size: 600%;
 }
 
 .text-10 {
     grid-column: 2/3;
     grid-row: 1/2;
+    font-size: 600%;
 }
 
 .text-11 {
     grid-column: 1/2;
     grid-row: 2/3;
     padding-right: 5%;
+    font-size: 600%;
 }
 
 .text-12 {
     grid-column: 2/3;
     grid-row: 2/3;
+    font-size: 600%;
 }
 
 .text-13 {
     grid-column: 1/2;
     grid-row: 3/4;
     padding-right: 5%;
+    font-size: 600%;
 }
 
 .text-14 {
     grid-column: 2/3;
     grid-row: 3/4;
+    font-size: 600%;
 }
 
 .text-15 {
     grid-column: 1/2;
     grid-row: 4/5;
     padding-right: 5%;
+    font-size: 600%;
 }
 
 .text-16 {
     grid-column: 2/3;
     grid-row: 4/5;
+    font-size: 600%;
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 75%;
 }
 
 p {
-    font-size: .5em;
+    font-size: 50%;
 }
 
 img {
@@ -176,25 +194,6 @@ img {
 }
 
 @media (max-width: 800px) and (min-width:600px) {
-    h3 {
-        font-size: 6em;
-    }
-
-    p {
-        font-size: 2em;
-    }
-
-    .hero {
-        display: grid;
-        grid-column: 2/4;
-        grid-row: 3/4;
-        grid-template-columns: .25fr .25fr;
-        grid-template-rows: .1fr .1fr .1fr .1fr;
-        font-size: 20em;
-        text-transform: uppercase;
-        padding-left: 5%;
-        z-index: 0;
-    }
 
 
 
