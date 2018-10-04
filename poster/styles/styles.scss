@@ -288,6 +288,11 @@ img {
 }
 
 @media (max-width: 800px) and (min-width: 600px) {
+    .side {
+        padding-left: 40%;
+        grid-template-columns: 2fr;
+    }
+
     h3 {
         font-size: 60%;
     }
@@ -353,7 +358,7 @@ img {
         -ms-grid-columns: .25fr .25fr;
         grid-template-columns: .25fr .25fr;
         -ms-grid-rows: .1fr .1fr .1fr .1fr;
-        grid-template-rows: .1fr .1fr .1fr .1fr;
+        grid-template-rows: .05fr .05fr .05fr .05fr;
         text-transform: uppercase;
         padding-left: 16%;
         padding-right: 10%;
@@ -371,7 +376,7 @@ img {
         grid-row: 1/2;
         padding-right: 5%;
         font-size: 300%;
-        margin-top: -50%;
+        margin-top: -84.5%;
     }
 
     .text-10 {
@@ -382,7 +387,7 @@ img {
         -ms-grid-row-span: 1;
         grid-row: 1/2;
         font-size: 300%;
-        margin-top: -50%;
+        margin-top: -70%;
     }
 
     .text-11 {
@@ -394,7 +399,7 @@ img {
         grid-row: 2/3;
         padding-right: 5%;
         font-size: 300%;
-        margin-top: -50%;
+        margin-top: -84.5%;
     }
 
     .text-12 {
@@ -405,7 +410,7 @@ img {
         -ms-grid-row-span: 1;
         grid-row: 2/3;
         font-size: 300%;
-        margin-top: -50%;
+        margin-top: -70%;
     }
 
     .text-13 {
@@ -417,7 +422,7 @@ img {
         grid-row: 3/4;
         padding-right: 5%;
         font-size: 300%;
-        margin-top: -50%;
+        margin-top: -84.5%;
     }
 
     .text-14 {
@@ -428,7 +433,7 @@ img {
         -ms-grid-row-span: 1;
         grid-row: 3/4;
         font-size: 300%;
-        margin-top: -50%;
+        margin-top: -70%;
     }
 
     .text-15 {
@@ -440,7 +445,7 @@ img {
         grid-row: 4/5;
         padding-right: 5%;
         font-size: 300%;
-        margin-top: -50%;
+        margin-top: -84.5%;
     }
 
     .text-16 {
@@ -451,9 +456,14 @@ img {
         -ms-grid-row-span: 1;
         grid-row: 4/5;
         font-size: 300%;
-        margin-top: -50%;
+        margin-top: -70%;
     }
 
+    img {
+        max-width: 125%;
+        max-height: 125%;
+        margin-right: 40%;
+    }
 }
 
 @media (max-width: 599px) and (min-width: 0px) {
