@@ -216,7 +216,7 @@ img {
         grid-row: 1/2;
         text-align: right;
         margin-right: 5%;
-        font-size: 15m
+        font-size: 5em
     }
 
     .text-3 {
@@ -232,3 +232,12 @@ img {
 
 
     @media (max-width: 599px) and (min-width:0px) {
+        h3 {
+            font-size: 10%;
+        }
+
+        p {
+            font-size: 5%;
+        }
+
+    }
