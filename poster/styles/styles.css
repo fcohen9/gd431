@@ -1,7 +1,8 @@
 * {
   font-family: sans-serif;
   font-weight: 200;
-  background-color: orange;
+  background-color: #bc6c32;
+  font-size: 32px;
 }
 
 .wrapper {
@@ -11,7 +12,7 @@
       grid-template-rows: .5fr 1.5fr 9fr;
   -ms-grid-columns: 1fr 2fr 2fr;
       grid-template-columns: 1fr 2fr 2fr;
-  background-color: orange;
+  background-color: #bc6c32;
   margin: 5%;
 }
 
@@ -37,6 +38,7 @@
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+  font-size: 10em;
 }
 
 .text-2 {
@@ -48,6 +50,7 @@
   grid-row: 1/2;
   text-align: right;
   margin-right: 5%;
+  font-size: 10em;
 }
 
 .text-3 {
@@ -58,6 +61,7 @@
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   text-align: right;
+  font-size: 10em;
 }
 
 .top-subtext {
@@ -69,6 +73,7 @@
   grid-row: 2/3;
   text-align: left;
   margin-left: 40%;
+  font-size: 75%;
 }
 
 .side {
@@ -86,6 +91,8 @@
       grid-template-rows: .12fr .12fr .12fr .12fr .12fr;
   background-color: transparent;
   margin-left: 5%;
+  margin-right: 10%;
+  z-index: 0;
 }
 
 .text-4 {
@@ -98,6 +105,7 @@
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   padding: 5%;
+  font-size: .8em;
 }
 
 .text-5 {
@@ -110,6 +118,7 @@
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   padding: 5%;
+  font-size: .8em;
 }
 
 .text-6 {
@@ -122,6 +131,7 @@
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   padding: 5%;
+  font-size: .8em;
 }
 
 .text-7 {
@@ -134,6 +144,7 @@
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   padding: 5%;
+  font-size: .8em;
 }
 
 .text-8 {
@@ -146,6 +157,7 @@
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   padding: 5%;
+  font-size: .8em;
 }
 
 .image {
@@ -171,10 +183,9 @@
       grid-template-columns: .25fr .25fr;
   -ms-grid-rows: .1fr .1fr .1fr .1fr;
       grid-template-rows: .1fr .1fr .1fr .1fr;
-  font-size: 12.5em;
   text-transform: uppercase;
   padding-left: 5%;
-  z-index: 0;
+  z-index: 1;
 }
 
 .text-9 {
@@ -185,6 +196,7 @@
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   padding-right: 5%;
+  font-size: 600%;
 }
 
 .text-10 {
@@ -194,6 +206,7 @@
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+  font-size: 600%;
 }
 
 .text-11 {
@@ -204,6 +217,7 @@
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   padding-right: 5%;
+  font-size: 600%;
 }
 
 .text-12 {
@@ -213,6 +227,7 @@
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+  font-size: 600%;
 }
 
 .text-13 {
@@ -223,6 +238,7 @@
   -ms-grid-row-span: 1;
   grid-row: 3/4;
   padding-right: 5%;
+  font-size: 600%;
 }
 
 .text-14 {
@@ -232,6 +248,7 @@
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
+  font-size: 600%;
 }
 
 .text-15 {
@@ -242,6 +259,7 @@
   -ms-grid-row-span: 1;
   grid-row: 4/5;
   padding-right: 5%;
+  font-size: 600%;
 }
 
 .text-16 {
@@ -251,18 +269,67 @@
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-row: 4/5;
+  font-size: 600%;
 }
 
 h3 {
-  font-size: 1em;
+  font-size: 75%;
 }
 
 p {
-  font-size: .75em;
+  font-size: 50%;
 }
 
 img {
   max-width: 100%;
   max-height: 100%;
+}
+
+@media (max-width: 800px) and (min-width: 600px) {
+  h3 {
+    font-size: 30%;
+  }
+  p {
+    font-size: 25%;
+  }
+  .text-1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    font-size: 5em;
+  }
+  .text-2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    text-align: right;
+    margin-right: 5%;
+    font-size: 5em;
+  }
+  .text-3 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    text-align: right;
+    font-size: 5em;
+  }
+}
+
+@media (max-width: 599px) and (min-width: 0px) {
+  h3 {
+    font-size: 10%;
+  }
+  p {
+    font-size: 5%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
