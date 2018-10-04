@@ -288,10 +288,10 @@ img {
 
 @media (max-width: 800px) and (min-width: 600px) {
   h3 {
-    font-size: 30%;
+    font-size: 60%;
   }
   p {
-    font-size: 25%;
+    font-size: 35%;
   }
   .text-1 {
     -ms-grid-column: 1;
@@ -300,7 +300,7 @@ img {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
-    font-size: 5em;
+    font-size: 20%;
   }
   .text-2 {
     -ms-grid-column: 2;
@@ -311,7 +311,7 @@ img {
     grid-row: 1/2;
     text-align: right;
     margin-right: 5%;
-    font-size: 5em;
+    font-size: 7.5em;
   }
   .text-3 {
     -ms-grid-column: 3;
@@ -321,7 +321,101 @@ img {
     -ms-grid-row-span: 1;
     grid-row: 1/2;
     text-align: right;
-    font-size: 5em;
+    font-size: 7.5em;
+  }
+  .hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-columns: .25fr .25fr;
+    grid-template-columns: .25fr .25fr;
+    -ms-grid-rows: .1fr .1fr .1fr .1fr;
+    grid-template-rows: .1fr .1fr .1fr .1fr;
+    text-transform: uppercase;
+    padding-left: 10%;
+    padding-right: 10%;
+    z-index: 1;
+  }
+  .text-9 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    padding-right: 5%;
+    font-size: 300%;
+  }
+  .text-10 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    font-size: 300%;
+  }
+  .text-11 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    padding-right: 5%;
+    font-size: 300%;
+  }
+  .text-12 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    font-size: 300%;
+  }
+  .text-13 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    padding-right: 5%;
+    font-size: 300%;
+  }
+  .text-14 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    font-size: 300%;
+  }
+  .text-15 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    padding-right: 5%;
+    font-size: 300%;
+  }
+  .text-16 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    font-size: 300%;
   }
 }
 
