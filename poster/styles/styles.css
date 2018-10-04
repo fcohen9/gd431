@@ -9,9 +9,9 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: .5fr 1.5fr 9fr;
-      grid-template-rows: .5fr 1.5fr 9fr;
+  grid-template-rows: .5fr 1.5fr 9fr;
   -ms-grid-columns: 1fr 2fr 2fr;
-      grid-template-columns: 1fr 2fr 2fr;
+  grid-template-columns: 1fr 2fr 2fr;
   background-color: #bc6c32;
   margin: 5%;
 }
@@ -26,9 +26,9 @@
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   -ms-grid-rows: .25fr .25fr .25fr;
-      grid-template-rows: .25fr .25fr .25fr;
+  grid-template-rows: .25fr .25fr .25fr;
   -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .text-1 {
@@ -86,13 +86,14 @@
   -ms-grid-row-span: 2;
   grid-row: 2/4;
   -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   -ms-grid-rows: .12fr .12fr .12fr .12fr .12fr;
-      grid-template-rows: .12fr .12fr .12fr .12fr .12fr;
+  grid-template-rows: .1fr .1fr .1fr .1fr .1fr;
   background-color: transparent;
   margin-left: 5%;
   margin-right: 10%;
   z-index: 0;
+  line-height: 50%;
 }
 
 .text-4 {
@@ -103,9 +104,9 @@
   -ms-grid-row-span: 1;
   grid-row: 5/6;
   -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
   padding: 5%;
-  font-size: .8em;
+  font-size: .6em;
 }
 
 .text-5 {
@@ -116,9 +117,9 @@
   -ms-grid-row-span: 1;
   grid-row: 4/5;
   -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
   padding: 5%;
-  font-size: .8em;
+  font-size: .6em;
 }
 
 .text-6 {
@@ -129,9 +130,9 @@
   -ms-grid-row-span: 1;
   grid-row: 3/4;
   -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
   padding: 5%;
-  font-size: .8em;
+  font-size: .6em;
 }
 
 .text-7 {
@@ -142,9 +143,9 @@
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
   padding: 5%;
-  font-size: .8em;
+  font-size: .6em;
 }
 
 .text-8 {
@@ -155,9 +156,9 @@
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
   padding: 5%;
-  font-size: .8em;
+  font-size: .6em;
 }
 
 .image {
@@ -180,11 +181,11 @@
   -ms-grid-row-span: 1;
   grid-row: 3/4;
   -ms-grid-columns: .25fr .25fr;
-      grid-template-columns: .25fr .25fr;
+  grid-template-columns: .25fr .25fr;
   -ms-grid-rows: .1fr .1fr .1fr .1fr;
-      grid-template-rows: .1fr .1fr .1fr .1fr;
+  grid-template-rows: .1fr .1fr .1fr .1fr;
   text-transform: uppercase;
-  padding-left: 5%;
+  padding-left: 10%;
   z-index: 1;
 }
 
