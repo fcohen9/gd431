@@ -289,7 +289,7 @@ img {
 
 @media (max-width: 800px) and (min-width: 600px) {
     h3 {
-        font-size: 30%;
+        font-size: 50%;
     }
 
     p {
@@ -303,7 +303,7 @@ img {
         -ms-grid-row: 1;
         -ms-grid-row-span: 1;
         grid-row: 1/2;
-        font-size: 5em;
+        font-size: 7.5em;
     }
 
     .text-2 {
@@ -315,7 +315,7 @@ img {
         grid-row: 1/2;
         text-align: right;
         margin-right: 5%;
-        font-size: 5em;
+        font-size: 7.5em;
     }
 
     .text-3 {
@@ -326,7 +326,7 @@ img {
         -ms-grid-row-span: 1;
         grid-row: 1/2;
         text-align: right;
-        font-size: 5em;
+        font-size: 7.5em;
     }
 }
 
