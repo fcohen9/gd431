@@ -78,7 +78,6 @@
 }
 
 .side {
-  padding: 6%;
   display: -ms-grid;
   display: grid;
   -ms-grid-column: 1;
@@ -89,8 +88,8 @@
   grid-row: 2/4;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  -ms-grid-rows: .121fr .121fr .121fr .121fr .121fr;
-      grid-template-rows: .121fr .121fr .121fr .121fr .121fr;
+  -ms-grid-rows: .125fr .125fr .125fr .125fr .125fr;
+      grid-template-rows: .125fr .125fr .125fr .125fr .125fr;
   background-color: transparent;
   margin-left: 5%;
   margin-right: 10%;
