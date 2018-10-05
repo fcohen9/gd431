@@ -197,7 +197,7 @@
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   padding-right: 5%;
-  font-size: 600%;
+  font-size: 800%;
 }
 
 .text-10 {
@@ -207,7 +207,7 @@
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  font-size: 600%;
+  font-size: 800%;
 }
 
 .text-11 {
@@ -218,7 +218,7 @@
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   padding-right: 5%;
-  font-size: 600%;
+  font-size: 800%;
 }
 
 .text-12 {
@@ -228,7 +228,7 @@
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  font-size: 600%;
+  font-size: 800%;
 }
 
 .text-13 {
@@ -239,7 +239,7 @@
   -ms-grid-row-span: 1;
   grid-row: 3/4;
   padding-right: 5%;
-  font-size: 600%;
+  font-size: 800%;
 }
 
 .text-14 {
@@ -249,7 +249,7 @@
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  font-size: 600%;
+  font-size: 800%;
 }
 
 .text-15 {
@@ -260,7 +260,7 @@
   -ms-grid-row-span: 1;
   grid-row: 4/5;
   padding-right: 5%;
-  font-size: 600%;
+  font-size: 800%;
 }
 
 .text-16 {
@@ -270,7 +270,7 @@
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-row: 4/5;
-  font-size: 600%;
+  font-size: 800%;
 }
 
 h3 {
