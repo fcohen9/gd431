@@ -292,22 +292,28 @@ img {
 
 @media (max-width: 800px) and (min-width: 600px) {
   .wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: .5fr 1.5fr 9fr;
-    grid-template-rows: .5fr 1.5fr 9fr;
-    -ms-grid-columns: .5fr 1fr 1fr;
-        grid-template-columns: .5fr 1fr 1fr;
-    background-color: #bc6c32;
-    margin: 5%;
+    -ms-grid-columns: .5fr .5fr;
+        grid-template-columns: .5fr .5fr;
   }
   .text-1 {
-    font-size: 1.5vw;
+    font-size: 1vw;
   }
   .text-2 {
-    font-size: 1.5vw;
+    font-size: 1vw;
   }
   .text-3 {
+    font-size: 1vw;
+  }
+  .side {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .text-4,
+  .text-5,
+  .text.6,
+  .text-7,
+  .text-8 {
     font-size: 1.5vw;
   }
 }
