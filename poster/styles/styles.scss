@@ -296,23 +296,26 @@ img {
     ;
 }
 
-@media (max-width: 800px) and (min-width: 600px) {
+@media (max-width: 1000px) and (min-width: 600px) {
 
     .wrapper {
-        grid-template-columns: .5fr .5fr;
+        grid-template-columns: 1fr 1fr;
+
 
     }
 
+
+
     .text-1 {
-        font-size: 1vw;
+        font-size: 2vw;
     }
 
     .text-2 {
-        font-size: 1vw;
+        font-size: 2vw;
     }
 
     .text-3 {
-        font-size: 1vw;
+        font-size: 2vw;
     }
 
     .side {

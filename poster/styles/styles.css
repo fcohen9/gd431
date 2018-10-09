@@ -290,7 +290,7 @@ img {
   max-width: 100%;
 }
 
-@media (max-width: 800px) and (min-width: 600px) {
+@media (max-width: 900px) and (min-width: 600px) {
   .wrapper {
     -ms-grid-columns: .5fr .5fr;
         grid-template-columns: .5fr .5fr;
