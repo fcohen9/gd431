@@ -296,7 +296,8 @@ img {
     ;
 }
 
-@media (max-width: 1000px) and (min-width: 600px) {
+
+@media (max-width: 1600px) and (min-width: 1200px) {
 
     .wrapper {
         grid-template-columns: 1fr 1fr;
@@ -322,13 +323,7 @@ img {
         grid-column: 1/2;
     }
 
-    .text-4,
-    .text-5,
-    .text.6,
-    .text-7,
-    .text-8 {
-        font-size: 1.5vw;
-    }
+
 
 }
 
