@@ -1,7 +1,7 @@
 * {
     font-family: sans-serif;
     font-weight: 200;
-    background-color: #bc6c32;
+background-color: #bc6c32;
     font-size: 32px;
 }
 
@@ -29,7 +29,7 @@
     grid-template-rows: .25fr .25fr .25fr;
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 2fr .8fr .5fr;
-    z-index: 0;
+
 }
 
 .text-1 {
@@ -94,7 +94,7 @@
     background-color: transparent;
     margin-left: 5%;
     margin-right: 10%;
-    z-index: 0;
+
     line-height: 70%;
 
 }
@@ -195,7 +195,7 @@
     text-transform: uppercase;
     padding-left: 10%;
 
-    z-index: 1;
+
 }
 
 .text-9 {
@@ -306,56 +306,63 @@ img {
     }
 
     .top {
-        display: -ms-grid;
+        grid-column: 1/3;
         display: grid;
-        grid-template-columns: .5fr .5fr .5fr
+        grid-template-columns: .5fr .5fr .5fr;
     }
 
     .text-1 {
         grid-column: 1/2;
         font-size: 2vw;
+        text-align: center;
     }
 
     .text-2 {
+        text-align: center;
         font-size: 2vw;
         grid-column: 2/3;
     }
 
     .text-3 {
+        text-align: center;
         font-size: 2vw;
         grid-column: 3/4;
     }
 
+    .top-subtext {
+        grid-column: 1/4;
+  
+
+
+    font-size: 3vw;
+}
+
     .image {
 
         grid-column: 2/3;
-        -ms-grid-row: 2;
-        -ms-grid-row-span: 1;
+    
         grid-row: 2/3;
         object-fit: fill;
+        align-content: right;
 
     }
 
-    img {
-        object-fit: fill;
-        max-width: 75%;
 
-    }
 
     h3 {
         font-size: 50%;
     }
 
     .side {
+        z-index: 1;
         grid-column: 1/2;
-        grid-template-rows: ..05fr .05fr .05fr .05fr .05fr;
+        grid-template-rows: .5fr .5fr .5fr .5fr .5fr;
 
     }
 
     .text-4 {
 
-        -ms-grid-row: 5;
-        -ms-grid-row-span: 1;
+       
         grid-row: 5/6;
 
         padding: 10%;
@@ -367,8 +374,7 @@ img {
 
     .text-5 {
 
-        -ms-grid-row: 4;
-        -ms-grid-row-span: 1;
+        
         grid-row: 4/5;
 
         padding: 10%;
@@ -377,8 +383,7 @@ img {
 
     .text-6 {
 
-        -ms-grid-row: 3;
-        -ms-grid-row-span: 1;
+        
         grid-row: 3/4;
 
         padding: 10%;
@@ -387,8 +392,7 @@ img {
 
     .text-7 {
 
-        -ms-grid-row: 2;
-        -ms-grid-row-span: 1;
+       
         grid-row: 2/3;
 
         padding: 10%;
@@ -397,14 +401,116 @@ img {
 
     .text-8 {
 
-        -ms-grid-row: 1;
-        -ms-grid-row-span: 1;
+      
         grid-row: 1/2;
 
         padding: 10%;
         font-size: 2.5vw;
 
     }
+
+    .hero {
+    
+    display: grid;
+   
+    grid-column: 2/3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-columns: .25fr .25fr;
+    grid-template-columns: .25fr .25fr;
+    -ms-grid-rows: .1fr .1fr .1fr .1fr;
+    grid-template-rows: .1fr .1fr .1fr .1fr;
+    text-transform: uppercase;
+    padding-left: 10%;
+
+
+}
+
+.text-9 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    padding-right: 5%;
+    font-size: 18vw;
+}
+
+.text-10 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    font-size: 18vw;
+}
+
+.text-11 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    padding-right: 5%;
+    font-size: 18vw;
+}
+
+.text-12 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    font-size: 18vw;
+}
+
+.text-13 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    padding-right: 5%;
+    font-size: 18vw;
+}
+
+.text-14 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    font-size: 18vw;
+}
+
+.text-15 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    padding-right: 5%;
+    font-size: 18vw;
+}
+
+.text-16 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    font-size: 18vw;
+}
+
 
 
 
