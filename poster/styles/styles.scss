@@ -297,7 +297,7 @@ img {
 }
 
 
-@media (max-width: 800px) and (min-width: 600px) {
+@media (max-width:800px) and (min-width:600px) {
 
     .wrapper {
         grid-template-columns: 1fr 1fr;
@@ -348,6 +348,62 @@ img {
 
     .side {
         grid-column: 1/2;
+        grid-template-rows: ..05fr .05fr .05fr .05fr .05fr;
+
+    }
+
+    .text-4 {
+
+        -ms-grid-row: 5;
+        -ms-grid-row-span: 1;
+        grid-row: 5/6;
+
+        padding: 10%;
+        font-size: 2.5vw;
+        text-align: left;
+
+
+    }
+
+    .text-5 {
+
+        -ms-grid-row: 4;
+        -ms-grid-row-span: 1;
+        grid-row: 4/5;
+
+        padding: 10%;
+        font-size: 2.5vw;
+    }
+
+    .text-6 {
+
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 1;
+        grid-row: 3/4;
+
+        padding: 10%;
+        font-size: 2.5vw;
+    }
+
+    .text-7 {
+
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
+        grid-row: 2/3;
+
+        padding: 10%;
+        font-size: 2.5vw;
+    }
+
+    .text-8 {
+
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 1;
+        grid-row: 1/2;
+
+        padding: 10%;
+        font-size: 2.5vw;
+
     }
 
 
