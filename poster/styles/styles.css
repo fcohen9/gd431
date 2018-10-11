@@ -286,7 +286,7 @@ img {
   max-width: 100%;
 }
 
-@media (max-width: 800px) and (min-width: 600px) {
+@media (max-width: 800px) and (min-width: 400px) {
   .wrapper {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -494,10 +494,13 @@ img {
   }
 }
 
-@media (max-width: 599px) and (min-width: 0px) {
+@media (max-width: 399px) and (min-width: 0px) {
   .wrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 6fr;
+        grid-template-columns: 6fr;
+  }
+  .top {
+    grid-column: span;
   }
 }
 /*# sourceMappingURL=styles.css.map */

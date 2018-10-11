@@ -293,7 +293,7 @@ img {
 }
 
 
-@media (max-width:800px) and (min-width:600px) {
+@media (max-width:800px) and (min-width:400px) {
 
     .wrapper {
         grid-template-columns: 1fr 1fr;
@@ -535,8 +535,11 @@ padding: 5%;
 
 }
 
-@media (max-width: 599px) and (min-width: 0px) {
-   .wrapper {grid-template-columns: 1fr;}
+@media (max-width: 399px) and (min-width: 0px) {
+   .wrapper {grid-template-columns: 6fr;}
+.top {grid-column: span;}
+
+   
 }
 
 /*# sourceMappingURL=styles.css.map */
