@@ -496,11 +496,219 @@ img {
 
 @media (max-width: 399px) and (min-width: 0px) {
   .wrapper {
-    -ms-grid-columns: 6fr;
-        grid-template-columns: 6fr;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: .05fr .05fr .05fr .05fr;
+        grid-template-rows: .05fr .05fr .05fr .05fr;
   }
   .top {
-    grid-column: span;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: .3fr .3fr .3fr;
+        grid-template-columns: .3fr .3fr .3fr;
+  }
+  .text-1 {
+    text-align: center;
+    font-size: 3vw;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .text-2 {
+    font-size: 3vw;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    text-align: center;
+  }
+  .text-3 {
+    font-size: 3vw;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    text-align: center;
+  }
+  .top-subtext {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    text-align: center;
+    font-size: 6vw;
+  }
+  p {
+    text-transform: initial;
+  }
+  .image {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-columns: .25fr .25fr;
+    grid-template-columns: .25fr .25fr;
+    -ms-grid-rows: .05fr .05fr .05fr .05fr;
+        grid-template-rows: .05fr .05fr .05fr .05fr;
+    text-transform: uppercase;
+    padding-left: 0%;
+    padding-top: 6%;
+  }
+  .text-9 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    padding-right: 5%;
+    font-size: 18vw;
+  }
+  .text-10 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    font-size: 18vw;
+  }
+  .text-11 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    padding-right: 5%;
+    font-size: 18vw;
+  }
+  .text-12 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    font-size: 18vw;
+  }
+  .text-13 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    padding-right: 5%;
+    font-size: 18vw;
+  }
+  .text-14 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    font-size: 18vw;
+  }
+  .text-15 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    padding-right: 5%;
+    font-size: 18vw;
+  }
+  .text-16 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    font-size: 18vw;
+  }
+  .side {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    -ms-grid-rows: .05fr .05fr .05fr .05fr .05fr;
+        grid-template-rows: .05fr .05fr .05fr .05fr .05fr;
+    margin-right: 20%;
+  }
+  h3 span {
+    font-size: 200%;
+    display: block;
+  }
+  .text-4 {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5/6;
+    font-size: 2.5vw;
+    padding: 5%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .text-5 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    padding: 5%;
+    font-size: 2.5vw;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .text-6 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    padding: 5%;
+    font-size: 2.5vw;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .text-7 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    padding: 5%;
+    font-size: 2.5vw;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .text-8 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    padding: 5%;
+    font-size: 2.5vw;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  h2 {
+    font-size: 200%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
