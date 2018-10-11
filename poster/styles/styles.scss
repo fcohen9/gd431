@@ -5,6 +5,28 @@ background-color: #bc6c32;
     font-size: 32px;
 }
 
+
+
+
+    h2 {font-size: 100%;
+font-size: 2.5vw;}
+
+h3 span {
+    font-size: 1vw;}
+
+
+
+p {
+    font-size: 50%;
+}
+
+img {
+    object-fit: fill;
+    max-width: 100%;
+    ;
+}
+   
+
 .wrapper {
     display: -ms-grid;
     display: grid;
@@ -97,6 +119,7 @@ background-color: #bc6c32;
 
     line-height: 70%;
     object-fit: contain;
+   
 
 }
 
@@ -110,7 +133,7 @@ background-color: #bc6c32;
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
     padding: 10%;
-    font-size: 1vw;
+    
 object-fit: contain;}
 
 .text-5 {
@@ -123,7 +146,7 @@ object-fit: contain;}
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
     padding: 10%;
-    font-size: 2.5vw;
+    
 }
 
 .text-6 {
@@ -136,7 +159,7 @@ object-fit: contain;}
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
     padding: 10%;
-    font-size: 2.5vw;
+    
 }
 
 .text-7 {
@@ -149,7 +172,7 @@ object-fit: contain;}
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
     padding: 10%;
-    font-size: 2.5vw;
+    
     object-fit: contain;
 }
 
@@ -163,7 +186,7 @@ object-fit: contain;}
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
     padding: 10%;
-    font-size: 2.5vw;
+    
 
 }
 
@@ -282,21 +305,6 @@ object-fit: contain;}
 }
 
 
-
-h3 {
-    
-    font-size: .05vw;
-}
-
-p {
-    font-size: 50%;
-}
-
-img {
-    object-fit: fill;
-    max-width: 100%;
-    ;
-}
 
 
 @media (max-width:800px) and (min-width:400px) {
