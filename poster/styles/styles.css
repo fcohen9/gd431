@@ -115,10 +115,10 @@ img {
 }
 
 /* media query*/
-@media (max-width: 800px) and (min-width: 400px) {
+@media (max-width: 800px) and (min-width: 500px) {
   .wrapper {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1.5fr;
+        grid-template-columns: 1fr 1.5fr;
   }
   .top {
     -ms-grid-column: 1;
@@ -129,35 +129,13 @@ img {
     -ms-grid-columns: .5fr .5fr .5fr;
         grid-template-columns: .5fr .5fr .5fr;
   }
-  .text-1 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    font-size: 3vw;
-    text-align: center;
+  h2 {
+    margin-left: 10%;
+    font-size: 75%;
   }
-  .text-2 {
-    text-align: center;
-    font-size: 3vw;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-  }
-  .text-3 {
-    text-align: center;
-    font-size: 3vw;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
-    grid-column: 3/4;
-  }
-  .top-subtext {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-column: 1/4;
-    font-size: 3.5vw;
-    margin-top: 5%;
-    text-align: left;
-    padding: 2%;
+  p {
+    margin-left: 5%;
+    font-size: 1.75vw;
   }
   .image {
     -ms-grid-column: 2;
@@ -166,10 +144,8 @@ img {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
-    -o-object-fit: fill;
-       object-fit: fill;
-    -ms-flex-line-pack: right;
-        align-content: right;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .side {
     -ms-grid-column: 1;
@@ -177,7 +153,6 @@ img {
     grid-column: 1/2;
     -ms-grid-rows: .05fr .05fr .05fr .05fr .05fr;
         grid-template-rows: .05fr .05fr .05fr .05fr .05fr;
-    grid-auto-columns: 0%;
     margin-right: 20%;
   }
   h3 span {
@@ -187,190 +162,22 @@ img {
     padding: 5%;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-  }
-  .text-4 {
-    -ms-grid-row: 5;
-    -ms-grid-row-span: 1;
-    grid-row: 5/6;
-  }
-  .text-5 {
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
-    grid-row: 4/5;
-    padding: 5%;
-    font-size: 2.5vw;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  .text-6 {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    grid-row: 3/4;
-    padding: 5%;
-    font-size: 2.5vw;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  .text-7 {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    padding: 5%;
-    font-size: 2.5vw;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  .text-8 {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    padding: 5%;
-    font-size: 2.5vw;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  .hero {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    grid-row: 3/4;
-    -ms-grid-columns: .25fr .25fr;
-    grid-template-columns: .25fr .25fr;
-    -ms-grid-rows: .05fr .05fr .05fr .05fr;
-        grid-template-rows: .05fr .05fr .05fr .05fr;
-    text-transform: uppercase;
-    padding-left: 0%;
-  }
-  .text-9 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    padding-right: 5%;
-    font-size: 18vw;
-  }
-  .text-10 {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    font-size: 18vw;
-  }
-  .text-11 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    padding-right: 5%;
-    font-size: 18vw;
-  }
-  .text-12 {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    font-size: 18vw;
-  }
-  .text-13 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    grid-row: 3/4;
-    padding-right: 5%;
-    font-size: 18vw;
-  }
-  .text-14 {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    grid-row: 3/4;
-    font-size: 18vw;
-  }
-  .text-15 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
-    grid-row: 4/5;
-    padding-right: 5%;
-    font-size: 18vw;
-  }
-  .text-16 {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
-    grid-row: 4/5;
-    font-size: 18vw;
+    margin-left: 8%;
+    line-height: 100%;
   }
 }
 
-@media (max-width: 399px) and (min-width: 0px) {
-  .wrapper {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: .05fr .05fr .05fr .05fr;
-        grid-template-rows: .05fr .05fr .05fr .05fr;
+@media (max-width: 499px) and (min-width: 0px) {
+  h2 {
+    margin-left: 10%;
+    font-size: 10%;
   }
-  .top {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: .3fr .3fr .3fr;
-        grid-template-columns: .3fr .3fr .3fr;
+  h2 span {
+    font-size: 50%;
   }
-  .text-1 {
-    text-align: center;
-    font-size: 3vw;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-  }
-  .text-2 {
-    font-size: 3vw;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    text-align: center;
-  }
-  .text-3 {
-    font-size: 3vw;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
-    grid-column: 3/4;
-    text-align: center;
-  }
-  .top-subtext {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-column: 1/4;
-    text-align: center;
-    font-size: 6vw;
+  p {
+    margin-left: 5%;
+    font-size: 1.75vw;
   }
   .image {
     -ms-grid-column: 1;
