@@ -1,3 +1,4 @@
+/*defining basics*/
 * {
   background-color: #bc6c32;
   font-family: sans-serif;
@@ -16,24 +17,12 @@
   margin: 5%;
 }
 
-.image {
-  -ms-flex-line-pack: right;
-      align-content: right;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  margin-top: 7%;
-}
-
-img {
-  margin-left: 2%;
-  max-width: 100%;
-  overflow: hidden;
-}
-
+/*order of styling:
+top
+side
+hero
+image*/
+/*organizing and styling the text at the top*/
 .top {
   display: -ms-grid;
   display: grid;
@@ -59,6 +48,7 @@ p {
   text-align: left;
 }
 
+/*organizing and styling the text to the side*/
 .side {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -72,6 +62,7 @@ p {
   margin-top: 0;
 }
 
+/*h3 span and h3 tageting different things*/
 h3 span {
   font-size: 40%;
 }
@@ -80,12 +71,14 @@ h3 {
   margin-right: 10%;
 }
 
+/*creating and placing the hero */
 .hero {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2/4;
 }
 
+/*h1 span, nth child setup, and h1 tageting different things*/
 h1 {
   display: -ms-grid;
   display: grid;
@@ -105,7 +98,26 @@ h1 span {
   margin-top: 0;
 }
 
-/* media query*/
+/*placing and sizing image*/
+.image {
+  -ms-flex-line-pack: right;
+      align-content: right;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin-top: 7%;
+}
+
+img {
+  margin-left: 2%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* media queries*/
 @media (max-width: 800px) and (min-width: 500px) {
   .wrapper {
     -ms-grid-columns: 1fr 1.5fr;

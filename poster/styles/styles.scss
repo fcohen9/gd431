@@ -1,5 +1,8 @@
-* {
-    background-color: #bc6c32;
+
+
+/*defining basics*/  
+
+* {background-color: #bc6c32;
     font-family: sans-serif;
     font-size: 32px;
     font-weight: 200;}
@@ -13,20 +16,13 @@
     grid-template-rows: .5fr 1.5fr 4fr;
     margin: 5%;}
 
-.image {
-   align-content: right;
-    grid-column: 3/4;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    margin-top:7%;}
+/*order of styling:
+top
+side
+hero
+image*/
 
-img {
-    margin-left:2%;
-    max-width:100%;
-    overflow: hidden;
-    }
-
+/*organizing and styling the text at the top*/
 .top {
     display: -ms-grid;
     display: grid;
@@ -40,13 +36,12 @@ grid-template-columns: 1fr .32fr .32fr;}
  h2 {
 font-size: 2.5vw;}
 
-
-
 p {font-size: 50%;
     grid-column:2/4;
     text-align: left;
 }
 
+/*organizing and styling the text to the side*/
 
 .side {
 grid-column: 1/2;
@@ -55,16 +50,16 @@ grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 margin-right: 20%;
 margin-top:0;}
 
-
-
+/*h3 span and h3 tageting different things*/
 h3 span {font-size: 40%;}
 
 h3 {margin-right:10%;}
 
-
+/*creating and placing the hero */
 .hero {grid-column: 2/4;
 }
 
+/*h1 span, nth child setup, and h1 tageting different things*/
 h1 {
     display: grid;
     grid-template-columns: .5fr .5fr;
@@ -80,14 +75,26 @@ margin-top:0;
 }
 
 
+/*placing and sizing image*/
+.image {
+   align-content: right;
+    grid-column: 3/4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    margin-top:7%;}
 
-
+img {
+    margin-left:2%;
+    max-width:100%;
+    overflow: hidden;
+    }
    
 
 
 
 
-/* media query*/
+/* media queries*/
 
 
 @media (max-width:800px) and (min-width:500px) {
