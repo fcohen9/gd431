@@ -106,7 +106,6 @@
   transform: rotate(-90deg);
   padding: 10%;
   font-size: 2.5vw;
-  text-align: left;
 }
 
 .text-5 {
@@ -305,19 +304,19 @@ img {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
-    font-size: 2vw;
+    font-size: 3vw;
     text-align: center;
   }
   .text-2 {
     text-align: center;
-    font-size: 2vw;
+    font-size: 3vw;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
   }
   .text-3 {
     text-align: center;
-    font-size: 2vw;
+    font-size: 3vw;
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3/4;
