@@ -326,7 +326,9 @@ img {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
-    font-size: 3vw;
+    font-size: 4vw;
+    margin-top: 5%;
+    text-align: center;
   }
   .image {
     -ms-grid-column: 2;
@@ -347,6 +349,11 @@ img {
     -ms-grid-rows: .05fr .05fr .05fr .05fr .05fr;
         grid-template-rows: .05fr .05fr .05fr .05fr .05fr;
     grid-auto-columns: 0%;
+    margin-right: 20%;
+  }
+  h3 span {
+    font-size: 100%;
+    display: inline-block;
   }
   .text-4 {
     -ms-grid-row: 5;
@@ -403,8 +410,8 @@ img {
     grid-row: 3/4;
     -ms-grid-columns: .25fr .25fr;
     grid-template-columns: .25fr .25fr;
-    -ms-grid-rows: .1fr .1fr .1fr .1fr;
-    grid-template-rows: .1fr .1fr .1fr .1fr;
+    -ms-grid-rows: .05fr .05fr .05fr .05fr;
+        grid-template-rows: .05fr .05fr .05fr .05fr;
     text-transform: uppercase;
     padding-left: 0%;
   }
@@ -436,7 +443,6 @@ img {
     grid-row: 2/3;
     padding-right: 5%;
     font-size: 18vw;
-    margin-bottom: 5%;
   }
   .text-12 {
     -ms-grid-column: 2;
@@ -446,7 +452,6 @@ img {
     -ms-grid-row-span: 1;
     grid-row: 2/3;
     font-size: 18vw;
-    margin-bottom: 5%;
   }
   .text-13 {
     -ms-grid-column: 1;
@@ -457,7 +462,6 @@ img {
     grid-row: 3/4;
     padding-right: 5%;
     font-size: 18vw;
-    margin-bottom: 5%;
   }
   .text-14 {
     -ms-grid-column: 2;
@@ -467,7 +471,6 @@ img {
     -ms-grid-row-span: 1;
     grid-row: 3/4;
     font-size: 18vw;
-    margin-bottom: 5%;
   }
   .text-15 {
     -ms-grid-column: 1;
@@ -478,7 +481,6 @@ img {
     grid-row: 4/5;
     padding-right: 5%;
     font-size: 18vw;
-    margin-bottom: 5%;
   }
   .text-16 {
     -ms-grid-column: 2;
@@ -488,7 +490,6 @@ img {
     -ms-grid-row-span: 1;
     grid-row: 4/5;
     font-size: 18vw;
-    margin-bottom: 5%;
   }
 }
 

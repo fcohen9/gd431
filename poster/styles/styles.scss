@@ -334,7 +334,9 @@ img {
   
 
 
-    font-size: 3vw;
+    font-size: 4vw;
+    margin-top: 5%;
+    text-align: center; 
 }
 
     .image {
@@ -356,8 +358,12 @@ img {
         grid-column: 1/2;
         grid-template-rows: .05fr .05fr .05fr .05fr .05fr;
         grid-auto-columns: 0%;
+        margin-right: 20%;
 
     }
+
+    h3 span {font-size:100%;
+        display: inline-block;}
 
     .text-4 {
 
@@ -367,6 +373,8 @@ img {
         
         font-size: 2.5vw;
        transform: rotate(0deg);
+       
+        
 
 
     }
@@ -421,8 +429,8 @@ padding: 5%;
     grid-row: 3/4;
     -ms-grid-columns: .25fr .25fr;
     grid-template-columns: .25fr .25fr;
-    -ms-grid-rows: .1fr .1fr .1fr .1fr;
-    grid-template-rows: .1fr .1fr .1fr .1fr;
+     
+    grid-template-rows: .05fr .05fr .05fr .05fr;
     text-transform: uppercase;
     padding-left:0%;
 
@@ -461,7 +469,7 @@ padding: 5%;
     grid-row: 2/3;
     padding-right: 5%;
     font-size: 18vw;
-    margin-bottom: 5%;
+    
 }
 
 .text-12 {
@@ -472,7 +480,7 @@ padding: 5%;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
     font-size: 18vw;
-     margin-bottom: 5%;
+    
 }
 
 .text-13 {
@@ -484,7 +492,7 @@ padding: 5%;
     grid-row: 3/4;
     padding-right: 5%;
     font-size: 18vw;
-     margin-bottom: 5%;
+    
 }
 
 .text-14 {
@@ -495,7 +503,7 @@ padding: 5%;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
     font-size: 18vw;
-    margin-bottom: 5%;
+    
 }
 
 .text-15 {
@@ -507,7 +515,7 @@ padding: 5%;
     grid-row: 4/5;
     padding-right: 5%;
     font-size: 18vw;
-     margin-bottom: 5%;
+     
 }
 
 .text-16 {
@@ -518,7 +526,7 @@ padding: 5%;
     -ms-grid-row-span: 1;
     grid-row: 4/5;
     font-size: 18vw;
-    margin-bottom: 5%;
+    
 }
 
 
