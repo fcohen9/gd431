@@ -8,7 +8,8 @@
     "@11ty/eleventy": "github:11ty/eleventy"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "eleventy --serve --watch",
+    "build": "eleventy"
   },
   "keywords": [],
   "author": "",
