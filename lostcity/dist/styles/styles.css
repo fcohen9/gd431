@@ -4,10 +4,91 @@
   font-size: 32px;
 }
 
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*why is there so much space between the logo and the first set of text*/
+.text {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  margin-left: 20%;
+}
+
+.logo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  max-width: 100%;
+}
+
+.address {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  margin-left: 40%;
+}
+
+.icons {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  max-width: 20%;
+}
+
+img:nth-child(2) {
+  margin-top: 50%;
+}
+
+img {
+  max-width: 20%;
+  margin: 10%;
+}
+
+p {
+  font-size: 50%;
+  font-weight: 100;
+  text-align: left;
+  color: white;
+  margin-left: 30%;
+}
+
+h1 {
+  color: white;
+  font-weight: 500;
+  text-transform: capitalize;
+  list-style-type: none;
+  text-align: left;
+  margin-left: 10%;
+}
+
+h2 {
+  font-size: 75%;
+  font-weight: 200;
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: left;
+  margin-left: 30%;
+}
+
+h3 {
+  font-size: 60%;
+  font-weight: 200;
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: left;
+  margin-left: 30%;
+}
+
 @media (max-width: 499px) {
-  /*how do i make the logo 50% and the other images smaller? also why are images not centering?*/
   img {
-    max-width: 50%;
+    max-width: 20%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -19,16 +100,17 @@
   p {
     font-size: 50%;
     font-weight: 100;
-    text-align: center;
+    text-align: left;
     color: white;
     text-transform: capitalize;
+    margin-left: 10%;
   }
   h1 {
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: capitalize;
     list-style-type: none;
-    text-align: center;
+    text-align: left;
   }
   h2 {
     font-size: 75%;
@@ -36,7 +118,17 @@
     color: white;
     text-transform: capitalize;
     text-decoration: none;
-    text-align: center;
+    text-align: left;
+    margin-left: 10%;
+  }
+  h3 {
+    font-size: 60%;
+    font-weight: 200;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 10%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,93 @@
+/* CSS Document */
+.wrapper {
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+body {
+  background: black;
+  font-size: 22px;
+  line-height: 32px;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+a {
+  color: white;
+  font-weight: 200;
+}
+
+b {
+  color: white;
+  font-weight: 200;
+}
+
+/*get rid of dots*/
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/*buttons*/
+nav ul li {
+  background-color: red;
+  margin: 10%;
+  border-radius: 25px;
+}
+
+/*button text*/
+nav a {
+  display: block;
+  padding: 0 10px;
+  color: white;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+/*what happens to the button when you hover*/
+nav a:hover {
+  background-color: green;
+  margin-bottom: 200%;
+}
+
+nav b:hover {
+  background-color: red;
+}
+
+/* hide menu */
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 10%;
+}
+
+/* display menu on Hover */
+nav ul li:hover > ul {
+  display: block;
+  margin-top: 50%;
+}
+
+/* what comes up when you hover and for some reason button size*/
+nav ul li {
+  width: 100px;
+  display: block;
+  position: relative;
+}
+
+nav ul ul li {
+  width: 100px;
+  display: block;
+  position: relative;
+}
+
+nav ul ul ul li {
+  width: 100px;
+  display: block;
+  position: relative;
+}
+/*# sourceMappingURL=menu_page.css.map */
