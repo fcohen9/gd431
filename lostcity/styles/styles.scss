@@ -3,14 +3,71 @@
     font-size: 32px;
    
 }
+.wrapper
+{display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
 
+.text
+{grid-column: 1/2;
+margin-left:20%;
+}
+
+.logo {max-width: 100%;}
+
+.address {grid-column: 2/4;
+margin-left: 40%;}
+
+.icons {grid-column: 3/4;
+    max-width:20%;
+
+}
+
+img:nth-child(2) {
+    margin-top: 50%;
+    color:green;
+}
+
+img {
+max-width:20%;
+margin:10%;
+}
+
+p {font-size:50%;
+    font-weight: 100;
+    text-align: left;
+color:white;
+margin-left:30%;}
+
+h1 {color:white;
+    font-weight: 500;
+text-transform: capitalize;
+list-style-type: none;
+text-align: left;
+margin-left:10%;
+
+}
+
+h2 {font-size:75%;
+    font-weight: 200;
+    color:white;
+text-transform: capitalize;
+text-decoration: none;
+text-align: left;
+margin-left:30%;}
+
+h3 {font-size:60%;
+    font-weight: 200;
+    color:white;
+text-transform: capitalize;
+text-decoration: none;
+text-align: left;
+margin-left:30%;}
 
 
 @media (max-width: 499px) {
   
-/*how do i make the logo 50% and the other images smaller? also why are images not centering?*/
-
-img {max-width:50%;
+img {max-width:20%;
 display: block;
 margin-left:auto;
 margin-right:auto;
@@ -20,15 +77,16 @@ object-position: center;}
 
 p {font-size:50%;
     font-weight: 100;
-    text-align: center;
+    text-align: left;
 color:white;
-text-transform: capitalize;}
+text-transform: capitalize;
+margin-left:10%;}
 
 h1 {color:white;
-    font-weight: 600;
+    font-weight: 500;
 text-transform: capitalize;
 list-style-type: none;
-text-align: center;
+text-align: left;
 }
 
 h2 {font-size:75%;
@@ -36,7 +94,18 @@ h2 {font-size:75%;
     color:white;
 text-transform: capitalize;
 text-decoration: none;
-text-align: center;}
+text-align: left;
+margin-left:10%;}
+
+h3 {font-size:60%;
+    font-weight: 200;
+    color:white;
+text-transform: capitalize;
+text-decoration: none;
+text-align: left;
+margin-left:10%;}
 }
+
+
 
  
