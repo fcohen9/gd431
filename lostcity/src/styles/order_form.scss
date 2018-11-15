@@ -1,2 +1,23 @@
-.wrapper{color:black;}
-input {display: flex;}
+*{background-color:black;
+font-family: sans-serif;
+color:white;}
+
+
+fieldset {margin:10%; border:none;
+line-height: 100%;
+display: flex;}
+
+input {
+    margin-top: 2%;
+}
+
+label {margin:10%;}
+
+button {margin-top:5%;
+margin-bottom: 5%;
+ background-color:red;
+    
+    border-radius: 25px;
+}
+/*how can i make the save this card go next to the check box?*/
+
