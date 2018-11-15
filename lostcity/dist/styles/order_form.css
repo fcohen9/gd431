@@ -1,0 +1,10 @@
+.wrapper {
+  color: black;
+}
+
+input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=order_form.css.map */

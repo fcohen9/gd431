@@ -65,10 +65,10 @@ margin-left:20%;
 }
 
 
-.address {grid-column: 2/4;
-margin-left: 40%;}
 
-.assets {grid-column:3/4;
+.assets {margin-top:10%;
+    margin-left:20%;
+    grid-column:2/4;
     grid-row:1/3;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -77,32 +77,83 @@ margin-left: 40%;}
 
 .milkshake {grid-column: 1/2;
     grid-row:1/2;
-    max-width:20%;
-    margin:10%;
+     z-index:0;
+     transform: rotate(20deg);
 
     
 }
 
 .burger {grid-column: 2/3;
-    grid-row:2/3;
-    max-width:20%;
-    margin:10%;
+    grid-row:1/2;
+    z-index:0;
+    transform:rotate(10deg) scale(2,2);
     
 }
 
 .fries {grid-column: 3/4;
+    grid-row:1/2;
+    transform: rotate(-10deg);
+}
+
+.milkshake1 {grid-column: 3/4;
     grid-row:3/4;
-    max-width:20%;
-    margin:10%;
-    
+z-index:0;
+transform : rotate(-15deg) scale(1.5, 1.5);}
+
+.burger1{grid-column:1/2;
+    grid-row:3/4;z-index:0;
+transform: rotate(10deg);}
+
+.fries1{grid-column: 2/3;
+    grid-row:3/4;z-index:0;
+transform: rotate(5deg) scale(.75, .75);}
+
+.footer-wrapper {
+
+display: grid;
+grid-template-columns: 1fr 2fr;;
+margin-right:5%;
+margin-left:5%;
+
 }
 
 
 img {
-    grid-row: auto;
-max-width:20%;
+    
+max-width:30%;}
+/*why isn't my pulse working?
+animation: pulse 1s infinite;
 
 }
+
+@keyframes pulse {
+  0% {transform: scale (.5, .5);}
+  100%{transform: scale (1, 1);}
+}
+*/
+
+
+img:hover {
+
+    
+    animation: shake 1.0s; 
+   
+    animation-iteration-count: infinite; 
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}}
 
 p {font-size:50%;
     font-weight: 100;
