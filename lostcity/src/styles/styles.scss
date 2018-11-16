@@ -75,7 +75,7 @@ margin-left:20%;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-.milkshake {grid-column: 1/2;
+.assets__milkshake {grid-column: 1/2;
     grid-row:1/2;
      z-index:0;
      transform: rotate(20deg);
@@ -83,28 +83,28 @@ margin-left:20%;
     
 }
 
-.burger {grid-column: 2/3;
+.assets__burger {grid-column: 2/3;
     grid-row:1/2;
     z-index:0;
     transform:rotate(10deg) scale(2,2);
     
 }
 
-.fries {grid-column: 3/4;
+.assets__fries {grid-column: 3/4;
     grid-row:1/2;
     transform: rotate(-10deg);
 }
 
-.milkshake1 {grid-column: 3/4;
+.assets__milkshake--1 {grid-column: 3/4;
     grid-row:3/4;
 z-index:0;
 transform : rotate(-15deg) scale(1.5, 1.5);}
 
-.burger1{grid-column:1/2;
+.assets__burger--1{grid-column:1/2;
     grid-row:3/4;z-index:0;
 transform: rotate(10deg);}
 
-.fries1{grid-column: 2/3;
+.assets__fries--1{grid-column: 2/3;
     grid-row:3/4;z-index:0;
 transform: rotate(5deg) scale(.75, .75);}
 

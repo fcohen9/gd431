@@ -1,93 +1,74 @@
-/* CSS Document */
 .wrapper {
+  display: -ms-grid;
+  display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
 }
 
-body {
-  background: black;
-  font-size: 22px;
-  line-height: 32px;
-  color: white;
-  font-family: sans-serif;
+.navbar {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
   text-align: center;
 }
 
-a {
+.dropbtn {
   color: white;
-  font-weight: 200;
-}
-
-b {
-  color: white;
-  font-weight: 200;
-}
-
-/*get rid of dots*/
-nav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-/*buttons*/
-nav ul li {
   background-color: red;
-  margin: 10%;
+  font-size: 16px;
+  border: none;
   border-radius: 25px;
+  margin: 5%;
 }
 
-/*button text*/
-nav a {
-  display: block;
-  padding: 0 10px;
-  color: white;
-  font-size: 20px;
-  line-height: 60px;
-  text-decoration: none;
+.starters {
+  color: pink;
+  text-align: center;
 }
 
-/*what happens to the button when you hover*/
-nav a:hover {
-  background-color: green;
-  margin-bottom: 200%;
+.burgers {
+  color: purple;
+  text-align: center;
 }
 
-nav b:hover {
-  background-color: red;
+.fountain {
+  color: yellow;
+  text-align: center;
 }
 
-/* hide menu */
-nav ul ul {
+.brunch {
+  color: orange;
+  text-align: center;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
   display: none;
-  position: absolute;
-  top: 10%;
+  z-index: 1;
+  color: black;
 }
 
-/* display menu on Hover */
-nav ul li:hover > ul {
+.dropdown-content a {
+  color: black;
   display: block;
+  z-index: 1;
+}
+
+.dropdown a:hover {
+  display: block;
+  color: black;
   margin-top: 50%;
 }
 
-/* what comes up when you hover and for some reason button size*/
-nav ul li {
-  width: 100px;
+.show {
   display: block;
-  position: relative;
-}
-
-nav ul ul li {
-  width: 100px;
-  display: block;
-  position: relative;
-}
-
-nav ul ul ul li {
-  width: 100px;
-  display: block;
-  position: relative;
+  color: black;
 }
 /*# sourceMappingURL=menu_page.css.map */
