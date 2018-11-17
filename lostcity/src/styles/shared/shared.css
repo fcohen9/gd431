@@ -31,4 +31,13 @@ a {
   padding-top: 7%;
   width: 80%;
 }
+
+.footer-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  margin-right: 5%;
+  margin-left: 5%;
+}
 /*# sourceMappingURL=shared.css.map */
