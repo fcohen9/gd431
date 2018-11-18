@@ -41,46 +41,17 @@ a {
   margin-left: 5%;
 }
 
-.header-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 3fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
-  margin-right: 5%;
-  margin-left: 5%;
-}
-
-button {
+h3 {
+  font-size: 100%;
+  font-weight: 200;
   color: white;
-  background-color: red;
-  border-radius: 25px;
+  text-transform: capitalize;
   text-decoration: none;
-  border-color: red;
-  margin: 20%;
+  text-align: left;
+  margin-left: 30%;
 }
 
-a {
-  color: white;
-  background-color: red;
-  text-decoration: none;
-  font-size: 75%;
-}
-
-.logo {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  max-width: 100%;
-  padding-top: 7%;
-  width: 80%;
-}
-
-.footer-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
-  margin-right: 5%;
-  margin-left: 5%;
+* {
+  font-size: 32px;
 }
 /*# sourceMappingURL=base.css.map */

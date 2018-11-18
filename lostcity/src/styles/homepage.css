@@ -1,7 +1,6 @@
 * {
   background-color: black;
   font-family: sans-serif;
-  font-size: 32px;
 }
 
 .header-wrapper {
@@ -45,6 +44,16 @@ a {
       grid-template-columns: 1fr 2fr;
   margin-right: 5%;
   margin-left: 5%;
+}
+
+h3 {
+  font-size: 100%;
+  font-weight: 200;
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: left;
+  margin-left: 30%;
 }
 
 .wrapper {

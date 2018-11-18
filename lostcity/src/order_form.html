@@ -2,6 +2,7 @@
 layout: layouts/default.njk
 title: order
 stylesheet: order_form
+
 ---
 
 
@@ -9,35 +10,44 @@ stylesheet: order_form
 <form class="order-form">
     <fieldset>
         
-        <label for="name">
-        <input id="name" type="name" placeholder="Name">
-        name </label>
+        <label for="name">  name
+        <input id="name" type="text" placeholder="Name">
+        </label>
 
-        <label for="address">
-        <input id="address" type="address" placeholder="Address">
-        address </label>
+        <label for="address"> address 
+        <input id="address" type="text" placeholder="Address">
+        </label>
 
-        <label for="card_type">
+
+<group class="inline-radio">
+	<div><input type="radio" name="dorp"><label>delivery</label></div>
+	<div><input type="radio" name="dorp"><label>pick up</label></div>
+</group>
+    
+        
+
+
+        <label for="card_number"> card number
+        <input id="card_number" type="text" placeholder="card number">  </label>
+
+        <label for="card_expiration">card number
+        <input id="card_expiration" type="text" placeholder="expiration"> </label>
+        
+        <label for="cvc"> cvc
+        <input id="cvc" type="text" placeholder="cvc">  </label>
+
+        <label for="card_type"> card type
         <select id="card_type">
             <option>Visa</option>
             <option>Mastercard</option>
             <option>Discover</option>
             <option>American Express</option>
         </select>
-        card type</label>
-
-        <label for="card_number">
-        <input id="card_number" type="card_number" placeholder="card number"> card number </label>
-
-        <label for="card_expiration">
-        <input id="card_expiration" type="card_expiration" placeholder="expiration"> card expiration </label>
-        
-        <label for="cvc">
-        <input id="cvc" type="cvc" placeholder="cvc"> cvc </label>
+        </label>
 
 
-        <label for="save">
-            <input id="save" type="checkbox">  save this card 
+        <label for="save"> save this card 
+            <input id="save" type="checkbox">  
         </label>
 
         <button type="submit" class="order_button">order</button>
