@@ -42,7 +42,7 @@ a {
 }
 
 h3 {
-  font-size: 100%;
+  font-size: 60%;
   font-weight: 200;
   color: white;
   text-transform: capitalize;
@@ -57,13 +57,17 @@ h3 {
   color: white;
 }
 
-fieldset {
+/*general*/
+.order-form {
   margin: 10%;
   border: none;
   line-height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 40% 20% 20% 20% 10%;
+      grid-template-rows: 40% 20% 20% 20% 10%;
 }
 
 label {
@@ -76,6 +80,18 @@ label {
 input {
   margin-top: 1%;
   max-width: 25%;
+  padding: 1%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 5%;
+  font-size: 60%;
+  display: block;
+}
+
+textarea {
+  margin-top: 1%;
+  max-width: 25%;
+  height: auto;
   padding: 1%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -113,136 +129,133 @@ select {
   display: block;
 }
 
-#save {
-  margin-right: 21%;
-}
-
 h1 {
   margin: 5%;
   font-size: 60%;
   display: block;
   text-align: left;
   font-weight: 400;
+  border: 1px solid pink;
 }
 
-/* switch nonsense The switch - the box around the slider 
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 10%;
-    height: 5%;
-    font-size: 60%;
-
+/*name*/
+.nameandchoice {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
 }
 
-/* Hide default HTML checkbox 
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+/*address*/
+.input-address {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
 }
 
-/* The slider 
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-input:checked+.slider {
-    background-color: #2196F3;
-}
-
-input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}*/
-/*switch trying again*/
-form {
-  background: #fff;
-  width: 100%;
-  margin: auto;
-  padding: 30px;
-  min-width: 320px;
-  max-width: 540px;
-  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  border-radius: 3px;
-}
-
-h1 {
-  color: #fff;
-}
-
-.inline-radio {
+/*delivery or pick up*/
+.choice {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 3px;
-  overflow: hidden;
-  border: 1px solid #b6b6b6;
 }
 
-.inline-radio div {
-  position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+#delivery {
+  display: none;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
 }
 
-.inline-radio input {
-  width: 100%;
-  height: 60px;
-  opacity: 0;
+#pickup {
+  display: none;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
 }
 
-.inline-radio label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #b6b6b6;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  pointer-events: none;
-  border-right: 1px solid #b6b6b6;
+.radio_buttons {
+  max-width: 20%;
+  border: solid 2px red;
+  padding: 1%;
 }
 
-.inline-radio input:checked + label {
-  background: #d81b60;
-  font-weight: 500;
-  color: #fff;
+input[type="radio"]:checked + label {
+  border: solid 2px green;
+}
+
+/*card*/
+.card {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+#save {
+  margin-right: 21%;
+}
+
+.end1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.end2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+/*yes/no*/
+.contact {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  display: block;
+}
+
+#yes {
+  display: none;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+  border: 2px solid red;
+}
+
+#no {
+  display: none;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+  border: 2px solid red;
+}
+
+.radio_buttons-1 {
+  max-width: 7.5%;
+  border: solid 2px red;
+}
+
+input[type="radio"]:checked + label {
+  border: solid 2px green;
 }
 /*# sourceMappingURL=order_form.css.map */
