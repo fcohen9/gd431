@@ -1,49 +1,62 @@
 @import "shared/header", "shared/footer";
 
+* {
+    background-color: whitesmoke;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
 
 }
 
 .navbar {
     grid-column: 2/3;
     text-align: center;
+    display: grid;
+
 }
 
 .dropbtn {
 
     color: white;
-    background-color: red;
-    font-size: 16px;
+    background-color: black;
+    font-size: 75%;
     border: none;
-    border-radius: 25px;
+
     margin: 5%;
 }
 
 .starters {
-    color: pink;
+    color: white;
     text-align: center;
+    padding: 3%;
 }
 
 .burgers {
-    color: purple;
+    color: white;
     text-align: center;
+    padding: 3%;
 }
 
 .fountain {
-    color: yellow;
+    color: white;
     text-align: center;
+    padding: 3%;
 }
 
 .brunch {
-    color: orange;
+    color: white;
     text-align: center;
+    padding: 3%;
 }
 
 .dropbtn:hover,
 .dropbtn:focus {
-    background-color: #2980B9;
+    background-color: grey;
 }
 
 .dropdown {
@@ -76,8 +89,16 @@
     color: black;
     margin-top: 50%;
 }
- 
+
 .show {
     display: block;
     color: black;
+}
+
+p {
+    color: black;
+    z-index: 1;
+    font-size: 50%;
+    font-weight: 200;
+
 }

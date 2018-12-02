@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/styles/base.css">
     <link rel="stylesheet" href="/styles/{{ stylesheet }}.css">
     
-    <title>{{ title }}</title>
+    <title> {% if title !== "home" %} {{ title }} | {% endif %} Lost City Diner </title>
 
 </head> 
 

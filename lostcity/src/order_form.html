@@ -2,6 +2,7 @@
 layout: layouts/default.njk
 title: order
 stylesheet: order_form
+tags: nav
 
 ---
 
@@ -96,9 +97,9 @@ stylesheet: order_form
  </label>
   
         <label for="zip"> zip
-        <input id="zip" type="text" placeholder="zip">  
+        <input id="zip" type="text" placeholder="zip">  </label>
         <label for="special_instructions"> delivery instructions
-    <textarea name="special_instructions" rows="10" cols="10" >
+    <textarea name="special_instructions" rows="10" cols="20" >
 
 </textarea> </label>
 
@@ -143,7 +144,7 @@ stylesheet: order_form
             <input id="tip" type="text">  
         </label>
 
-</div>
+
 
 
  
@@ -154,14 +155,18 @@ stylesheet: order_form
 <label class="radio_buttons" for="yes">yes</label>
 <input type="radio" id="no" name="conper">
 <label class="radio_buttons" for="no">no</label>
-</div>
 
-<div class="end2">
+
+
 <label for="email"> email <input id="email" type="email">
 </label>
 
-        <button type="submit" class="order_button">order</button>
+        
         </div>
+    <button type="submit" class="order_button"><a href="/thank_you">place order</a></button>
+</div>
+        
+
     
 </form>
 </div>

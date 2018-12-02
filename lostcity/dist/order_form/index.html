@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/styles/base.css">
     <link rel="stylesheet" href="/styles/order_form.css">
     
-    <title>order</title>
+    <title>  order |  Lost City Diner </title>
 
 </head> 
 
@@ -15,12 +15,21 @@
 
 
 <div class="header-wrapper">
-<img class= "logo" src="/images/logo.png" alt="lost city diner">
+<img class= "logo" src="/images/wordmark.svg" alt="lost city diner">
 
-<button><a href="/">home</a></button>
-<button><a href="/about">about</a></button>
-<button><a href= "/menu_page">menus</a></button>
-<button><a href="/order_form">order</a></button>
+
+<nav>
+<ul class="u-list-reset">
+
+<li> <a class="button__header is-active " href="/order_form/"> order</a> </li>
+
+<li> <a class="button__header " href="/"> home</a> </li>
+
+<li> <a class="button__header " href="/menu_page/"> menus</a> </li>
+
+</ul>
+</nav>
+
 
 </div>
 
@@ -117,9 +126,9 @@
  </label>
   
         <label for="zip"> zip
-        <input id="zip" type="text" placeholder="zip">  
+        <input id="zip" type="text" placeholder="zip">  </label>
         <label for="special_instructions"> delivery instructions
-    <textarea name="special_instructions" rows="10" cols="10" >
+    <textarea name="special_instructions" rows="10" cols="20" >
 
 </textarea> </label>
 
@@ -164,7 +173,7 @@
             <input id="tip" type="text">  
         </label>
 
-</div>
+
 
 
  
@@ -175,14 +184,18 @@
 <label class="radio_buttons" for="yes">yes</label>
 <input type="radio" id="no" name="conper">
 <label class="radio_buttons" for="no">no</label>
-</div>
 
-<div class="end2">
+
+
 <label for="email"> email <input id="email" type="email">
 </label>
 
-        <button type="submit" class="order_button">order</button>
+        
         </div>
+    <button type="submit" class="order_button"><a href="/thank_you">place order</a></button>
+</div>
+        
+
     
 </form>
 </div>
@@ -190,11 +203,10 @@
 
 
 
-
-<div class="footer-wrapper"> 
-<h3 class="phone"> 410-547-lost</h3>
-        <h3 class="address"> 1730 N. Charles Street,
-            Baltimore, MD 21201 </h3>
+<div class="footer-wrapper">
+    <h3 class="phone"> 410-547-lost</h3>
+    <h3 class="address"> 1730 N. Charles Street,
+        Baltimore, MD 21201 </h3>
 </div>
 
 

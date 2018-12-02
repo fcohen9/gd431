@@ -1,59 +1,6 @@
 * {
-  background-color: black;
+  background-color: whitesmoke;
   font-family: sans-serif;
-}
-
-.header-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 3fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
-  margin-right: 5%;
-  margin-left: 5%;
-}
-
-button {
-  color: white;
-  background-color: red;
-  border-radius: 25px;
-  text-decoration: none;
-  border-color: red;
-  margin: 20%;
-}
-
-a {
-  color: white;
-  background-color: red;
-  text-decoration: none;
-  font-size: 75%;
-}
-
-.logo {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  max-width: 100%;
-  padding-top: 7%;
-  width: 80%;
-}
-
-.footer-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
-  margin-right: 5%;
-  margin-left: 5%;
-}
-
-h3 {
-  font-size: 60%;
-  font-weight: 200;
-  color: white;
-  text-transform: capitalize;
-  text-decoration: none;
-  text-align: left;
-  margin-left: 30%;
 }
 
 .wrapper {
@@ -72,7 +19,7 @@ h3 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  color: white;
+  color: black;
   line-height: 100%;
   margin-top: 15%;
 }
@@ -84,7 +31,18 @@ h3 {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  margin-left: 20%;
+}
+
+.open {
+  background-color: white;
+  -webkit-box-shadow: 3px 5px grey;
+          box-shadow: 3px 5px grey;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
 }
 
 .assets {
@@ -294,12 +252,19 @@ p {
   font-size: 50%;
   font-weight: 100;
   text-align: left;
-  color: white;
+  color: black;
   margin-left: 30%;
 }
 
+.des__1 {
+  background-color: white;
+  padding: 5%;
+  -webkit-box-shadow: 3px 5px grey;
+          box-shadow: 3px 5px grey;
+}
+
 h1 {
-  color: white;
+  color: black;
   font-weight: 500;
   text-transform: capitalize;
   list-style-type: none;
@@ -311,7 +276,7 @@ h1 {
 h2 {
   font-size: 70%;
   font-weight: 200;
-  color: white;
+  color: black;
   text-transform: capitalize;
   text-decoration: none;
   text-align: left;
@@ -321,7 +286,7 @@ h2 {
 h3 {
   font-size: 55%;
   font-weight: 200;
-  color: white;
+  color: black;
   text-transform: capitalize;
   text-decoration: none;
   text-align: left;
@@ -343,12 +308,12 @@ h3 {
     font-size: 50%;
     font-weight: 100;
     text-align: left;
-    color: white;
+    color: black;
     text-transform: capitalize;
     margin-left: 10%;
   }
   h1 {
-    color: white;
+    color: black;
     font-weight: 500;
     text-transform: capitalize;
     list-style-type: none;
@@ -357,7 +322,7 @@ h3 {
   h2 {
     font-size: 75%;
     font-weight: 200;
-    color: white;
+    color: black;
     text-transform: capitalize;
     text-decoration: none;
     text-align: left;
@@ -366,7 +331,7 @@ h3 {
   h3 {
     font-size: 60%;
     font-weight: 200;
-    color: white;
+    color: black;
     text-transform: capitalize;
     text-decoration: none;
     text-align: left;

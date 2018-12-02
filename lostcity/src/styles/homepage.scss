@@ -1,11 +1,11 @@
 * {
-    background-color: black;
+    background-color: whitesmoke;
     font-family: sans-serif;
 
 
 }
 
-@import "shared/header", "shared/footer";
+
 
 
 
@@ -21,17 +21,28 @@
 .des {
     grid-column: 1/2;
     grid-row: 1/2;
-    color: white;
+    color: black;
     line-height: 100%;
     margin-top: 15%;
+
+
+
 }
 
 
 .text {
     grid-column: 1/2;
     grid-row: 2/3;
-    margin-left: 20%;
 
+
+
+}
+
+.open {
+    background-color: white;
+    box-shadow: 3px 5px grey;
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
 
 
@@ -168,12 +179,18 @@ p {
     font-size: 50%;
     font-weight: 100;
     text-align: left;
-    color: white;
+    color: black;
     margin-left: 30%;
 }
 
+.des__1 {
+    background-color: white;
+    padding: 5%;
+    box-shadow: 3px 5px grey;
+}
+
 h1 {
-    color: white;
+    color: black;
     font-weight: 500;
     text-transform: capitalize;
     list-style-type: none;
@@ -186,7 +203,7 @@ h1 {
 h2 {
     font-size: 70%;
     font-weight: 200;
-    color: white;
+    color: black;
     text-transform: capitalize;
     text-decoration: none;
     text-align: left;
@@ -196,7 +213,7 @@ h2 {
 h3 {
     font-size: 55%;
     font-weight: 200;
-    color: white;
+    color: black;
     text-transform: capitalize;
     text-decoration: none;
     text-align: left;
@@ -220,13 +237,13 @@ h3 {
         font-size: 50%;
         font-weight: 100;
         text-align: left;
-        color: white;
+        color: black;
         text-transform: capitalize;
         margin-left: 10%;
     }
 
     h1 {
-        color: white;
+        color: black;
         font-weight: 500;
         text-transform: capitalize;
         list-style-type: none;
@@ -236,7 +253,7 @@ h3 {
     h2 {
         font-size: 75%;
         font-weight: 200;
-        color: white;
+        color: black;
         text-transform: capitalize;
         text-decoration: none;
         text-align: left;
@@ -246,7 +263,7 @@ h3 {
     h3 {
         font-size: 60%;
         font-weight: 200;
-        color: white;
+        color: black;
         text-transform: capitalize;
         text-decoration: none;
         text-align: left;

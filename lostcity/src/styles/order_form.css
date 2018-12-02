@@ -7,20 +7,33 @@
   margin-left: 5%;
 }
 
-button {
-  color: white;
-  background-color: red;
-  border-radius: 25px;
-  text-decoration: none;
-  border-color: red;
-  margin: 20%;
+.header-wrapper nav {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/ span 4;
 }
 
-a {
-  color: white;
-  background-color: red;
+.header-wrapper nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.button__header {
+  color: black;
+  background-color: white;
+  border-radius: 25px;
   text-decoration: none;
+  border-color: white;
+  padding: 8px 25px 8px 25px;
+  -webkit-box-shadow: 3px 5px grey;
+          box-shadow: 3px 5px grey;
   font-size: 75%;
+  display: block;
+  margin: 20% 0;
 }
 
 .logo {
@@ -28,8 +41,12 @@ a {
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   max-width: 100%;
-  padding-top: 7%;
+  padding-top: 10%;
   width: 80%;
+}
+
+* {
+  font-family: sans-serif;
 }
 
 .footer-wrapper {
@@ -44,7 +61,7 @@ a {
 h3 {
   font-size: 60%;
   font-weight: 200;
-  color: white;
+  color: black;
   text-transform: capitalize;
   text-decoration: none;
   text-align: left;
@@ -52,9 +69,8 @@ h3 {
 }
 
 * {
-  background-color: black;
+  background-color: whitesmoke;
   font-family: sans-serif;
-  color: white;
 }
 
 /*general*/
@@ -68,6 +84,8 @@ h3 {
       grid-template-columns: 50% 50%;
   -ms-grid-rows: 40% 20% 20% 20% 10%;
       grid-template-rows: 40% 20% 20% 20% 10%;
+  background-color: whitesmoke;
+  font-family: sans-serif;
 }
 
 label {
@@ -86,11 +104,12 @@ input {
   margin-right: 5%;
   font-size: 60%;
   display: block;
+  border: 2px solid grey;
 }
 
 textarea {
   margin-top: 1%;
-  max-width: 25%;
+  max-width: 45%;
   height: auto;
   padding: 1%;
   -webkit-box-sizing: border-box;
@@ -98,6 +117,7 @@ textarea {
   margin-right: 5%;
   font-size: 60%;
   display: block;
+  border: 2px solid grey;
 }
 
 ::-webkit-input-placeholder {
@@ -185,12 +205,13 @@ h1 {
 
 .radio_buttons {
   max-width: 20%;
-  border: solid 2px red;
   padding: 1%;
+  text-align: center;
 }
 
 input[type="radio"]:checked + label {
-  border: solid 2px green;
+  border: solid 2px red;
+  border-radius: 25px;
 }
 
 /*card*/
@@ -214,15 +235,6 @@ input[type="radio"]:checked + label {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-}
-
-.end2 {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  grid-row: 4/5;
 }
 
 /*yes/no*/
@@ -252,10 +264,38 @@ input[type="radio"]:checked + label {
 
 .radio_buttons-1 {
   max-width: 7.5%;
-  border: solid 2px red;
 }
 
 input[type="radio"]:checked + label {
-  border: solid 2px green;
+  border: solid 2px red;
+  border-radius: 25px;
+}
+
+.order_button {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  color: red;
+  background-color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  border-color: white;
+  text-align: left;
+  padding: 3%;
+  text-align: bottom;
+  -webkit-box-shadow: 3px 5px grey;
+          box-shadow: 3px 5px grey;
+  margin-top: 5%;
+}
+
+#state {
+  border: 2px solid grey;
+}
+
+#card_type {
+  border: 2px solid grey;
 }
 /*# sourceMappingURL=order_form.css.map */
