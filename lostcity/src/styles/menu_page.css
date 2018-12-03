@@ -157,7 +157,45 @@ h3 {
 p {
   color: black;
   z-index: 1;
-  font-size: 50%;
+  font-size: 55%;
   font-weight: 200;
+}
+
+h4 {
+  color: red;
+  font-size: 75%;
+  font-weight: 200;
+}
+
+h5 {
+  font-size: 45%;
+  font-weight: 200;
+}
+
+#starters,
+#burgers,
+#fountain,
+#brunch {
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.on-menu {
+  font-size: 45%;
+  font-weight: 200;
+}
+
+.top-description {
+  font-size: 45%;
+  font-weight: 200;
+  font-style: italic;
+  padding: 0;
+  margin-bottom: 5%;
+  margin-left: 0;
 }
 /*# sourceMappingURL=menu_page.css.map */
