@@ -1,0 +1,261 @@
+.header-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+button {
+  color: white;
+  background-color: red;
+  border-radius: 25px;
+  text-decoration: none;
+  border-color: red;
+  margin: 20%;
+}
+
+a {
+  color: white;
+  background-color: red;
+  text-decoration: none;
+  font-size: 75%;
+}
+
+.logo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  max-width: 100%;
+  padding-top: 7%;
+  width: 80%;
+}
+
+.footer-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+h3 {
+  font-size: 60%;
+  font-weight: 200;
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: left;
+  margin-left: 30%;
+}
+
+* {
+  background-color: black;
+  font-family: sans-serif;
+  color: white;
+}
+
+/*general*/
+.order-form {
+  margin: 10%;
+  border: none;
+  line-height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 40% 20% 20% 20% 10%;
+      grid-template-rows: 40% 20% 20% 20% 10%;
+}
+
+label {
+  margin: 5%;
+  font-size: 60%;
+  display: block;
+  text-align: left;
+}
+
+input {
+  margin-top: 1%;
+  max-width: 25%;
+  padding: 1%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 5%;
+  font-size: 60%;
+  display: block;
+}
+
+textarea {
+  margin-top: 1%;
+  max-width: 25%;
+  height: auto;
+  padding: 1%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 5%;
+  font-size: 60%;
+  display: block;
+}
+
+::-webkit-input-placeholder {
+  color: pink;
+}
+
+:-ms-input-placeholder {
+  color: pink;
+}
+
+::-ms-input-placeholder {
+  color: pink;
+}
+
+::placeholder {
+  color: pink;
+}
+
+select {
+  margin-top: 5%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 1%;
+  max-width: 25%;
+  font-size: 60%;
+  cursor: pointer;
+  margin-right: 5%;
+  display: block;
+}
+
+h1 {
+  margin: 5%;
+  font-size: 60%;
+  display: block;
+  text-align: left;
+  font-weight: 400;
+  border: 1px solid pink;
+}
+
+/*name*/
+.nameandchoice {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+/*address*/
+.input-address {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+/*delivery or pick up*/
+.choice {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#delivery {
+  display: none;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+#pickup {
+  display: none;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.radio_buttons {
+  max-width: 20%;
+  border: solid 2px red;
+  padding: 1%;
+}
+
+input[type="radio"]:checked + label {
+  border: solid 2px green;
+}
+
+/*card*/
+.card {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+#save {
+  margin-right: 21%;
+}
+
+.end1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.end2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+/*yes/no*/
+.contact {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  display: block;
+}
+
+#yes {
+  display: none;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+  border: 2px solid red;
+}
+
+#no {
+  display: none;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+  border: 2px solid red;
+}
+
+.radio_buttons-1 {
+  max-width: 7.5%;
+  border: solid 2px red;
+}
+
+input[type="radio"]:checked + label {
+  border: solid 2px green;
+}
+/*# sourceMappingURL=order_form.css.map */
