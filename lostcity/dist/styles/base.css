@@ -10,6 +10,7 @@
       grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
   margin-right: 5%;
   margin-left: 5%;
+  background-color: whitesmoke;
 }
 
 .header-wrapper nav {
@@ -39,6 +40,7 @@
   font-size: 75%;
   display: block;
   margin: 20% 0;
+  background-color: whitesmoke;
 }
 
 .logo {
@@ -48,6 +50,7 @@
   max-width: 100%;
   padding-top: 10%;
   width: 80%;
+  background-color: whitesmoke;
 }
 
 * {
@@ -61,6 +64,7 @@
       grid-template-columns: 1fr 2fr;
   margin-right: 5%;
   margin-left: 5%;
+  background-color: whitesmoke;
 }
 
 h3 {
