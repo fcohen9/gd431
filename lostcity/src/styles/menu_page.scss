@@ -9,8 +9,8 @@
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    // margin-top: 5%;
+    // margin-bottom: 5%;
 
 
 }
@@ -126,9 +126,9 @@ h5 {
     text-align: left;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.dropdown-content ul {
+    // list-style-type: none;
+    // padding: 0;
     margin: 0;
 
 

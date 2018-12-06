@@ -47,12 +47,14 @@ body {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+  margin-left: 30%;
+  padding: 10%;
 }
 
-img {
-  max-width: 30%;
-}
+/*img {
 
+    max-width: 30%;
+}*/
 p {
   font-size: 50%;
   font-weight: 100;
@@ -98,46 +100,63 @@ h3 {
   margin-left: 30%;
 }
 
-.assets {
-  width: 100%;
-  height: 100%;
-  margin: -280px 40px 54px -34px;
-  animation: falling 10s infinite linear;
-  -webkit-animation: falling 10s infinite linear;
-  -moz-animation: falling 10s infinite linear;
-  color: transparent;
+.slideshow__homepage {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+  text-align: right;
 }
 
-@-webkit-keyframes falling {
-  0% {
-    opacity: 1;
-    -webkit-transform: translate(0, 0px) rotateZ(0deg);
-  }
-  75% {
-    opacity: 1;
-    -webkit-transform: translate(50%, 50%) rotateZ(270deg);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translate(100%, 100%) rotateZ(360deg);
-  }
+.slideshow__homepage--container {
+  display: inline-block;
 }
+
+.button__slideshow {
+  color: black;
+  background-color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  border-color: white;
+  padding: 8px 25px 8px 25px;
+  -webkit-box-shadow: 3px 5px grey;
+          box-shadow: 3px 5px grey;
+  font-size: 75%;
+  display: inline-block;
+  margin: 20% 0;
+}
+
+/*.assets__milkshake {
+
+    width: 100%;
+    height: 100%;
+    margin: -280px 40px 54px -34px;
+
+    animation: falling 5s infinite linear;
+
+    -webkit-animation: falling 5s infinite linear;
+    -moz-animation: falling 5s infinite linear;
+    color: transparent;
+
+}
+
+
 
 @keyframes falling {
-  0% {
-    opacity: 1;
-    -webkit-transform: translate(0, 0px) rotateZ(0deg);
-  }
-  75% {
-    opacity: 1;
-    -webkit-transform: translate(50%, 50%) rotateZ(270deg);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translate(100%, 100%) rotateZ(360deg);
-  }
-}
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
 
+    }
+
+    100% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+
+    }
+}*/
 @media screen and (max-width: 480px) {
   img {
     max-width: 20%;

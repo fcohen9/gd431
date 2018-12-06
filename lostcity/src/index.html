@@ -2,6 +2,7 @@
 layout: layouts/default.njk
 title: home
 stylesheet: homepage
+javascript: homepage
 tags: nav
 ---
 
@@ -15,10 +16,6 @@ tags: nav
 
 
 
-    <div class="assets">
-        <img src="images/milkshake.svg" class="assets__milkshake" alt="milkshake">
-
-    </div>
 
 
 
@@ -28,11 +25,7 @@ tags: nav
         </p>
     </div>
 
-    <div class="assets">
-        <img src="images/burger.svg" class="assets__burger" alt="burger">
 
-
-    </div>
 
     <div class="text">
         <ul class="open">
@@ -46,10 +39,18 @@ tags: nav
 
     </div class="text">
 
-    <div class="assets">
-        <img src="images/fries.svg" class="assets__fries" alt="fries">
 
 
+    <div class="slideshow__homepage">
+        <div class="slideshow__homepage--container">
+            <img class="mySlides" src="images/fries.svg">
+            <img class="mySlides" src="images/milkshake.svg">
+            <img class="mySlides" src="images/burger.svg">
 
+
+            <button class="button__slideshow" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="button__slideshow" onclick="plusDivs(1)">&#10095;</button>
+        </div>
     </div>
+
 </div>
