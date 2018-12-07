@@ -1,0 +1,49 @@
+body {
+    background-color: whitesmoke;
+
+}
+
+.wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.slideshow__about {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+}
+
+.slideshow__about--container {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: inline-block;
+
+
+}
+
+.mySlides {
+    background-color: whitesmoke;
+    min-height: 10vw;
+    max-height: 10vw;
+    min-width: 10vw;
+    max-width: 10vw;
+
+
+}
+
+.button__slideshow {
+    color: black;
+    background-color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    border-color: white;
+
+    padding: 8px 25px 8px 25px;
+    box-shadow: 3px 5px grey;
+    font-size: 75%;
+    display: inline-block;
+    margin: 20% 0;
+
+
+}
