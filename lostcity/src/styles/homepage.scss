@@ -203,6 +203,7 @@ h2 {
 
 
 
+
     }
 
     .text {
@@ -285,14 +286,34 @@ h2 {
 
 @media screen and (max-width:480px) {
 
-    h2 {
-        font-size: 60%;
-        font-weight: 200;
-        color: green;
-        text-transform: capitalize;
-        text-decoration: none;
-        text-align: left;
+    .wrapper {
 
+        grid-template-rows: .5fr 1fr;
+        grid-template-columns: 1fr;
+        text-align: center;
+
+
+
+    }
+
+    .des {
+        grid-row: 1/2;
+
+
+
+    }
+
+    .text {
+        grid-row: 2/3;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 0;
+    }
+
+    p {
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 5%;
     }
 
 }
