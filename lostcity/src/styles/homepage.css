@@ -16,19 +16,6 @@ body {
   background-color: whitesmoke;
 }
 
-.des {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  color: black;
-  line-height: 100%;
-  margin-top: 15%;
-  background-color: white;
-}
-
 .text {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -37,19 +24,11 @@ body {
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   background-color: white;
-}
-
-.open {
   -webkit-box-shadow: 3px 5px grey;
           box-shadow: 3px 5px grey;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
   margin-left: 30%;
-  padding: 10%;
+  margin-bottom: 5%;
+  padding: 5%;
 }
 
 .assets {
@@ -140,20 +119,11 @@ body {
           transform: rotate(5deg) scale(0.75, 0.75);
 }
 
+/*make those^ into heights not transforms*/
 img {
   max-width: 30%;
 }
 
-/*why isn't my pulse working?
-animation: pulse 1s infinite;
-
-}
-
-@keyframes pulse {
-  0% {transform: scale (.5, .5);}
-  100%{transform: scale (1, 1);}
-}
-*/
 img:hover {
   -webkit-animation: shake 1.0s;
           animation: shake 1.0s;
@@ -261,9 +231,6 @@ p {
   text-align: left;
   color: black;
   margin-left: 30%;
-}
-
-.des__1 {
   background-color: white;
   padding: 5%;
   -webkit-box-shadow: 3px 5px grey;
@@ -276,102 +243,108 @@ h1 {
   text-transform: capitalize;
   list-style-type: none;
   text-align: left;
-  margin-left: 10%;
-  font-size: 85%;
+  font-size: 75%;
 }
 
 h2 {
-  font-size: 70%;
+  font-size: 60%;
   font-weight: 200;
   color: black;
   text-transform: capitalize;
   text-decoration: none;
   text-align: left;
-  margin-left: 30%;
 }
 
-h3 {
-  font-size: 55%;
-  font-weight: 200;
-  color: black;
-  text-transform: capitalize;
-  text-decoration: none;
-  text-align: left;
-  margin-left: 30%;
-}
-
-/*.assets__milkshake {
-
-    width: 100%;
-    height: 100%;
-    margin: -280px 40px 54px -34px;
-
-    animation: falling 5s infinite linear;
-
-    -webkit-animation: falling 5s infinite linear;
-    -moz-animation: falling 5s infinite linear;
-    color: transparent;
-
-}
-
-
-
-@keyframes falling {
-    0% {
-        -webkit-transform: translateY(-1000px);
-        transform: translateY(-1000px);
-
-    }
-
-    100% {
-        -webkit-transform: translateY(1000px);
-        transform: translateY(1000px);
-
-    }
-}*/
-@media screen and (max-width: 480px) {
-  img {
-    max-width: 20%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20%;
-    margin-top: 10%;
-    -o-object-position: center;
-       object-position: center;
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .wrapper {
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+  }
+  .text {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    margin-left: 10%;
+    margin-top: 0;
   }
   p {
     font-size: 50%;
     font-weight: 100;
     text-align: left;
     color: black;
-    text-transform: capitalize;
     margin-left: 10%;
+    margin-top: 5%;
+    background-color: white;
+    padding: 5%;
+    -webkit-box-shadow: 3px 5px grey;
+            box-shadow: 3px 5px grey;
   }
-  h1 {
-    color: green;
-    font-weight: 500;
-    text-transform: capitalize;
-    list-style-type: none;
-    text-align: left;
+  .assets {
+    margin-top: 10%;
+    margin-left: 20%;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+    margin-right: 20%;
   }
+  img {
+    min-width: 150%;
+  }
+  .assets__milkshake {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    z-index: 0;
+    -webkit-transform: unset;
+            transform: unset;
+    margin: auto;
+  }
+  .assets__burger {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    z-index: 0;
+    -webkit-transform: unset;
+            transform: unset;
+    margin: auto;
+  }
+  .assets__fries {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -webkit-transform: unset;
+            transform: unset;
+    margin: auto;
+  }
+  .assets__milkshake--1,
+  .assets__burger--1,
+  .assets__fries--1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
   h2 {
-    font-size: 75%;
-    font-weight: 200;
-    color: black;
-    text-transform: capitalize;
-    text-decoration: none;
-    text-align: left;
-    margin-left: 10%;
-  }
-  h3 {
     font-size: 60%;
     font-weight: 200;
-    color: black;
+    color: green;
     text-transform: capitalize;
     text-decoration: none;
     text-align: left;
-    margin-left: 10%;
   }
 }
 /*# sourceMappingURL=homepage.css.map */

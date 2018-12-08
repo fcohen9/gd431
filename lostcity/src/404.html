@@ -2,29 +2,66 @@
 layout: layouts/default.njk
 title: 404
 stylesheet: 404
+javascript: 404.js
 ---
-<div class="slide-in-top">
+<div class="wrapper">
 
-<h1> 404 </h1>
+    <h1>404</h1>
 
-    <div class="assets">
-        <img class="assets__milkshake" src="/images/milkshake.svg" alt="milkshake">
-        <img class="assets__milkshake--1" src="/images/milkshake.svg" alt="milkshake">
-        </div>
+    <div class="slide-in-top">
 
-    <div class="assets">
-        <img class="assets__burger" src="/images/burger.svg" alt="burger">
-        <img class="assets__burger--1" src="/images/burger.svg" alt="burger">
-    </div> 
 
-    <div class="assets">
-        <img class="assets__fries" src="/images/fries.svg" alt="fries">
-        <img class="assets__fries--1" src="/images/fries.svg" alt="fries">
+
+        <ul class="u-list-reset assets">
+            <li>
+                <svg aria-hidden="true" focusable="false">
+                    <use xlink:href="#fries"></use>
+                </svg>
+            </li>
+            <li>
+                <svg aria-hidden="true" focusable="false">
+                    <use xlink:href="#burger"></use>
+                </svg>
+            </li>
+            <li>
+                <svg aria-hidden="true" focusable="false">
+                    <use xlink:href="#milkshake"></use>
+                </svg>
+            </li>
+            <li>
+                <svg aria-hidden="true" focusable="false">
+                    <use xlink:href="#milkshake"></use>
+                </svg>
+            </li>
+            <li>
+                <svg aria-hidden="true" focusable="false">
+                    <use xlink:href="#fries"></use>
+                </svg>
+            </li>
+            <li>
+                <svg aria-hidden="true" focusable="false">
+                    <use xlink:href="#burger"></use>
+                </svg>
+            </li>
+            <li>
+                <svg aria-hidden="true" focusable="false">
+                    <use xlink:href="#burger"></use>
+                </svg>
+            </li>
+            <li>
+                <svg aria-hidden="true" focusable="false">
+                    <use xlink:href="#milkshake"></use>
+                </svg>
+            </li>
+            <li>
+                <svg aria-hidden="true" focusable="false">
+                    <use xlink:href="#fries"></use>
+                </svg>
+            </li>
+
+        </ul>
+
     </div>
-
 </div>
 
-
-
-
-
+{% include "_404-icons.html" %}
