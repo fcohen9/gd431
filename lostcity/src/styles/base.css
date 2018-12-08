@@ -118,8 +118,10 @@
     background-color: whitesmoke;
   }
   .header-wrapper nav {
+    display: -ms-inline-grid;
+    display: inline-grid;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 12%;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
