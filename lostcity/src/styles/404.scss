@@ -69,3 +69,39 @@ h1 {
 
 
 }
+
+@media screen and (min-width:481px) and (max-width:800px) {
+    img {
+        min-width: 150%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .assets {
+        transform: scale(.5);
+        margin: 10%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    h1 {
+        font-size: 600%;
+        margin-bottom: 50%;
+
+
+    }
+
+    li {
+
+        // about random: http://jonibologna.com/sass-function-demos/#random
+        @for $i from 1 through 20 {
+            &:nth-child(#{$i}) {
+                svg {
+                    margin-top: random(100)+px;
+                    transform: rotate(random(300)+deg) scale(random(1)-.25);
+
+                }
+            }
+        }
+    }
+}

@@ -8,6 +8,7 @@
 }
 
 
+
 /*general*/
 
 
@@ -231,3 +232,23 @@ input[type="radio"]:checked+label {
 #card_type {
     border: 2px solid grey;
 }
+
+@media screen and (min-width:481px) and (max-width:800px) {
+
+    img {
+        min-width: 150%;
+    }
+
+    //come back to this
+
+    .order-form {
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 40% 20% 20% 20% 10%;
+        background-color: whitesmoke;
+        font-family: sans-serif;
+    }
+}
+
+@media screen and (max-width:480px) {}

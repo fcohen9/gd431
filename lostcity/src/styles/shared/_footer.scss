@@ -7,7 +7,7 @@
 
     display: grid;
     grid-template-columns: 1fr 2fr;
-    ;
+
     margin-right: 5%;
     margin-left: 5%;
     background-color: whitesmoke;
@@ -22,4 +22,54 @@ h3 {
     text-decoration: none;
     text-align: left;
     margin-left: 30%;
+}
+
+@media screen and (min-width:481px) and (max-width:800px) {
+
+    .footer-wrapper {
+        margin: 5%;
+
+
+
+
+
+
+    }
+
+    h3 {
+        font-size: 40%;
+        font-weight: 400;
+        color: black;
+        text-transform: capitalize;
+        text-decoration: none;
+        text-align: left;
+        margin-left: 0;
+
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    .footer-wrapper {
+
+        display: block;
+        margin-left: 10%;
+
+
+
+
+
+
+    }
+
+    h3 {
+        font-size: 40%;
+        font-weight: 400;
+        color: black;
+        text-transform: capitalize;
+        text-decoration: none;
+        text-align: left;
+        margin-left: 0;
+
+    }
 }

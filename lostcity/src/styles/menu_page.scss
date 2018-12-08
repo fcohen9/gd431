@@ -4,6 +4,8 @@
     background-color: whitesmoke;
 }
 
+
+
 /*why are the nav buttons slightly higher on this page??*/
 
 .wrapper {
@@ -148,4 +150,45 @@ h5 {
     margin-left: 0;
 
 
+}
+
+
+@media screen and (min-width:481px) and (max-width:800px) {
+    img {
+        min-width: 150%;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        // margin-top: 5%;
+        // margin-bottom: 5%;
+
+
+    }
+
+    .navbar {
+        grid-column: 1/2;
+        text-align: center;
+        display: grid;
+
+    }
+}
+
+@media screen and (max-width:480px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        // margin-top: 5%;
+        // margin-bottom: 5%;
+
+
+    }
+
+    .navbar {
+        grid-column: 1/2;
+        text-align: center;
+        display: grid;
+
+    }
 }

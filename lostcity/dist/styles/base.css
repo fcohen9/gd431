@@ -84,7 +84,7 @@
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
-    width: 50%;
+    width: 100%;
     background-color: whitesmoke;
     margin-left: 25%;
     margin-right: 25%;
@@ -106,7 +106,6 @@
 
 @media screen and (max-width: 480px) {
   .header-wrapper {
-    text-align: center;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -118,10 +117,8 @@
     background-color: whitesmoke;
   }
   .header-wrapper nav {
-    display: -ms-inline-grid;
-    display: inline-grid;
     margin-right: auto;
-    margin-left: 12%;
+    margin-left: auto;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -197,6 +194,37 @@ h3 {
   text-decoration: none;
   text-align: left;
   margin-left: 30%;
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .footer-wrapper {
+    margin: 5%;
+  }
+  h3 {
+    font-size: 40%;
+    font-weight: 400;
+    color: black;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-wrapper {
+    display: block;
+    margin-left: 10%;
+  }
+  h3 {
+    font-size: 40%;
+    font-weight: 400;
+    color: black;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 0;
+  }
 }
 
 /*  Removes default styles from a button element */
