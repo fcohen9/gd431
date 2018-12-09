@@ -38,123 +38,123 @@ h1 {
 }
 
 .assets li:nth-child(1) svg {
-  margin-top: 186px;
-  -webkit-transform: rotate(223deg) scale(1.5);
-          transform: rotate(223deg) scale(1.5);
+  margin-top: 88px;
+  -webkit-transform: rotate(6deg) scale(0.5);
+          transform: rotate(6deg) scale(0.5);
 }
 
 .assets li:nth-child(2) svg {
-  margin-top: 183px;
-  -webkit-transform: rotate(92deg) scale(1.5);
-          transform: rotate(92deg) scale(1.5);
+  margin-top: 91px;
+  -webkit-transform: rotate(87deg) scale(1.5);
+          transform: rotate(87deg) scale(1.5);
 }
 
 .assets li:nth-child(3) svg {
-  margin-top: 133px;
-  -webkit-transform: rotate(172deg) scale(0.5);
-          transform: rotate(172deg) scale(0.5);
+  margin-top: 41px;
+  -webkit-transform: rotate(74deg) scale(0.5);
+          transform: rotate(74deg) scale(0.5);
 }
 
 .assets li:nth-child(4) svg {
-  margin-top: 99px;
-  -webkit-transform: rotate(294deg) scale(0.5);
-          transform: rotate(294deg) scale(0.5);
+  margin-top: 126px;
+  -webkit-transform: rotate(177deg) scale(0.5);
+          transform: rotate(177deg) scale(0.5);
 }
 
 .assets li:nth-child(5) svg {
-  margin-top: 61px;
-  -webkit-transform: rotate(212deg) scale(0.5);
-          transform: rotate(212deg) scale(0.5);
+  margin-top: 161px;
+  -webkit-transform: rotate(79deg) scale(0.5);
+          transform: rotate(79deg) scale(0.5);
 }
 
 .assets li:nth-child(6) svg {
-  margin-top: 147px;
-  -webkit-transform: rotate(45deg) scale(1.5);
-          transform: rotate(45deg) scale(1.5);
+  margin-top: 134px;
+  -webkit-transform: rotate(29deg) scale(1.5);
+          transform: rotate(29deg) scale(1.5);
 }
 
 .assets li:nth-child(7) svg {
-  margin-top: 102px;
-  -webkit-transform: rotate(219deg) scale(0.5);
-          transform: rotate(219deg) scale(0.5);
-}
-
-.assets li:nth-child(8) svg {
-  margin-top: 190px;
-  -webkit-transform: rotate(225deg) scale(0.5);
-          transform: rotate(225deg) scale(0.5);
-}
-
-.assets li:nth-child(9) svg {
-  margin-top: 119px;
-  -webkit-transform: rotate(138deg) scale(1.5);
-          transform: rotate(138deg) scale(1.5);
-}
-
-.assets li:nth-child(10) svg {
-  margin-top: 172px;
-  -webkit-transform: rotate(263deg) scale(0.5);
-          transform: rotate(263deg) scale(0.5);
-}
-
-.assets li:nth-child(11) svg {
-  margin-top: 154px;
-  -webkit-transform: rotate(119deg) scale(0.5);
-          transform: rotate(119deg) scale(0.5);
-}
-
-.assets li:nth-child(12) svg {
-  margin-top: 156px;
-  -webkit-transform: rotate(27deg) scale(1.5);
-          transform: rotate(27deg) scale(1.5);
-}
-
-.assets li:nth-child(13) svg {
-  margin-top: 125px;
-  -webkit-transform: rotate(37deg) scale(1.5);
-          transform: rotate(37deg) scale(1.5);
-}
-
-.assets li:nth-child(14) svg {
-  margin-top: 20px;
-  -webkit-transform: rotate(208deg) scale(0.5);
-          transform: rotate(208deg) scale(0.5);
-}
-
-.assets li:nth-child(15) svg {
-  margin-top: 73px;
-  -webkit-transform: rotate(27deg) scale(1.5);
-          transform: rotate(27deg) scale(1.5);
-}
-
-.assets li:nth-child(16) svg {
-  margin-top: 163px;
+  margin-top: 19px;
   -webkit-transform: rotate(76deg) scale(1.5);
           transform: rotate(76deg) scale(1.5);
 }
 
+.assets li:nth-child(8) svg {
+  margin-top: 197px;
+  -webkit-transform: rotate(179deg) scale(1.5);
+          transform: rotate(179deg) scale(1.5);
+}
+
+.assets li:nth-child(9) svg {
+  margin-top: 44px;
+  -webkit-transform: rotate(104deg) scale(0.5);
+          transform: rotate(104deg) scale(0.5);
+}
+
+.assets li:nth-child(10) svg {
+  margin-top: 118px;
+  -webkit-transform: rotate(22deg) scale(0.5);
+          transform: rotate(22deg) scale(0.5);
+}
+
+.assets li:nth-child(11) svg {
+  margin-top: 6px;
+  -webkit-transform: rotate(122deg) scale(0.5);
+          transform: rotate(122deg) scale(0.5);
+}
+
+.assets li:nth-child(12) svg {
+  margin-top: 189px;
+  -webkit-transform: rotate(51deg) scale(0.5);
+          transform: rotate(51deg) scale(0.5);
+}
+
+.assets li:nth-child(13) svg {
+  margin-top: 42px;
+  -webkit-transform: rotate(273deg) scale(1.5);
+          transform: rotate(273deg) scale(1.5);
+}
+
+.assets li:nth-child(14) svg {
+  margin-top: 81px;
+  -webkit-transform: rotate(288deg) scale(1.5);
+          transform: rotate(288deg) scale(1.5);
+}
+
+.assets li:nth-child(15) svg {
+  margin-top: 45px;
+  -webkit-transform: rotate(34deg) scale(1.5);
+          transform: rotate(34deg) scale(1.5);
+}
+
+.assets li:nth-child(16) svg {
+  margin-top: 175px;
+  -webkit-transform: rotate(107deg) scale(0.5);
+          transform: rotate(107deg) scale(0.5);
+}
+
 .assets li:nth-child(17) svg {
-  margin-top: 181px;
-  -webkit-transform: rotate(233deg) scale(1.5);
-          transform: rotate(233deg) scale(1.5);
+  margin-top: 32px;
+  -webkit-transform: rotate(252deg) scale(0.5);
+          transform: rotate(252deg) scale(0.5);
 }
 
 .assets li:nth-child(18) svg {
-  margin-top: 150px;
-  -webkit-transform: rotate(204deg) scale(0.5);
-          transform: rotate(204deg) scale(0.5);
+  margin-top: 9px;
+  -webkit-transform: rotate(288deg) scale(1.5);
+          transform: rotate(288deg) scale(1.5);
 }
 
 .assets li:nth-child(19) svg {
-  margin-top: 61px;
-  -webkit-transform: rotate(117deg) scale(0.5);
-          transform: rotate(117deg) scale(0.5);
+  margin-top: 114px;
+  -webkit-transform: rotate(150deg) scale(0.5);
+          transform: rotate(150deg) scale(0.5);
 }
 
 .assets li:nth-child(20) svg {
-  margin-top: 12px;
-  -webkit-transform: rotate(50deg) scale(1.5);
-          transform: rotate(50deg) scale(1.5);
+  margin-top: 106px;
+  -webkit-transform: rotate(139deg) scale(1.5);
+          transform: rotate(139deg) scale(1.5);
 }
 
 .slide-in-top {
@@ -177,8 +177,8 @@ h1 {
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(100vh);
-            transform: translateY(100vh);
+    -webkit-transform: translateY(75vh);
+            transform: translateY(75vh);
   }
 }
 
@@ -192,128 +192,31 @@ h1 {
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(100vh);
-            transform: translateY(100vh);
+    -webkit-transform: translateY(75vh);
+            transform: translateY(75vh);
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (min-width: 481px) and (max-width: 850px) {
+  h1 {
+    font-size: 800%;
+  }
   img {
     min-width: 150%;
+  }
+  .assets {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
   }
 }
 
 @media screen and (max-width: 480px) {
   .assets {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    margin: 10%;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    display: none;
   }
   h1 {
     font-size: 600%;
     margin-bottom: 50%;
-  }
-  li:nth-child(1) svg {
-    margin-top: 4px;
-    -webkit-transform: rotate(270deg) scale(0.75);
-            transform: rotate(270deg) scale(0.75);
-  }
-  li:nth-child(2) svg {
-    margin-top: 49px;
-    -webkit-transform: rotate(72deg) scale(0.75);
-            transform: rotate(72deg) scale(0.75);
-  }
-  li:nth-child(3) svg {
-    margin-top: 8px;
-    -webkit-transform: rotate(23deg) scale(0.75);
-            transform: rotate(23deg) scale(0.75);
-  }
-  li:nth-child(4) svg {
-    margin-top: 57px;
-    -webkit-transform: rotate(128deg) scale(0.75);
-            transform: rotate(128deg) scale(0.75);
-  }
-  li:nth-child(5) svg {
-    margin-top: 78px;
-    -webkit-transform: rotate(64deg) scale(0.75);
-            transform: rotate(64deg) scale(0.75);
-  }
-  li:nth-child(6) svg {
-    margin-top: 62px;
-    -webkit-transform: rotate(8deg) scale(0.75);
-            transform: rotate(8deg) scale(0.75);
-  }
-  li:nth-child(7) svg {
-    margin-top: 74px;
-    -webkit-transform: rotate(245deg) scale(0.75);
-            transform: rotate(245deg) scale(0.75);
-  }
-  li:nth-child(8) svg {
-    margin-top: 38px;
-    -webkit-transform: rotate(104deg) scale(0.75);
-            transform: rotate(104deg) scale(0.75);
-  }
-  li:nth-child(9) svg {
-    margin-top: 42px;
-    -webkit-transform: rotate(193deg) scale(0.75);
-            transform: rotate(193deg) scale(0.75);
-  }
-  li:nth-child(10) svg {
-    margin-top: 27px;
-    -webkit-transform: rotate(149deg) scale(0.75);
-            transform: rotate(149deg) scale(0.75);
-  }
-  li:nth-child(11) svg {
-    margin-top: 96px;
-    -webkit-transform: rotate(143deg) scale(0.75);
-            transform: rotate(143deg) scale(0.75);
-  }
-  li:nth-child(12) svg {
-    margin-top: 88px;
-    -webkit-transform: rotate(220deg) scale(0.75);
-            transform: rotate(220deg) scale(0.75);
-  }
-  li:nth-child(13) svg {
-    margin-top: 31px;
-    -webkit-transform: rotate(200deg) scale(0.75);
-            transform: rotate(200deg) scale(0.75);
-  }
-  li:nth-child(14) svg {
-    margin-top: 31px;
-    -webkit-transform: rotate(133deg) scale(0.75);
-            transform: rotate(133deg) scale(0.75);
-  }
-  li:nth-child(15) svg {
-    margin-top: 17px;
-    -webkit-transform: rotate(79deg) scale(0.75);
-            transform: rotate(79deg) scale(0.75);
-  }
-  li:nth-child(16) svg {
-    margin-top: 12px;
-    -webkit-transform: rotate(297deg) scale(0.75);
-            transform: rotate(297deg) scale(0.75);
-  }
-  li:nth-child(17) svg {
-    margin-top: 32px;
-    -webkit-transform: rotate(197deg) scale(0.75);
-            transform: rotate(197deg) scale(0.75);
-  }
-  li:nth-child(18) svg {
-    margin-top: 37px;
-    -webkit-transform: rotate(114deg) scale(0.75);
-            transform: rotate(114deg) scale(0.75);
-  }
-  li:nth-child(19) svg {
-    margin-top: 34px;
-    -webkit-transform: rotate(100deg) scale(0.75);
-            transform: rotate(100deg) scale(0.75);
-  }
-  li:nth-child(20) svg {
-    margin-top: 77px;
-    -webkit-transform: rotate(77deg) scale(0.75);
-            transform: rotate(77deg) scale(0.75);
   }
 }
 /*# sourceMappingURL=404.css.map */
