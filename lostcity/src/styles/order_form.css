@@ -272,11 +272,6 @@ input {
   height: 3vw;
 }
 
-.radio_buttons {
-  padding: 0;
-  margin: 0;
-}
-
 #zip {
   max-width: 25%;
 }
@@ -289,6 +284,9 @@ input {
   max-width: 15%;
 }
 
+/*.card_details {
+    margin-top: 6%;
+}*/
 textarea {
   margin-top: 1%;
   max-width: 45%;
@@ -381,6 +379,15 @@ h1 {
 .radio_buttons {
   max-width: 20%;
   text-align: center;
+  padding: 0;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.radio {
+  height: 10vw;
+  width: 50%;
+  border: 2px solid grey;
 }
 
 input[type="radio"]:checked + label {
