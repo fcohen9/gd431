@@ -93,7 +93,7 @@
     padding: 8px 25px 8px 25px;
     -webkit-box-shadow: 3px 5px grey;
             box-shadow: 3px 5px grey;
-    font-size: 75%;
+    font-size: 65%;
     display: block;
     margin: 0;
   }
@@ -133,9 +133,12 @@
   .header-wrapper nav li {
     display: -ms-inline-grid;
     display: inline-grid;
-    padding: 10%;
+    padding: 2vw;
     margin-right: auto;
     margin-left: auto;
+    margin: 2vw;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .logo {
     margin-top: 15%;
@@ -159,9 +162,9 @@
     text-decoration: none;
     border-color: white;
     padding: 8px 25px 8px 25px;
-    -webkit-box-shadow: 3px 5px grey;
-            box-shadow: 3px 5px grey;
-    font-size: 75%;
+    -webkit-box-shadow: 2px 4px grey;
+            box-shadow: 2px 4px grey;
+    font-size: 55%;
     display: block;
     margin: 0;
   }

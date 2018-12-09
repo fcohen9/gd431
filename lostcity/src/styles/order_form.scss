@@ -35,6 +35,7 @@ p {
 
     background-color: whitesmoke;
     font-family: sans-serif;
+
 }
 
 label {
@@ -49,7 +50,7 @@ input {
     margin-top: 1%;
     max-width: 100%;
     padding: 2%;
-    padding-left: 5%;
+
     box-sizing: border-box;
     margin-right: 5%;
     font-size: 60%;
@@ -94,6 +95,7 @@ textarea {
     color: grey;
     font-size: 125%;
 
+
 }
 
 select {
@@ -116,6 +118,8 @@ select {
 
 option {
     font-size: 100%;
+    text-align: center;
+
 }
 
 h1 {
@@ -145,116 +149,67 @@ h1 {
     display: none;
     cursor: grabbing;
 
+
 }
 
 #pickup {
     display: none;
     cursor: grabbing;
 
+
 }
 
 
 
 .radio_buttons {
-    max-width: 20%;
-
-
-    text-align: center;
-    padding: 0;
+    width: 40%;
+    display: inline-block;
+    padding: 1%;
+    margin: 0;
     margin-top: 5%;
-    margin-bottom: 5%;
+    text-align: center;
+    overflow: hidden;
 
 
 }
+
+
 
 .radio {
-    height: 10vw;
-    width: 50%;
-
+    height: 6vw;
+    width: 60%;
+    text-align: center;
     border: 2px solid grey;
+    margin-top: 5%;
+    margin-left: 5.5%;
+    font-size: 80%;
+    color: grey;
+    overflow: hidden;
+
+
+
+
+
 
 }
+
+
+
+
 
 input[type="radio"]:checked+label {
     border: solid 2px red;
     border-radius: 25px;
+    text-align: center;
+    color: black;
 
 }
 
 
 
-/*card
-
-.card {
-    grid-column: 2/3;
-    grid-row: 1/2;
-
-    margin-left: 15%;
-}*/
-
-#save {
-    margin-right: 21%;
-
-}
-
-/*.end1 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-
-    margin-left: 15%;
-}
 
 
 
-
-/*yes/no*/
-
-
-
-/*.contact {
-
-    grid-column: 2/3;
-    grid-row: 1/2;
-
-    display: block;
-    margin-left: 15%;
-
-}*/
-
-#yes {
-    display: none;
-    cursor: grabbing;
-    border: 2px solid red;
-
-
-}
-
-#no {
-    display: none;
-    cursor: grabbing;
-    border: 2px solid red;
-
-
-}
-
-
-
-.radio_buttons-1 {
-    max-width: 7.5%;
-    height: 3vw;
-
-
-
-
-
-}
-
-input[type="radio"]:checked+label {
-    border: solid 2px red;
-    border-radius: 25px;
-
-
-}
 
 .order_button {
 
@@ -281,6 +236,9 @@ input[type="radio"]:checked+label {
 
 }
 
+#tip {
+    max-width: 25%;
+}
 
 
 a {
@@ -289,11 +247,22 @@ a {
 
 #state {
     border: 2px solid grey;
+    color: grey;
 
 }
 
 #card_type {
     border: 2px solid grey;
+    color: grey;
+    font-size: 70%;
+}
+
+#save {
+    display: grid;
+    text-align: left;
+    width: 3vw;
+    height: 3vw;
+    padding: 0;
 }
 
 @media screen and (min-width:481px) and (max-width:800px) {
@@ -302,16 +271,186 @@ a {
         min-width: 150%;
     }
 
-    //come back to this
+
 
     .order-form {
-
+        text-align: center;
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 40% 20% 20% 20% 10%;
-        background-color: whitesmoke;
-        font-family: sans-serif;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .column__one {
+        display: inline-block;
+        margin-left: 4%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .column__two {
+        display: inline-block;
+        margin-left: 4%;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    label {
+        margin-left: 0;
+
+
+    }
+
+    input {
+        margin-left: 0;
+        height: 6vw;
+        width: 60vw;
+    }
+
+    #state {
+        height: 6vw;
+        width: 10vw;
+    }
+
+    textarea {
+
+        max-width: 60vw;
+        max-height: 15vw;
+
+    }
+
+    .radio_buttons {
+
+        max-height: 6vw;
+        width: 10vw;
+        padding: 1%;
+        margin: 0;
+
+        text-align: center;
+        margin-left: 0;
+
+
+
+    }
+
+
+
+
+    .radio {
+        text-align: left;
+        height: 10vw;
+        width: 60vw;
+        margin-left: 0;
+        border: none;
+        margin-top: 5vw;
+        margin-bottom: 0;
+
+
+
+
+
+
+
+
+    }
+
+    #card_type {
+        height: 6vw;
+        min-width: 25%;
+        text-align: left;
+        padding-left: 1%;
+
+
     }
 }
 
-@media screen and (max-width:480px) {}
+
+@media screen and (max-width:480px) {
+
+    .order-form {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .column__one {
+        margin-left: 4%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-top: 0;
+    }
+
+    .column__two {
+        margin-left: 4%;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-top: 0;
+    }
+
+    label {
+        margin-left: 0;
+
+
+    }
+
+    input {
+        margin-left: 0;
+        height: 10vw;
+    }
+
+    #state {
+        height: 10vw;
+        width: 10vw;
+    }
+
+    textarea {
+
+        max-width: 100%;
+
+    }
+
+    .radio_buttons {
+
+
+        padding: 1%;
+        margin: 0;
+        margin-top: 5%;
+        text-align: left;
+        margin-left: 0;
+
+
+
+    }
+
+
+
+    .radio {
+        height: 15vw;
+        width: 70%;
+        margin-left: 0;
+        border: 2px solid grey;
+        margin-top: 5%;
+
+
+
+
+
+
+
+    }
+
+    #card_type {
+        height: 10vw;
+        min-width: 25%;
+        text-align: left;
+        padding-left: 1%;
+
+
+    }
+
+
+
+}
