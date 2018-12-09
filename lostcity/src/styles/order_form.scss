@@ -11,15 +11,28 @@
 
 /*general*/
 
+h6 {
+    font-size: 75%;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-transform: uppercase;
 
+}
+
+p {
+    font-size: 80%;
+
+
+}
 
 .order-form {
-    margin: 10%;
-    border: none;
+    margin: 5%;
+    border: 2px solid grey;
     line-height: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 40% 20% 20% 20% 10%;
+
+
     background-color: whitesmoke;
     font-family: sans-serif;
 }
@@ -34,14 +47,33 @@ label {
 
 input {
     margin-top: 1%;
-    max-width: 25%;
-    padding: 1%;
+    max-width: 100%;
+    padding: 2%;
+    padding-left: 5%;
     box-sizing: border-box;
     margin-right: 5%;
     font-size: 60%;
     display: block;
     border: 2px solid grey;
+    height: 3vw;
 
+}
+
+.radio_buttons {
+    padding: 0;
+    margin: 0;
+}
+
+#zip {
+    max-width: 25%;
+}
+
+#card_expiration {
+    max-width: 25%;
+}
+
+#cvc {
+    max-width: 15%;
 }
 
 textarea {
@@ -58,18 +90,31 @@ textarea {
 }
 
 ::placeholder {
-    color: pink;
+    color: grey;
+    font-size: 125%;
+
 }
 
 select {
-    margin-top: 5%;
+    margin-top: 1%;
     appearance: none;
-    padding: 1%;
-    max-width: 25%;
+
+    max-width: 15%;
+    max-height: 5%;
     font-size: 60%;
     cursor: pointer;
-    margin-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+
     display: block;
+    text-align: center;
+    height: 3vw;
+
+}
+
+option {
+    font-size: 100%;
 }
 
 h1 {
@@ -78,35 +123,22 @@ h1 {
     display: block;
     text-align: left;
     font-weight: 400;
-    border: 1px solid pink;
+    border: 1px solid grey;
 }
 
-/*name*/
-
-.nameandchoice {
+.column__one {
+    margin-left: 15%;
     grid-column: 1/2;
-    grid-row: 1/2;
+}
+
+.column__two {
+    margin-left: 15%;
+    grid-column: 2/3;
 }
 
 
 
 
-/*address*/
-
-.input-address {
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-/*delivery or pick up*/
-
-.choice {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    display: flex;
-
-
-}
 
 #delivery {
     display: none;
@@ -125,8 +157,9 @@ h1 {
 .radio_buttons {
     max-width: 20%;
 
-    padding: 1%;
+
     text-align: center;
+
 
 }
 
@@ -138,21 +171,25 @@ input[type="radio"]:checked+label {
 
 
 
-/*card*/
+/*card
 
 .card {
     grid-column: 2/3;
     grid-row: 1/2;
-}
+
+    margin-left: 15%;
+}*/
 
 #save {
     margin-right: 21%;
 
 }
 
-.end1 {
+/*.end1 {
     grid-column: 2/3;
     grid-row: 2/3;
+
+    margin-left: 15%;
 }
 
 
@@ -162,13 +199,15 @@ input[type="radio"]:checked+label {
 
 
 
-.contact {
+/*.contact {
 
     grid-column: 2/3;
-    grid-row: 3/4;
-    display: block;
+    grid-row: 1/2;
 
-}
+    display: block;
+    margin-left: 15%;
+
+}*/
 
 #yes {
     display: none;
@@ -190,6 +229,7 @@ input[type="radio"]:checked+label {
 
 .radio_buttons-1 {
     max-width: 7.5%;
+    height: 3vw;
 
 
 
@@ -205,23 +245,34 @@ input[type="radio"]:checked+label {
 }
 
 .order_button {
-    grid-column: 2/3;
-    grid-row: 4/5;
 
-    color: red;
+
+
+    color: black;
     background-color: white;
     border-radius: 25px;
-    text-decoration: none;
+
     border-color: white;
-    text-align: left;
-    padding: 3%;
-    text-align: bottom;
-    box-shadow: 3px 5px grey;
-    margin-top: 5%;
+
+    padding: 8px 25px 8px 25px;
+    box-shadow: 2px 3px grey;
+    font-size: 60%;
+
+    margin-top: 10%;
+    margin-bottom: 15%;
+    text-transform: uppercase;
+    font-weight: 600;
 
 
 
 
+
+}
+
+
+
+a {
+    text-decoration: none;
 }
 
 #state {
