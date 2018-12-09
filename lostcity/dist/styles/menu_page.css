@@ -1,11 +1,11 @@
 .header-wrapper {
+  background-color: whitesmoke;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 3fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
-  margin-right: 5%;
   margin-left: 5%;
-  background-color: whitesmoke;
+  margin-right: 5%;
 }
 
 .header-wrapper nav {
@@ -24,40 +24,39 @@
 }
 
 .button__header {
-  color: black;
   background-color: white;
-  border-radius: 25px;
-  text-decoration: none;
   border-color: white;
-  padding: 8px 25px 8px 25px;
+  border-radius: 25px;
   -webkit-box-shadow: 3px 5px grey;
           box-shadow: 3px 5px grey;
-  font-size: 75%;
+  color: black;
   display: block;
+  font-size: 75%;
   margin: 20% 0;
+  padding: 8px 25px 8px 25px;
+  text-decoration: none;
 }
 
 .logo {
+  background-color: whitesmoke;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   max-width: 80%;
   padding-top: 15%;
-  background-color: whitesmoke;
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (min-width: 481px) and (max-width: 850px) {
   .header-wrapper {
-    text-align: center;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-    margin-right: 5%;
     margin-left: 5%;
-    background-color: whitesmoke;
+    margin-right: 5%;
+    text-align: center;
   }
   .header-wrapper nav {
     -ms-grid-column: 1;
@@ -76,26 +75,26 @@
             justify-content: space-between;
   }
   .logo {
+    background-color: whitesmoke;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
-    width: 100%;
-    background-color: whitesmoke;
     margin-left: 25%;
     margin-right: 25%;
+    width: 100%;
   }
   .button__header {
-    color: black;
     background-color: white;
-    border-radius: 25px;
-    text-decoration: none;
     border-color: white;
-    padding: 8px 25px 8px 25px;
+    border-radius: 25px;
     -webkit-box-shadow: 3px 5px grey;
             box-shadow: 3px 5px grey;
-    font-size: 65%;
+    color: black;
     display: block;
+    font-size: 65%;
     margin: 0;
+    padding: 8px 25px 8px 25px;
+    text-decoration: none;
   }
 }
 
@@ -107,19 +106,18 @@
         grid-template-columns: 1fr;
     -ms-grid-rows: .25fr 1fr;
         grid-template-rows: .25fr 1fr;
-    margin-right: 5%;
     margin-left: 5%;
-    background-color: whitesmoke;
+    margin-right: 5%;
   }
   .header-wrapper nav {
-    margin-right: auto;
-    margin-left: auto;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
+    margin-left: auto;
+    margin-right: auto;
   }
   .header-wrapper nav .u-list-reset {
     display: -ms-grid;
@@ -133,40 +131,40 @@
   .header-wrapper nav li {
     display: -ms-inline-grid;
     display: inline-grid;
-    padding: 2vw;
-    margin-right: auto;
-    margin-left: auto;
-    margin: 2vw;
-    margin-top: 0;
     margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin: 2vw;
+    padding: 2vw;
   }
   .logo {
-    margin-top: 15%;
-    margin-bottom: 0;
-    padding: 0;
+    background-color: whitesmoke;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
-    width: 100%;
-    background-color: whitesmoke;
-    margin-right: auto;
+    margin-bottom: 0;
     margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    padding: 0;
+    width: 100%;
   }
   .button__header {
-    color: black;
     background-color: white;
-    border-radius: 25px;
-    text-decoration: none;
     border-color: white;
-    padding: 8px 25px 8px 25px;
+    border-radius: 25px;
     -webkit-box-shadow: 2px 4px grey;
             box-shadow: 2px 4px grey;
-    font-size: 55%;
+    color: black;
     display: block;
+    font-size: 55%;
     margin: 0;
+    padding: 8px 25px 8px 25px;
+    text-decoration: none;
   }
 }
 
@@ -175,23 +173,23 @@
 }
 
 .footer-wrapper {
+  background-color: whitesmoke;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr;
       grid-template-columns: 1fr 2fr;
-  margin-right: 5%;
   margin-left: 5%;
-  background-color: whitesmoke;
+  margin-right: 5%;
 }
 
 h3 {
+  color: black;
   font-size: 60%;
   font-weight: 200;
-  color: black;
-  text-transform: capitalize;
-  text-decoration: none;
-  text-align: left;
   margin-left: 30%;
+  text-align: left;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 @media screen and (min-width: 481px) and (max-width: 800px) {
@@ -199,13 +197,13 @@ h3 {
     margin: 5%;
   }
   h3 {
+    color: black;
     font-size: 40%;
     font-weight: 400;
-    color: black;
-    text-transform: capitalize;
-    text-decoration: none;
-    text-align: left;
     margin-left: 0;
+    text-align: left;
+    text-decoration: none;
+    text-transform: capitalize;
   }
 }
 
@@ -215,13 +213,13 @@ h3 {
     margin-left: 10%;
   }
   h3 {
+    color: black;
     font-size: 40%;
     font-weight: 400;
-    color: black;
-    text-transform: capitalize;
-    text-decoration: none;
-    text-align: left;
     margin-left: 0;
+    text-align: left;
+    text-decoration: none;
+    text-transform: capitalize;
   }
 }
 
@@ -229,7 +227,6 @@ h3 {
   background-color: whitesmoke;
 }
 
-/*why are the nav buttons slightly higher on this page??*/
 .wrapper {
   display: -ms-grid;
   display: grid;
@@ -238,44 +235,44 @@ h3 {
 }
 
 .navbar {
+  display: -ms-grid;
+  display: grid;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   text-align: center;
-  display: -ms-grid;
-  display: grid;
 }
 
 .dropbtn {
-  color: white;
   background-color: black;
-  font-size: 75%;
   border: none;
+  color: white;
+  font-size: 75%;
   margin: 5%;
 }
 
 .starters {
   color: white;
-  text-align: center;
   padding: 3%;
+  text-align: center;
 }
 
 .burgers {
   color: white;
-  text-align: center;
   padding: 3%;
+  text-align: center;
 }
 
 .fountain {
   color: white;
-  text-align: center;
   padding: 3%;
+  text-align: center;
 }
 
 .brunch {
   color: white;
-  text-align: center;
   padding: 3%;
+  text-align: center;
 }
 
 .dropbtn:hover,
@@ -288,9 +285,9 @@ h3 {
 }
 
 .dropdown-content {
+  color: black;
   display: none;
   z-index: 1;
-  color: black;
 }
 
 .dropdown-content a {
@@ -300,21 +297,21 @@ h3 {
 }
 
 .dropdown a:hover {
-  display: block;
   color: black;
+  display: block;
   margin-top: 50%;
 }
 
 .show {
-  display: block;
   color: black;
+  display: block;
 }
 
 p {
   color: black;
-  z-index: 1;
   font-size: 55%;
   font-weight: 200;
+  z-index: 1;
 }
 
 h4 {
@@ -346,14 +343,14 @@ h5 {
 
 .top-description {
   font-size: 45%;
-  font-weight: 200;
   font-style: italic;
-  padding: 0;
+  font-weight: 200;
   margin-bottom: 5%;
   margin-left: 0;
+  padding: 0;
 }
 
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (min-width: 481px) and (max-width: 850px) {
   img {
     min-width: 150%;
   }
@@ -364,12 +361,12 @@ h5 {
         grid-template-columns: 1fr;
   }
   .navbar {
+    display: -ms-grid;
+    display: grid;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
     text-align: center;
-    display: -ms-grid;
-    display: grid;
   }
 }
 
@@ -381,12 +378,12 @@ h5 {
         grid-template-columns: 1fr;
   }
   .navbar {
+    display: -ms-grid;
+    display: grid;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
     text-align: center;
-    display: -ms-grid;
-    display: grid;
   }
 }
 /*# sourceMappingURL=menu_page.css.map */

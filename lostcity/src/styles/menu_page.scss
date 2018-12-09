@@ -4,58 +4,47 @@
     background-color: whitesmoke;
 }
 
-
-
-/*why are the nav buttons slightly higher on this page??*/
-
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    // margin-top: 5%;
-    // margin-bottom: 5%;
-
-
 }
 
 .navbar {
+    display: grid;
     grid-column: 2/3;
     text-align: center;
-    display: grid;
-
 }
 
 .dropbtn {
-
-    color: white;
     background-color: black;
-    font-size: 75%;
     border: none;
-
+    color: white;
+    font-size: 75%;
     margin: 5%;
 }
 
 .starters {
     color: white;
-    text-align: center;
     padding: 3%;
+    text-align: center;
 }
 
 .burgers {
     color: white;
-    text-align: center;
     padding: 3%;
+    text-align: center;
 }
 
 .fountain {
     color: white;
-    text-align: center;
     padding: 3%;
+    text-align: center;
 }
 
 .brunch {
     color: white;
-    text-align: center;
     padding: 3%;
+    text-align: center;
 }
 
 .dropbtn:hover,
@@ -64,61 +53,48 @@
 }
 
 .dropdown {
-
     display: inline-block;
-
 }
 
 .dropdown-content {
-    display: none;
-
-
-
-    z-index: 1;
     color: black;
-
-
-
+    display: none;
+    z-index: 1;
 }
 
 .dropdown-content a {
     color: black;
     display: block;
     z-index: 1;
-
 }
 
 .dropdown a:hover {
-    display: block;
     color: black;
+    display: block;
     margin-top: 50%;
 }
 
 .show {
-    display: block;
     color: black;
+    display: block;
 }
 
 p {
     color: black;
-    z-index: 1;
     font-size: 55%;
     font-weight: 200;
-
+    z-index: 1;
 }
 
 h4 {
     color: red;
     font-size: 75%;
     font-weight: 200;
-
 }
 
 h5 {
     font-size: 45%;
     font-weight: 200;
-
-
 }
 
 #starters,
@@ -129,11 +105,7 @@ h5 {
 }
 
 .dropdown-content ul {
-    // list-style-type: none;
-    // padding: 0;
     margin: 0;
-
-
 }
 
 .on-menu {
@@ -143,17 +115,16 @@ h5 {
 
 .top-description {
     font-size: 45%;
-    font-weight: 200;
     font-style: italic;
-    padding: 0;
+    font-weight: 200;
     margin-bottom: 5%;
     margin-left: 0;
-
-
+    padding: 0;
 }
 
 
-@media screen and (min-width:481px) and (max-width:800px) {
+@media screen and (min-width:481px) and (max-width:850px) {
+
     img {
         min-width: 150%;
     }
@@ -161,34 +132,25 @@ h5 {
     .wrapper {
         display: grid;
         grid-template-columns: 1fr;
-        // margin-top: 5%;
-        // margin-bottom: 5%;
-
-
     }
 
     .navbar {
+        display: grid;
         grid-column: 1/2;
         text-align: center;
-        display: grid;
-
     }
 }
 
 @media screen and (max-width:480px) {
+
     .wrapper {
         display: grid;
         grid-template-columns: 1fr;
-        // margin-top: 5%;
-        // margin-bottom: 5%;
-
-
     }
 
     .navbar {
+        display: grid;
         grid-column: 1/2;
         text-align: center;
-        display: grid;
-
     }
 }

@@ -24,146 +24,146 @@ body {
 
 h1 {
   font-size: 1000%;
-  margin-top: 0;
   margin-bottom: 0;
+  margin-top: 0;
   text-align: center;
 }
 
 .assets {
-  padding: 1%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  padding: 1%;
 }
 
 .assets li:nth-child(1) svg {
-  margin-top: 98px;
-  -webkit-transform: rotate(229deg) scale(1.5);
-          transform: rotate(229deg) scale(1.5);
+  margin-top: 186px;
+  -webkit-transform: rotate(223deg) scale(1.5);
+          transform: rotate(223deg) scale(1.5);
 }
 
 .assets li:nth-child(2) svg {
-  margin-top: 12px;
-  -webkit-transform: rotate(162deg) scale(0.5);
-          transform: rotate(162deg) scale(0.5);
+  margin-top: 183px;
+  -webkit-transform: rotate(92deg) scale(1.5);
+          transform: rotate(92deg) scale(1.5);
 }
 
 .assets li:nth-child(3) svg {
-  margin-top: 154px;
-  -webkit-transform: rotate(87deg) scale(0.5);
-          transform: rotate(87deg) scale(0.5);
+  margin-top: 133px;
+  -webkit-transform: rotate(172deg) scale(0.5);
+          transform: rotate(172deg) scale(0.5);
 }
 
 .assets li:nth-child(4) svg {
-  margin-top: 35px;
-  -webkit-transform: rotate(3deg) scale(0.5);
-          transform: rotate(3deg) scale(0.5);
+  margin-top: 99px;
+  -webkit-transform: rotate(294deg) scale(0.5);
+          transform: rotate(294deg) scale(0.5);
 }
 
 .assets li:nth-child(5) svg {
-  margin-top: 10px;
-  -webkit-transform: rotate(86deg) scale(0.5);
-          transform: rotate(86deg) scale(0.5);
+  margin-top: 61px;
+  -webkit-transform: rotate(212deg) scale(0.5);
+          transform: rotate(212deg) scale(0.5);
 }
 
 .assets li:nth-child(6) svg {
-  margin-top: 153px;
-  -webkit-transform: rotate(187deg) scale(0.5);
-          transform: rotate(187deg) scale(0.5);
+  margin-top: 147px;
+  -webkit-transform: rotate(45deg) scale(1.5);
+          transform: rotate(45deg) scale(1.5);
 }
 
 .assets li:nth-child(7) svg {
-  margin-top: 97px;
-  -webkit-transform: rotate(33deg) scale(0.5);
-          transform: rotate(33deg) scale(0.5);
+  margin-top: 102px;
+  -webkit-transform: rotate(219deg) scale(0.5);
+          transform: rotate(219deg) scale(0.5);
 }
 
 .assets li:nth-child(8) svg {
-  margin-top: 22px;
-  -webkit-transform: rotate(226deg) scale(1.5);
-          transform: rotate(226deg) scale(1.5);
+  margin-top: 190px;
+  -webkit-transform: rotate(225deg) scale(0.5);
+          transform: rotate(225deg) scale(0.5);
 }
 
 .assets li:nth-child(9) svg {
-  margin-top: 18px;
-  -webkit-transform: rotate(259deg) scale(1.5);
-          transform: rotate(259deg) scale(1.5);
+  margin-top: 119px;
+  -webkit-transform: rotate(138deg) scale(1.5);
+          transform: rotate(138deg) scale(1.5);
 }
 
 .assets li:nth-child(10) svg {
-  margin-top: 171px;
-  -webkit-transform: rotate(17deg) scale(1.5);
-          transform: rotate(17deg) scale(1.5);
+  margin-top: 172px;
+  -webkit-transform: rotate(263deg) scale(0.5);
+          transform: rotate(263deg) scale(0.5);
 }
 
 .assets li:nth-child(11) svg {
-  margin-top: 131px;
-  -webkit-transform: rotate(188deg) scale(0.5);
-          transform: rotate(188deg) scale(0.5);
+  margin-top: 154px;
+  -webkit-transform: rotate(119deg) scale(0.5);
+          transform: rotate(119deg) scale(0.5);
 }
 
 .assets li:nth-child(12) svg {
-  margin-top: 66px;
-  -webkit-transform: rotate(232deg) scale(1.5);
-          transform: rotate(232deg) scale(1.5);
+  margin-top: 156px;
+  -webkit-transform: rotate(27deg) scale(1.5);
+          transform: rotate(27deg) scale(1.5);
 }
 
 .assets li:nth-child(13) svg {
-  margin-top: 77px;
-  -webkit-transform: rotate(134deg) scale(1.5);
-          transform: rotate(134deg) scale(1.5);
+  margin-top: 125px;
+  -webkit-transform: rotate(37deg) scale(1.5);
+          transform: rotate(37deg) scale(1.5);
 }
 
 .assets li:nth-child(14) svg {
-  margin-top: 41px;
-  -webkit-transform: rotate(218deg) scale(0.5);
-          transform: rotate(218deg) scale(0.5);
+  margin-top: 20px;
+  -webkit-transform: rotate(208deg) scale(0.5);
+          transform: rotate(208deg) scale(0.5);
 }
 
 .assets li:nth-child(15) svg {
-  margin-top: 52px;
-  -webkit-transform: rotate(214deg) scale(0.5);
-          transform: rotate(214deg) scale(0.5);
+  margin-top: 73px;
+  -webkit-transform: rotate(27deg) scale(1.5);
+          transform: rotate(27deg) scale(1.5);
 }
 
 .assets li:nth-child(16) svg {
-  margin-top: 98px;
-  -webkit-transform: rotate(218deg) scale(0.5);
-          transform: rotate(218deg) scale(0.5);
+  margin-top: 163px;
+  -webkit-transform: rotate(76deg) scale(1.5);
+          transform: rotate(76deg) scale(1.5);
 }
 
 .assets li:nth-child(17) svg {
-  margin-top: 173px;
-  -webkit-transform: rotate(284deg) scale(0.5);
-          transform: rotate(284deg) scale(0.5);
+  margin-top: 181px;
+  -webkit-transform: rotate(233deg) scale(1.5);
+          transform: rotate(233deg) scale(1.5);
 }
 
 .assets li:nth-child(18) svg {
-  margin-top: 183px;
-  -webkit-transform: rotate(36deg) scale(1.5);
-          transform: rotate(36deg) scale(1.5);
+  margin-top: 150px;
+  -webkit-transform: rotate(204deg) scale(0.5);
+          transform: rotate(204deg) scale(0.5);
 }
 
 .assets li:nth-child(19) svg {
-  margin-top: 149px;
-  -webkit-transform: rotate(2deg) scale(0.5);
-          transform: rotate(2deg) scale(0.5);
+  margin-top: 61px;
+  -webkit-transform: rotate(117deg) scale(0.5);
+          transform: rotate(117deg) scale(0.5);
 }
 
 .assets li:nth-child(20) svg {
-  margin-top: 142px;
-  -webkit-transform: rotate(78deg) scale(1.5);
-          transform: rotate(78deg) scale(1.5);
+  margin-top: 12px;
+  -webkit-transform: rotate(50deg) scale(1.5);
+          transform: rotate(50deg) scale(1.5);
 }
 
 .slide-in-top {
-  display: -ms-grid;
-  display: grid;
-  -webkit-animation: slide-in-top 3s infinite;
-          animation: slide-in-top 3s infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
+  -webkit-animation: slide-in-top 4s infinite;
+          animation: slide-in-top 4s infinite;
+  display: -ms-grid;
+  display: grid;
   position: absolute;
 }
 
@@ -216,104 +216,104 @@ h1 {
     margin-bottom: 50%;
   }
   li:nth-child(1) svg {
-    margin-top: 99px;
-    -webkit-transform: rotate(188deg) scale(0.75);
-            transform: rotate(188deg) scale(0.75);
+    margin-top: 4px;
+    -webkit-transform: rotate(270deg) scale(0.75);
+            transform: rotate(270deg) scale(0.75);
   }
   li:nth-child(2) svg {
-    margin-top: 73px;
-    -webkit-transform: rotate(63deg) scale(0.75);
-            transform: rotate(63deg) scale(0.75);
+    margin-top: 49px;
+    -webkit-transform: rotate(72deg) scale(0.75);
+            transform: rotate(72deg) scale(0.75);
   }
   li:nth-child(3) svg {
-    margin-top: 21px;
-    -webkit-transform: rotate(90deg) scale(0.75);
-            transform: rotate(90deg) scale(0.75);
+    margin-top: 8px;
+    -webkit-transform: rotate(23deg) scale(0.75);
+            transform: rotate(23deg) scale(0.75);
   }
   li:nth-child(4) svg {
-    margin-top: 70px;
+    margin-top: 57px;
+    -webkit-transform: rotate(128deg) scale(0.75);
+            transform: rotate(128deg) scale(0.75);
+  }
+  li:nth-child(5) svg {
+    margin-top: 78px;
+    -webkit-transform: rotate(64deg) scale(0.75);
+            transform: rotate(64deg) scale(0.75);
+  }
+  li:nth-child(6) svg {
+    margin-top: 62px;
+    -webkit-transform: rotate(8deg) scale(0.75);
+            transform: rotate(8deg) scale(0.75);
+  }
+  li:nth-child(7) svg {
+    margin-top: 74px;
+    -webkit-transform: rotate(245deg) scale(0.75);
+            transform: rotate(245deg) scale(0.75);
+  }
+  li:nth-child(8) svg {
+    margin-top: 38px;
+    -webkit-transform: rotate(104deg) scale(0.75);
+            transform: rotate(104deg) scale(0.75);
+  }
+  li:nth-child(9) svg {
+    margin-top: 42px;
+    -webkit-transform: rotate(193deg) scale(0.75);
+            transform: rotate(193deg) scale(0.75);
+  }
+  li:nth-child(10) svg {
+    margin-top: 27px;
+    -webkit-transform: rotate(149deg) scale(0.75);
+            transform: rotate(149deg) scale(0.75);
+  }
+  li:nth-child(11) svg {
+    margin-top: 96px;
     -webkit-transform: rotate(143deg) scale(0.75);
             transform: rotate(143deg) scale(0.75);
   }
-  li:nth-child(5) svg {
-    margin-top: 5px;
-    -webkit-transform: rotate(37deg) scale(0.75);
-            transform: rotate(37deg) scale(0.75);
-  }
-  li:nth-child(6) svg {
-    margin-top: 6px;
-    -webkit-transform: rotate(61deg) scale(0.75);
-            transform: rotate(61deg) scale(0.75);
-  }
-  li:nth-child(7) svg {
-    margin-top: 51px;
-    -webkit-transform: rotate(59deg) scale(0.75);
-            transform: rotate(59deg) scale(0.75);
-  }
-  li:nth-child(8) svg {
-    margin-top: 40px;
-    -webkit-transform: rotate(223deg) scale(0.75);
-            transform: rotate(223deg) scale(0.75);
-  }
-  li:nth-child(9) svg {
-    margin-top: 34px;
-    -webkit-transform: rotate(98deg) scale(0.75);
-            transform: rotate(98deg) scale(0.75);
-  }
-  li:nth-child(10) svg {
-    margin-top: 63px;
-    -webkit-transform: rotate(156deg) scale(0.75);
-            transform: rotate(156deg) scale(0.75);
-  }
-  li:nth-child(11) svg {
-    margin-top: 27px;
-    -webkit-transform: rotate(31deg) scale(0.75);
-            transform: rotate(31deg) scale(0.75);
-  }
   li:nth-child(12) svg {
-    margin-top: 32px;
-    -webkit-transform: rotate(38deg) scale(0.75);
-            transform: rotate(38deg) scale(0.75);
+    margin-top: 88px;
+    -webkit-transform: rotate(220deg) scale(0.75);
+            transform: rotate(220deg) scale(0.75);
   }
   li:nth-child(13) svg {
-    margin-top: 70px;
-    -webkit-transform: rotate(49deg) scale(0.75);
-            transform: rotate(49deg) scale(0.75);
+    margin-top: 31px;
+    -webkit-transform: rotate(200deg) scale(0.75);
+            transform: rotate(200deg) scale(0.75);
   }
   li:nth-child(14) svg {
-    margin-top: 92px;
-    -webkit-transform: rotate(13deg) scale(0.75);
-            transform: rotate(13deg) scale(0.75);
+    margin-top: 31px;
+    -webkit-transform: rotate(133deg) scale(0.75);
+            transform: rotate(133deg) scale(0.75);
   }
   li:nth-child(15) svg {
-    margin-top: 20px;
-    -webkit-transform: rotate(278deg) scale(0.75);
-            transform: rotate(278deg) scale(0.75);
+    margin-top: 17px;
+    -webkit-transform: rotate(79deg) scale(0.75);
+            transform: rotate(79deg) scale(0.75);
   }
   li:nth-child(16) svg {
-    margin-top: 21px;
-    -webkit-transform: rotate(11deg) scale(0.75);
-            transform: rotate(11deg) scale(0.75);
+    margin-top: 12px;
+    -webkit-transform: rotate(297deg) scale(0.75);
+            transform: rotate(297deg) scale(0.75);
   }
   li:nth-child(17) svg {
-    margin-top: 19px;
-    -webkit-transform: rotate(14deg) scale(0.75);
-            transform: rotate(14deg) scale(0.75);
+    margin-top: 32px;
+    -webkit-transform: rotate(197deg) scale(0.75);
+            transform: rotate(197deg) scale(0.75);
   }
   li:nth-child(18) svg {
-    margin-top: 64px;
-    -webkit-transform: rotate(190deg) scale(0.75);
-            transform: rotate(190deg) scale(0.75);
+    margin-top: 37px;
+    -webkit-transform: rotate(114deg) scale(0.75);
+            transform: rotate(114deg) scale(0.75);
   }
   li:nth-child(19) svg {
-    margin-top: 27px;
-    -webkit-transform: rotate(55deg) scale(0.75);
-            transform: rotate(55deg) scale(0.75);
+    margin-top: 34px;
+    -webkit-transform: rotate(100deg) scale(0.75);
+            transform: rotate(100deg) scale(0.75);
   }
   li:nth-child(20) svg {
-    margin-top: 47px;
-    -webkit-transform: rotate(16deg) scale(0.75);
-            transform: rotate(16deg) scale(0.75);
+    margin-top: 77px;
+    -webkit-transform: rotate(77deg) scale(0.75);
+            transform: rotate(77deg) scale(0.75);
   }
 }
 /*# sourceMappingURL=404.css.map */

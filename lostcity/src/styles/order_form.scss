@@ -3,8 +3,6 @@
 * {
     background-color: whitesmoke;
     font-family: sans-serif;
-
-
 }
 
 
@@ -16,51 +14,40 @@ h6 {
     font-weight: 600;
     margin-bottom: 0;
     text-transform: uppercase;
-
 }
 
 p {
     font-size: 80%;
-
-
 }
 
 .order-form {
-    margin: 5%;
-    border: 2px solid grey;
-    line-height: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-
-
     background-color: whitesmoke;
+    border: 2px solid grey;
+    display: grid;
     font-family: sans-serif;
-
+    grid-template-columns: 50% 50%;
+    line-height: 100%;
+    margin: 5%;
 }
 
 label {
-    margin: 5%;
-    font-size: 60%;
     display: block;
+    font-size: 60%;
+    margin: 5%;
     text-align: left;
-
 }
 
 input {
+    border: 2px solid grey;
+    box-sizing: border-box;
+    display: block;
+    font-size: 60%;
+    height: 3vw;
+    margin-right: 5%;
     margin-top: 1%;
     max-width: 100%;
     padding: 2%;
-
-    box-sizing: border-box;
-    margin-right: 5%;
-    font-size: 60%;
-    display: block;
-    border: 2px solid grey;
-    height: 3vw;
-
 }
-
-
 
 #zip {
     max-width: 25%;
@@ -74,172 +61,119 @@ input {
     max-width: 15%;
 }
 
-/*.card_details {
-    margin-top: 6%;
-}*/
-
 textarea {
+    border: 2px solid grey;
+    box-sizing: border-box;
+    display: block;
+    font-size: 60%;
+    height: auto;
+    margin-right: 5%;
     margin-top: 1%;
     max-width: 45%;
-    height: auto;
     padding: 1%;
-    box-sizing: border-box;
-    margin-right: 5%;
-    font-size: 60%;
-    display: block;
-    border: 2px solid grey;
-
 }
 
 ::placeholder {
     color: grey;
     font-size: 125%;
-
-
 }
 
 select {
-    margin-top: 1%;
     appearance: none;
-
-    max-width: 15%;
-    max-height: 5%;
-    font-size: 60%;
     cursor: pointer;
-    padding-top: 1%;
+    display: block;
+    font-size: 60%;
+    height: 3vw;
+    margin-top: 1%;
+    max-height: 5%;
+    max-width: 15%;
     padding-bottom: 1%;
     padding-right: 1%;
-
-    display: block;
+    padding-top: 1%;
     text-align: center;
-    height: 3vw;
-
 }
 
 option {
     font-size: 100%;
     text-align: center;
-
 }
 
 h1 {
-    margin: 5%;
-    font-size: 60%;
-    display: block;
-    text-align: left;
-    font-weight: 400;
     border: 1px solid grey;
+    display: block;
+    font-size: 60%;
+    font-weight: 400;
+    margin: 5%;
+    text-align: left;
 }
 
 .column__one {
-    margin-left: 15%;
     grid-column: 1/2;
+    margin-left: 15%;
 }
 
 .column__two {
-    margin-left: 15%;
     grid-column: 2/3;
+    margin-left: 15%;
 }
 
-
-
-
-
 #delivery {
-    display: none;
     cursor: grabbing;
-
-
+    display: none;
 }
 
 #pickup {
-    display: none;
     cursor: grabbing;
-
-
+    display: none;
 }
-
-
 
 .radio_buttons {
-    width: 40%;
     display: inline-block;
-    padding: 1%;
-    margin: 0;
     margin-top: 5%;
-    text-align: center;
+    margin: 0;
     overflow: hidden;
-
-
+    padding: 1%;
+    text-align: center;
+    width: 40%;
+    margin-top: 5%;
 }
-
-
 
 .radio {
-    height: 6vw;
-    width: 60%;
-    text-align: center;
     border: 2px solid grey;
-    margin-top: 5%;
-    margin-left: 5.5%;
-    font-size: 80%;
     color: grey;
+    font-size: 80%;
+    height: 6vw;
+    margin-left: 5.5%;
+    margin-top: 5%;
     overflow: hidden;
-
-
-
-
-
-
+    text-align: center;
+    width: 60%;
 }
-
-
-
-
 
 input[type="radio"]:checked+label {
-    border: solid 2px red;
     border-radius: 25px;
-    text-align: center;
+    border: solid 2px red;
     color: black;
-
+    text-align: center;
 }
 
-
-
-
-
-
-
 .order_button {
-
-
-
-    color: black;
     background-color: white;
-    border-radius: 25px;
-
     border-color: white;
-
-    padding: 8px 25px 8px 25px;
+    border-radius: 25px;
     box-shadow: 2px 3px grey;
+    color: black;
     font-size: 60%;
-
-    margin-top: 10%;
-    margin-bottom: 15%;
-    text-transform: uppercase;
     font-weight: 600;
-
-
-
-
-
+    margin-bottom: 15%;
+    margin-top: 10%;
+    padding: 8px 25px 8px 25px;
+    text-transform: uppercase;
 }
 
 #tip {
     max-width: 25%;
 }
-
 
 a {
     text-decoration: none;
@@ -248,7 +182,6 @@ a {
 #state {
     border: 2px solid grey;
     color: grey;
-
 }
 
 #card_type {
@@ -259,54 +192,50 @@ a {
 
 #save {
     display: grid;
-    text-align: left;
-    width: 3vw;
     height: 3vw;
     padding: 0;
+    text-align: left;
+    width: 3vw;
 }
 
-@media screen and (min-width:481px) and (max-width:800px) {
+@media screen and (min-width:481px) and (max-width:850px) {
 
     img {
         min-width: 150%;
     }
 
-
-
     .order-form {
-        text-align: center;
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 50% 50%;
+        text-align: center;
     }
 
     .column__one {
         display: inline-block;
-        margin-left: 4%;
         grid-column: 1/2;
         grid-row: 1/2;
+        margin-left: 4%;
         margin-top: 0;
         text-align: center;
     }
 
     .column__two {
         display: inline-block;
-        margin-left: 4%;
         grid-column: 1/2;
         grid-row: 2/3;
+        margin-left: 4%;
         margin-top: 0;
         text-align: center;
     }
 
     label {
         margin-left: 0;
-
-
     }
 
     input {
-        margin-left: 0;
         height: 6vw;
+        margin-left: 0;
         width: 60vw;
     }
 
@@ -316,57 +245,36 @@ a {
     }
 
     textarea {
-
-        max-width: 60vw;
         max-height: 15vw;
-
+        max-width: 60vw;
     }
 
     .radio_buttons {
-
-        max-height: 6vw;
-        width: 10vw;
-        padding: 1%;
-        margin: 0;
-
-        text-align: center;
         margin-left: 0;
-
-
-
+        margin: 0;
+        max-height: 6vw;
+        padding: 1%;
+        text-align: center;
+        width: 10vw;
     }
 
-
-
-
     .radio {
-        text-align: left;
-        height: 10vw;
-        width: 60vw;
-        margin-left: 0;
         border: none;
-        margin-top: 5vw;
+        height: 10vw;
         margin-bottom: 0;
-
-
-
-
-
-
-
-
+        margin-left: 0;
+        margin-top: 5vw;
+        text-align: left;
+        width: 60vw;
     }
 
     #card_type {
         height: 6vw;
         min-width: 25%;
-        text-align: left;
         padding-left: 1%;
-
-
+        text-align: left;
     }
 }
-
 
 @media screen and (max-width:480px) {
 
@@ -377,28 +285,26 @@ a {
     }
 
     .column__one {
-        margin-left: 4%;
         grid-column: 1/2;
         grid-row: 1/2;
+        margin-left: 4%;
         margin-top: 0;
     }
 
     .column__two {
-        margin-left: 4%;
         grid-column: 1/2;
         grid-row: 2/3;
+        margin-left: 4%;
         margin-top: 0;
     }
 
     label {
         margin-left: 0;
-
-
     }
 
     input {
-        margin-left: 0;
         height: 10vw;
+        margin-left: 0;
     }
 
     #state {
@@ -407,50 +313,25 @@ a {
     }
 
     textarea {
-
         max-width: 100%;
-
     }
 
     .radio_buttons {
-
-
         padding: 1%;
-        margin: 0;
-        margin-top: 5%;
-        text-align: left;
-        margin-left: 0;
-
-
-
     }
 
-
-
     .radio {
-        height: 15vw;
-        width: 70%;
-        margin-left: 0;
         border: 2px solid grey;
+        height: 15vw;
+        margin-left: 0;
         margin-top: 5%;
-
-
-
-
-
-
-
+        width: 50vw;
     }
 
     #card_type {
         height: 10vw;
         min-width: 25%;
-        text-align: left;
         padding-left: 1%;
-
-
+        text-align: left;
     }
-
-
-
 }

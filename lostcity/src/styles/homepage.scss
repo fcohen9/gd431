@@ -1,71 +1,49 @@
 * {
-
     font-family: sans-serif;
-
-
 }
-
-
-
 
 body {
     background-color: whitesmoke;
 }
 
 .wrapper {
+    background-color: whitesmoke;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: .5fr 1fr;
-    background-color: whitesmoke;
-
 }
-
-
-
-
 
 .text {
+    background-color: white;
+    box-shadow: 3px 5px grey;
     grid-column: 1/2;
     grid-row: 2/3;
-    background-color: white;
-
-    box-shadow: 3px 5px grey;
-    margin-left: 30%;
     margin-bottom: 5%;
-    padding: 5%;
-
-
-
-
+    margin-left: 30%;
 }
 
-
-
 .assets {
-    margin-top: 10%;
-    margin-left: 20%;
+    display: grid;
     grid-column: 2/4;
     grid-row: 1/3;
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 20%;
+    margin-top: 10%;
 }
 
 .assets__milkshake {
     grid-column: 1/2;
     grid-row: 1/2;
-    z-index: 0;
     transform: rotate(20deg);
-
-
+    z-index: 0;
 }
 
 .assets__burger {
     grid-column: 2/3;
     grid-row: 1/2;
-    z-index: 0;
     transform: rotate(10deg) scale(2, 2);
-
+    z-index: 0;
 }
 
 .assets__fries {
@@ -77,35 +55,31 @@ body {
 .assets__milkshake--1 {
     grid-column: 3/4;
     grid-row: 3/4;
-    z-index: 0;
     transform: rotate(-15deg) scale(1.5, 1.5);
+    z-index: 0;
 }
 
 .assets__burger--1 {
     grid-column: 1/2;
     grid-row: 3/4;
-    z-index: 0;
     transform: rotate(10deg);
+    z-index: 0;
 }
 
 .assets__fries--1 {
     grid-column: 2/3;
     grid-row: 3/4;
-    z-index: 0;
     transform: rotate(5deg) scale(.75, .75);
+    z-index: 0;
 }
 
 /*make those^ into heights not transforms*/
 
 img {
-
     max-width: 30%;
 }
 
-
-
 img:hover {
-
 
     animation: shake 1.0s;
 
@@ -159,51 +133,40 @@ img:hover {
     }
 }
 
-
-
 p {
+    background-color: white;
+    box-shadow: 3px 5px grey;
+    color: black;
     font-size: 50%;
     font-weight: 100;
-    text-align: left;
-    color: black;
     margin-left: 30%;
-    background-color: white;
-
     padding: 5%;
-    box-shadow: 3px 5px grey;
+    text-align: left;
 }
 
-
-
 h1 {
-    color: black;
+    color: darkgrey;
+    font-size: 60%;
     font-weight: 500;
-    text-transform: capitalize;
     list-style-type: none;
+    padding-right: 7%;
     text-align: left;
-
-    font-size: 75%;
-
+    text-transform: uppercase;
 }
 
 h2 {
+    color: black;
     font-size: 60%;
     font-weight: 200;
-    color: black;
-    text-transform: capitalize;
-    text-decoration: none;
     text-align: left;
-
+    text-decoration: none;
+    text-transform: capitalize;
 }
 
-@media screen and (min-width:481px) and (max-width:800px) {
+@media screen and (min-width:481px) and (max-width:850px) {
+
     .wrapper {
-
         grid-template-columns: 2fr 1fr;
-
-
-
-
     }
 
     .text {
@@ -213,28 +176,26 @@ h2 {
     }
 
     p {
+        background-color: white;
+        box-shadow: 3px 5px grey;
+        color: black;
         font-size: 50%;
         font-weight: 100;
-        text-align: left;
-        color: black;
         margin-left: 10%;
         margin-top: 5%;
-        background-color: white;
-
         padding: 5%;
-        box-shadow: 3px 5px grey;
+        text-align: left;
     }
 
-
     .assets {
-        margin-top: 10%;
-        margin-left: 20%;
-        grid-column: 2/3;
-        display: grid;
 
+        display: grid;
+        grid-column: 2/3;
         grid-template-rows: 1fr 1fr 1fr;
-        text-align: center;
+        margin-left: 20%;
         margin-right: 20%;
+        margin-top: 10%;
+        text-align: center;
     }
 
     img {
@@ -244,33 +205,24 @@ h2 {
     .assets__milkshake {
         grid-column: 2/3;
         grid-row: 1/2;
-        z-index: 0;
-        transform: unset;
         margin: auto;
-
-
-
-
+        transform: unset;
+        z-index: 0;
     }
 
     .assets__burger {
         grid-column: 2/3;
         grid-row: 2/3;
-        z-index: 0;
-        transform: unset;
         margin: auto;
-
-
-
+        transform: unset;
+        z-index: 0;
     }
 
     .assets__fries {
         grid-column: 2/3;
         grid-row: 3/4;
-        transform: unset;
         margin: auto;
-
-
+        transform: unset;
     }
 
     .assets__milkshake--1,
@@ -280,27 +232,16 @@ h2 {
     }
 }
 
-
-
-
-
 @media screen and (max-width:480px) {
 
     .wrapper {
-
-        grid-template-rows: .5fr 1fr;
         grid-template-columns: 1fr;
+        grid-template-rows: .5fr 1fr;
         text-align: center;
-
-
-
     }
 
     .des {
         grid-row: 1/2;
-
-
-
     }
 
     .text {
@@ -315,5 +256,4 @@ h2 {
         margin-right: 10%;
         padding: 5%;
     }
-
 }

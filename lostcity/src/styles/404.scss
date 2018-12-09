@@ -18,26 +18,22 @@ body {
 
 h1 {
     font-size: 1000%;
-    margin-top: 0;
     margin-bottom: 0;
+    margin-top: 0;
     text-align: center;
-
 }
 
 .assets {
-    padding: 1%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 1%;
 
     li {
-
-        // about random: http://jonibologna.com/sass-function-demos/#random
         @for $i from 1 through 20 {
             &:nth-child(#{$i}) {
                 svg {
                     margin-top: random(200)+px;
                     transform: rotate(random(300)+deg) scale(random(2)-.5);
-
                 }
             }
         }
@@ -45,38 +41,36 @@ h1 {
 }
 
 .slide-in-top {
-    display: grid;
-    animation: slide-in-top 3s infinite;
     animation-timing-function: linear;
+    animation: slide-in-top 4s infinite;
+    display: grid;
     position: absolute;
 }
 
 @keyframes slide-in-top {
     0% {
         transform: translateY(-100vh);
-
     }
 
     50% {
         transform: translateY(0);
-
     }
 
     100% {
         transform: translateY(100vh);
-
     }
-
-
 }
 
 @media screen and (min-width:481px) and (max-width:800px) {
+
     img {
         min-width: 150%;
     }
+
 }
 
 @media screen and (max-width:480px) {
+
     .assets {
         transform: scale(.5);
         margin: 10%;
@@ -87,19 +81,14 @@ h1 {
     h1 {
         font-size: 600%;
         margin-bottom: 50%;
-
-
     }
 
     li {
-
-        // about random: http://jonibologna.com/sass-function-demos/#random
         @for $i from 1 through 20 {
             &:nth-child(#{$i}) {
                 svg {
                     margin-top: random(100)+px;
                     transform: rotate(random(300)+deg) scale(random(1)-.25);
-
                 }
             }
         }
