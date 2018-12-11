@@ -1,3 +1,45 @@
+//general layout
+.header-wrapper {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    nav {
+        grid-column: 2/ span 4;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+//styling buttons
+.button__header {
+    background-color: white;
+    border-color: white;
+    border-radius: 25px;
+    box-shadow: 3px 5px grey;
+    color: black;
+    display: block;
+    font-size: 75%;
+    margin: 20% 0;
+    padding: 8px 25px 8px 25px;
+    text-decoration: none;
+}
+
+//placing logo
+.logo {
+    background-color: whitesmoke;
+    grid-column: 1/2;
+    max-width: 80%;
+    padding-top: 15%;
+}
+
+//animation for 404 page continues through header
+
 .assets {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -36,45 +78,11 @@
     }
 }
 
-.header-wrapper {
-    background-color: whitesmoke;
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
-    margin-left: 5%;
-    margin-right: 5%;
-
-    nav {
-        grid-column: 2/ span 4;
-
-        ul {
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-}
-
-.button__header {
-    background-color: white;
-    border-color: white;
-    border-radius: 25px;
-    box-shadow: 3px 5px grey;
-    color: black;
-    display: block;
-    font-size: 75%;
-    margin: 20% 0;
-    padding: 8px 25px 8px 25px;
-    text-decoration: none;
-}
-
-.logo {
-    background-color: whitesmoke;
-    grid-column: 1/2;
-    max-width: 80%;
-    padding-top: 15%;
-}
+//media querys
 
 @media screen and (min-width:481px) and (max-width:850px) {
 
+    //404 animation goes through header (# of seconds changes from desktop view)
     .assets {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -113,18 +121,12 @@
         }
     }
 
-    @media screen and (min-width:481px) and (max-width:850px) {
-
-        img {
-            min-width: 150%;
-        }
-
-        .assets {
-            transform: scale(.75);
-        }
+    //re-size elements
+    img {
+        min-width: 150%;
     }
 
-
+    //general layout
     .header-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -144,14 +146,7 @@
         }
     }
 
-    .logo {
-        background-color: whitesmoke;
-        grid-row: 1/2;
-        margin-left: 25%;
-        margin-right: 25%;
-        width: 100%;
-    }
-
+    //style buttons
     .button__header {
         background-color: white;
         border-color: white;
@@ -164,9 +159,25 @@
         padding: 8px 25px 8px 25px;
         text-decoration: none;
     }
+
+    //resize and move logo
+    .logo {
+        background-color: whitesmoke;
+        grid-row: 1/2;
+        margin-left: 25%;
+        margin-right: 25%;
+        width: 100%;
+    }
+
+    //resize assets
+    .assets {
+        transform: scale(.75);
+    }
 }
 
 @media screen and (max-width:480px) {
+    //general layout
+
     .header-wrapper {
         display: grid;
         grid-template-columns: 1fr;
@@ -199,6 +210,7 @@
         }
     }
 
+    //resize and move logo    
     .logo {
         background-color: whitesmoke;
         grid-column: 1/2;
@@ -211,16 +223,12 @@
         width: 100%;
     }
 
+    //style (re-size and move) buttons
     .button__header {
-        background-color: white;
-        border-color: white;
-        border-radius: 25px;
         box-shadow: 2px 4px grey;
-        color: black;
         display: block;
         font-size: 55%;
         margin: 0;
         padding: 8px 25px 8px 25px;
-        text-decoration: none;
     }
 }

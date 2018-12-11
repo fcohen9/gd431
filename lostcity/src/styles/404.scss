@@ -1,8 +1,17 @@
+//styling elements
+
 body {
     background-color: whitesmoke;
-
 }
 
+h1 {
+    font-size: 1000%;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+}
+
+//general layout
 .wrapper {
     text-align: center;
 }
@@ -16,13 +25,7 @@ body {
     position: relative;
 }
 
-h1 {
-    font-size: 1000%;
-    margin-bottom: 0;
-    margin-top: 0;
-    text-align: center;
-}
-
+//"randomizing" falling assets
 .assets {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -39,6 +42,8 @@ h1 {
         }
     }
 }
+
+//asset animation
 
 .slide-in-top {
     animation-timing-function: linear;
@@ -61,8 +66,11 @@ h1 {
     }
 }
 
+//media queries
+
 @media screen and (min-width:481px) and (max-width:850px) {
 
+    //styling elements
     h1 {
         font-size: 800%;
     }
@@ -71,6 +79,7 @@ h1 {
         min-width: 150%;
     }
 
+    //re-sizing assets
     .assets {
         transform: scale(.75);
     }
@@ -79,12 +88,16 @@ h1 {
 
 @media screen and (max-width:480px) {
 
-    .assets {
-        display: none;
-    }
-
+    //re-sizing elements
     h1 {
         font-size: 600%;
         margin-bottom: 50%;
     }
+
+    //not displaying assets
+    .assets {
+        display: none;
+    }
+
+
 }

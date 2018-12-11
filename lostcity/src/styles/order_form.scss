@@ -5,9 +5,16 @@
     font-family: sans-serif;
 }
 
+//styling text elements
 
-
-/*general*/
+h1 {
+    border: 1px solid grey;
+    display: block;
+    font-size: 60%;
+    font-weight: 400;
+    margin: 5%;
+    text-align: left;
+}
 
 h6 {
     font-size: 75%;
@@ -20,16 +27,7 @@ p {
     font-size: 80%;
 }
 
-.order-form {
-    background-color: whitesmoke;
-    border: 2px solid grey;
-    display: grid;
-    font-family: sans-serif;
-    grid-template-columns: 50% 50%;
-    line-height: 100%;
-    margin: 5%;
-}
-
+//styling input elements
 label {
     display: block;
     font-size: 60%;
@@ -49,18 +47,6 @@ input {
     padding: 2%;
 }
 
-#zip {
-    max-width: 25%;
-}
-
-#card_expiration {
-    max-width: 25%;
-}
-
-#cvc {
-    max-width: 15%;
-}
-
 textarea {
     border: 2px solid grey;
     box-sizing: border-box;
@@ -71,11 +57,6 @@ textarea {
     margin-top: 1%;
     max-width: 45%;
     padding: 1%;
-}
-
-::placeholder {
-    color: grey;
-    font-size: 125%;
 }
 
 select {
@@ -98,13 +79,26 @@ option {
     text-align: center;
 }
 
-h1 {
-    border: 1px solid grey;
-    display: block;
-    font-size: 60%;
-    font-weight: 400;
+//styling action 
+a {
+    text-decoration: none;
+}
+
+//styling placeholder text
+::placeholder {
+    color: grey;
+    font-size: 125%;
+}
+
+//general layout
+.order-form {
+    background-color: whitesmoke;
+    border: 2px solid grey;
+    display: grid;
+    font-family: sans-serif;
+    grid-template-columns: 50% 50%;
+    line-height: 100%;
     margin: 5%;
-    text-align: left;
 }
 
 .column__one {
@@ -117,6 +111,50 @@ h1 {
     margin-left: 15%;
 }
 
+//styling individual input sections (name, address, delivery?, card, order button)
+
+//address
+
+#state {
+    border: 2px solid grey;
+    color: grey;
+}
+
+#zip {
+    max-width: 25%;
+}
+
+//card and other payment things
+
+#card_expiration {
+    max-width: 25%;
+}
+
+#cvc {
+    max-width: 15%;
+}
+
+#card_type {
+    border: 2px solid grey;
+    color: grey;
+    font-size: 70%;
+}
+
+#save {
+    display: grid;
+    height: 3vw;
+    padding: 0;
+    text-align: left;
+    width: 3vw;
+}
+
+#tip {
+    max-width: 25%;
+}
+
+//delivery or pickup radio button
+
+//reset radio button default styles
 #delivery {
     cursor: grabbing;
     display: none;
@@ -127,6 +165,7 @@ h1 {
     display: none;
 }
 
+//style new radio button
 .radio_buttons {
     display: inline-block;
     margin-top: 5%;
@@ -157,6 +196,7 @@ input[type="radio"]:checked+label {
     text-align: center;
 }
 
+//styling order button 
 .order_button {
     background-color: white;
     border-color: white;
@@ -171,39 +211,31 @@ input[type="radio"]:checked+label {
     text-transform: uppercase;
 }
 
-#tip {
-    max-width: 25%;
-}
-
-a {
-    text-decoration: none;
-}
-
-#state {
-    border: 2px solid grey;
-    color: grey;
-}
-
-#card_type {
-    border: 2px solid grey;
-    color: grey;
-    font-size: 70%;
-}
-
-#save {
-    display: grid;
-    height: 3vw;
-    padding: 0;
-    text-align: left;
-    width: 3vw;
-}
+//media querys
 
 @media screen and (min-width:481px) and (max-width:850px) {
 
+    //styling elements
     img {
         min-width: 150%;
     }
 
+    label {
+        margin-left: 0;
+    }
+
+    input {
+        height: 6vw;
+        margin-left: 0;
+        width: 60vw;
+    }
+
+    textarea {
+        max-height: 15vw;
+        max-width: 60vw;
+    }
+
+    //general layout
     .order-form {
         display: grid;
         grid-template-columns: 100%;
@@ -229,26 +261,22 @@ a {
         text-align: center;
     }
 
-    label {
-        margin-left: 0;
-    }
 
-    input {
-        height: 6vw;
-        margin-left: 0;
-        width: 60vw;
-    }
-
+    //resizing address input fields
     #state {
         height: 6vw;
         width: 10vw;
     }
 
-    textarea {
-        max-height: 15vw;
-        max-width: 60vw;
+    //restyling card 
+    #card_type {
+        height: 6vw;
+        min-width: 25%;
+        padding-left: 1%;
+        text-align: left;
     }
 
+    //restyling radio button
     .radio_buttons {
         margin-left: 0;
         margin: 0;
@@ -268,15 +296,26 @@ a {
         width: 60vw;
     }
 
-    #card_type {
-        height: 6vw;
-        min-width: 25%;
-        padding-left: 1%;
-        text-align: left;
-    }
 }
 
 @media screen and (max-width:480px) {
+
+    //restyling elements 
+
+    label {
+        margin-left: 0;
+    }
+
+    input {
+        height: 10vw;
+        margin-left: 0;
+    }
+
+    textarea {
+        max-width: 100%;
+    }
+
+    //general layout 
 
     .order-form {
         display: grid;
@@ -298,23 +337,16 @@ a {
         margin-top: 0;
     }
 
-    label {
-        margin-left: 0;
-    }
 
-    input {
-        height: 10vw;
-        margin-left: 0;
-    }
+    //resizing state input 
 
     #state {
         height: 10vw;
         width: 10vw;
     }
 
-    textarea {
-        max-width: 100%;
-    }
+
+    //restyling radio button
 
     .radio_buttons {
         padding: 1%;
@@ -327,6 +359,8 @@ a {
         margin-top: 5%;
         width: 50vw;
     }
+
+    //reszing card input
 
     #card_type {
         height: 10vw;

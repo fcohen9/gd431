@@ -3,14 +3,7 @@
 
 }
 
-.footer-wrapper {
-    background-color: whitesmoke;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
+//style elements
 h3 {
     color: black;
     font-size: 60%;
@@ -21,12 +14,20 @@ h3 {
     text-transform: capitalize;
 }
 
+//general layout
+.footer-wrapper {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+//media querys
+
 @media screen and (min-width:481px) and (max-width:850px) {
 
-    .footer-wrapper {
-        margin: 5%;
-    }
-
+    //restyle elements
     h3 {
         color: black;
         font-size: 50%;
@@ -36,14 +37,18 @@ h3 {
         text-decoration: none;
         text-transform: capitalize;
     }
+
+    //add margin
+    .footer-wrapper {
+        margin: 5%;
+    }
+
+
 }
 
 @media screen and (max-width:480px) {
-    .footer-wrapper {
-        display: block;
-        margin-left: 10%;
-    }
 
+    //redeclare element stylings    
     h3 {
         color: black;
         font-size: 40%;
@@ -53,4 +58,11 @@ h3 {
         text-decoration: none;
         text-transform: capitalize;
     }
+
+    //change layout
+    .footer-wrapper {
+        display: block;
+        margin-left: 10%;
+    }
+
 }

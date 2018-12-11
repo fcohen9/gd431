@@ -2,9 +2,47 @@
     font-family: sans-serif;
 }
 
+//styling elements
+
 body {
     background-color: whitesmoke;
 }
+
+img {
+    max-width: 30%;
+}
+
+p {
+    background-color: white;
+    box-shadow: 3px 5px grey;
+    color: black;
+    font-size: 50%;
+    font-weight: 100;
+    margin-left: 30%;
+    padding: 5%;
+    text-align: left;
+}
+
+h1 {
+    color: darkgrey;
+    font-size: 60%;
+    font-weight: 500;
+    list-style-type: none;
+    padding-right: 7%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: black;
+    font-size: 60%;
+    font-weight: 200;
+    text-align: left;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+//general layout 
 
 .wrapper {
     background-color: whitesmoke;
@@ -13,7 +51,7 @@ body {
     grid-template-rows: .5fr 1fr;
 }
 
-.text {
+.text__daysopen {
     background-color: white;
     box-shadow: 3px 5px grey;
     grid-column: 1/2;
@@ -27,10 +65,12 @@ body {
     grid-column: 2/4;
     grid-row: 1/3;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     margin-left: 20%;
     margin-top: 10%;
 }
+
+//layout of svgs
 
 .assets__milkshake {
     grid-column: 1/2;
@@ -42,42 +82,44 @@ body {
 .assets__burger {
     grid-column: 2/3;
     grid-row: 1/2;
-    transform: rotate(10deg) scale(2, 2);
+    min-width: 70%;
+    transform: rotate(10deg);
     z-index: 0;
 }
 
 .assets__fries {
     grid-column: 3/4;
     grid-row: 1/2;
+    padding-left: 20%;
     transform: rotate(-10deg);
 }
 
 .assets__milkshake--1 {
     grid-column: 3/4;
-    grid-row: 3/4;
-    transform: rotate(-15deg) scale(1.5, 1.5);
+    grid-row: 2/3;
+    min-width: 40%;
+    transform: rotate(-20deg);
     z-index: 0;
 }
 
 .assets__burger--1 {
     grid-column: 1/2;
-    grid-row: 3/4;
-    transform: rotate(10deg);
+    grid-row: 2/3;
+    padding-top: 25%;
+    transform: rotate(-10deg);
     z-index: 0;
 }
 
 .assets__fries--1 {
     grid-column: 2/3;
-    grid-row: 3/4;
-    transform: rotate(5deg) scale(.75, .75);
+    grid-row: 2/3;
+    min-width: 35%;
+    padding-top: 15%;
+    transform: rotate(5deg);
     z-index: 0;
 }
 
-/*make those^ into heights not transforms*/
-
-img {
-    max-width: 30%;
-}
+//animation
 
 img:hover {
 
@@ -133,47 +175,11 @@ img:hover {
     }
 }
 
-p {
-    background-color: white;
-    box-shadow: 3px 5px grey;
-    color: black;
-    font-size: 50%;
-    font-weight: 100;
-    margin-left: 30%;
-    padding: 5%;
-    text-align: left;
-}
-
-h1 {
-    color: darkgrey;
-    font-size: 60%;
-    font-weight: 500;
-    list-style-type: none;
-    padding-right: 7%;
-    text-align: left;
-    text-transform: uppercase;
-}
-
-h2 {
-    color: black;
-    font-size: 60%;
-    font-weight: 200;
-    text-align: left;
-    text-decoration: none;
-    text-transform: capitalize;
-}
+//media querys
 
 @media screen and (min-width:481px) and (max-width:850px) {
 
-    .wrapper {
-        grid-template-columns: 2fr 1fr;
-    }
-
-    .text {
-        grid-column: 1/2;
-        margin-left: 10%;
-        margin-top: 0;
-    }
+    //styling elements
 
     p {
         background-color: white;
@@ -187,42 +193,64 @@ h2 {
         text-align: left;
     }
 
-    .assets {
+    //general layout
 
-        display: grid;
-        grid-column: 2/3;
-        grid-template-rows: 1fr 1fr 1fr;
-        margin-left: 20%;
-        margin-right: 20%;
-        margin-top: 10%;
-        text-align: center;
+    .wrapper {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 3fr;
     }
 
-    img {
+    .text__daysopen {
+        grid-column: 1/2;
+        margin-left: 10%;
+        margin-top: 0;
+    }
+
+    .assets {
+        grid-template-rows: .8fr .8fr .8fr;
+    }
+
+    .logo {
         min-width: 150%;
     }
 
+    //asset layout
+
     .assets__milkshake {
-        grid-column: 2/3;
+        align-self: center;
+        grid-column: 1/2;
         grid-row: 1/2;
-        margin: auto;
+        margin-left: 55%;
+        min-width: 130%;
+        padding-bottom: 20%;
         transform: unset;
-        z-index: 0;
     }
 
     .assets__burger {
-        grid-column: 2/3;
+        align-self: center;
+        grid-column: 1/2;
         grid-row: 2/3;
-        margin: auto;
+        margin-left: 50%;
+        min-width: 130%;
+        padding-top: 50%;
         transform: unset;
-        z-index: 0;
     }
 
     .assets__fries {
-        grid-column: 2/3;
+        align-self: center;
+        grid-column: 1/2;
         grid-row: 3/4;
-        margin: auto;
+        margin-left: 50%;
+        min-width: 130%;
+        padding-left: 0;
+        padding-top: 50%;
         transform: unset;
+    }
+
+    //stop animation
+
+    img:hover {
+        animation: none;
     }
 
     .assets__milkshake--1,
@@ -234,26 +262,42 @@ h2 {
 
 @media screen and (max-width:480px) {
 
-    .wrapper {
-        grid-template-columns: 1fr;
-        grid-template-rows: .5fr 1fr;
-        text-align: center;
-    }
-
-    .des {
-        grid-row: 1/2;
-    }
-
-    .text {
-        grid-row: 2/3;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 0;
-    }
+    //styling elements
 
     p {
         margin-left: 10%;
         margin-right: 10%;
         padding: 5%;
     }
+
+    //general layout
+
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr 1fr;
+        text-align: center;
+    }
+
+    .text__description {
+        grid-row: 1/2;
+    }
+
+    .text__daysopen {
+        grid-row: 2/3;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 0;
+    }
+
+    //don't display assets
+    .assets__milkshake,
+    .assets__burger,
+    .assets__fries,
+    .assets__milkshake--1,
+    .assets__burger--1,
+    .assets__fries--1 {
+        display: none;
+    }
+
+
 }
