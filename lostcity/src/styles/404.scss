@@ -1,39 +1,103 @@
+//styling elements
+
+body {
+    background-color: whitesmoke;
+}
+
 h1 {
     font-size: 1000%;
+    margin-bottom: 0;
+    margin-top: 0;
     text-align: center;
 }
 
-.slide-in-top {
-    animation: slide-in-top 3s ease-in infinite;
-    animation-timing-function: linear;
-
+//general layout
+.wrapper {
+    text-align: center;
 }
 
+.pg404 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    overflow-y: hidden;
+    position: relative;
+}
+
+//"randomizing" falling assets
+.assets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1%;
+
+    li {
+        @for $i from 1 through 20 {
+            &:nth-child(#{$i}) {
+                svg {
+                    margin-top: random(200)+px;
+                    transform: rotate(random(300)+deg) scale(random(2)-.5);
+                }
+            }
+        }
+    }
+}
+
+//asset animation
+
+.slide-in-top {
+    animation-timing-function: linear;
+    animation: slide-in-top 4s infinite;
+    display: grid;
+    position: absolute;
+}
 
 @keyframes slide-in-top {
     0% {
-        transform: translateY(-1000px);
-        opacity: 0
+        transform: translateY(-100vh);
     }
 
     50% {
         transform: translateY(0);
-        opacity: 1
     }
 
     100% {
-        transform: translateY(1000px);
-        opacity: 0
+        transform: translateY(75vh);
     }
 }
 
-.assets {
-    margin-top: 10%;
-    margin-left: 20%;
-    grid-column: 2/4;
-    grid-row: 1/3;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    max-width: 10%;
+//media queries
+
+@media screen and (min-width:481px) and (max-width:850px) {
+
+    //styling elements
+    h1 {
+        font-size: 800%;
+    }
+
+    img {
+        min-width: 150%;
+    }
+
+    //re-sizing assets
+    .assets {
+        transform: scale(.75);
+    }
+
+}
+
+@media screen and (max-width:480px) {
+
+    //re-sizing elements
+    h1 {
+        font-size: 600%;
+        margin-bottom: 50%;
+    }
+
+    //not displaying assets
+    .assets {
+        display: none;
+    }
+
+
 }

@@ -1,0 +1,158 @@
+//styling elements
+
+body {
+    background-color: whitesmoke;
+}
+
+
+//general layout
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    //grid-template-rows: auto;
+}
+
+.writing {
+    grid-column: 1/2;
+}
+
+.reviews {
+    font-size: 50%;
+    line-height: 2vw;
+    margin-left: 15%;
+}
+
+.reviewers {
+    font-weight: 400;
+    margin-left: 15%;
+    margin-bottom: 0;
+
+}
+
+//slideshow
+
+.slideshow__about--container {
+    grid-column: 2/3;
+
+    text-align: center;
+}
+
+.slideshow__about {
+    display: inline-block;
+    margin-top: 5vw;
+    text-align: center;
+}
+
+.mySlides {
+    background-color: whitesmoke;
+    height: 40vw;
+    width: 40vw;
+    margin-left: 1vw;
+    min-width: 100%;
+
+
+}
+
+.button__slideshow {
+    background-color: white;
+    border-color: white;
+    border-radius: 25px;
+    box-shadow: 2px 3px grey;
+    color: black;
+    font-size: 55%;
+    margin: 5%;
+    padding: 8px 25px 8px 25px;
+    text-decoration: none;
+}
+
+//media querys
+
+@media screen and (min-width:481px) and (max-width:850px) {
+
+    //general layout
+
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr 1fr 1fr;
+    }
+
+    .writing {
+        grid-column: 1/2;
+        grid-row: 2/4;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 0;
+    }
+
+    .reviews {
+        line-height: 5vw;
+        margin-bottom: 10vw;
+        margin-left: 5vw;
+    }
+
+    .reviewers {
+        line-height: 0;
+        margin-bottom: 5vw;
+        margin-top: 3vw;
+    }
+
+    //placement of slideshow
+    .slideshow__about {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 5vw;
+        display: inline-block;
+    }
+
+    //styling buttons
+    .button__slideshow {
+        margin-top: 5vw;
+    }
+
+
+}
+
+@media screen and (max-width:480px) {
+    //general layout
+
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr 1fr 1fr;
+    }
+
+    .writing {
+        grid-column: 1/2;
+        grid-row: 2/4;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 0;
+    }
+
+    .reviews {
+        line-height: 5vw;
+        margin-bottom: 12vw;
+        margin-left: 5vw;
+    }
+
+    .reviewers {
+        line-height: 0;
+        margin-bottom: 5vw;
+        margin-top: 3vw;
+        font-size: 75%;
+
+    }
+
+    //placement of slideshow and buttons
+
+    .slideshow__about {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-bottom: 10vw;
+        display: inline-block;
+    }
+
+    .button__slideshow {
+        margin-top: 5vw;
+    }
+}

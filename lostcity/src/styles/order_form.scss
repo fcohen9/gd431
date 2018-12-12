@@ -3,231 +3,369 @@
 * {
     background-color: whitesmoke;
     font-family: sans-serif;
-
-
 }
 
+//styling text elements
 
-/*general*/
-
-
-
-.order-form {
-    margin: 10%;
-    border: none;
-    line-height: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 40% 20% 20% 20% 10%;
-    background-color: whitesmoke;
-    font-family: sans-serif;
-}
-
-label {
-    margin: 5%;
-    font-size: 60%;
+h1 {
+    border: 1px solid grey;
     display: block;
+    font-size: 60%;
+    font-weight: 400;
+    margin: 5%;
     text-align: left;
+}
 
+h6 {
+    font-size: 75%;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 80%;
+}
+
+//styling input elements
+label {
+    display: block;
+    font-size: 60%;
+    margin: 5%;
+    text-align: left;
 }
 
 input {
-    margin-top: 1%;
-    max-width: 25%;
-    padding: 1%;
-    box-sizing: border-box;
-    margin-right: 5%;
-    font-size: 60%;
-    display: block;
     border: 2px solid grey;
-
+    box-sizing: border-box;
+    display: block;
+    font-size: 60%;
+    height: 3vw;
+    margin-right: 5%;
+    margin-top: 1%;
+    max-width: 100%;
+    padding: 2%;
 }
 
 textarea {
+    border: 2px solid grey;
+    box-sizing: border-box;
+    display: block;
+    font-size: 60%;
+    height: auto;
+    margin-right: 5%;
     margin-top: 1%;
     max-width: 45%;
-    height: auto;
     padding: 1%;
-    box-sizing: border-box;
-    margin-right: 5%;
-    font-size: 60%;
-    display: block;
-    border: 2px solid grey;
-
-}
-
-::placeholder {
-    color: pink;
 }
 
 select {
-    margin-top: 5%;
     appearance: none;
-    padding: 1%;
-    max-width: 25%;
-    font-size: 60%;
     cursor: pointer;
-    margin-right: 5%;
     display: block;
-}
-
-h1 {
-    margin: 5%;
     font-size: 60%;
-    display: block;
-    text-align: left;
-    font-weight: 400;
-    border: 1px solid pink;
-}
-
-/*name*/
-
-.nameandchoice {
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-
-
-
-/*address*/
-
-.input-address {
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-/*delivery or pick up*/
-
-.choice {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    display: flex;
-
-
-}
-
-#delivery {
-    display: none;
-    cursor: grabbing;
-
-}
-
-#pickup {
-    display: none;
-    cursor: grabbing;
-
-}
-
-
-
-.radio_buttons {
-    max-width: 20%;
-
-    padding: 1%;
+    height: 3vw;
+    margin-top: 1%;
+    max-height: 5%;
+    max-width: 15%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
     text-align: center;
-
 }
 
-input[type="radio"]:checked+label {
-    border: solid 2px red;
-    border-radius: 25px;
-
+option {
+    font-size: 100%;
+    text-align: center;
 }
 
-
-
-/*card*/
-
-.card {
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-
-#save {
-    margin-right: 21%;
-
-}
-
-.end1 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-
-
-
-/*yes/no*/
-
-
-
-.contact {
-
-    grid-column: 2/3;
-    grid-row: 3/4;
-    display: block;
-
-}
-
-#yes {
-    display: none;
-    cursor: grabbing;
-    border: 2px solid red;
-
-
-}
-
-#no {
-    display: none;
-    cursor: grabbing;
-    border: 2px solid red;
-
-
-}
-
-
-
-.radio_buttons-1 {
-    max-width: 7.5%;
-
-
-
-
-
-}
-
-input[type="radio"]:checked+label {
-    border: solid 2px red;
-    border-radius: 25px;
-
-
-}
-
-.order_button {
-    grid-column: 2/3;
-    grid-row: 4/5;
-
-    color: red;
-    background-color: white;
-    border-radius: 25px;
+//styling action 
+a {
     text-decoration: none;
-    border-color: white;
-    text-align: left;
-    padding: 3%;
-    text-align: bottom;
-    box-shadow: 3px 5px grey;
-    margin-top: 5%;
-
-
-
-
 }
+
+//styling placeholder text
+::placeholder {
+    color: grey;
+    font-size: 125%;
+}
+
+//general layout
+.order-form {
+    background-color: whitesmoke;
+    border: 2px solid grey;
+    display: grid;
+    font-family: sans-serif;
+    grid-template-columns: 50% 50%;
+    line-height: 100%;
+    margin: 5%;
+}
+
+.column__one {
+    grid-column: 1/2;
+    margin-left: 15%;
+}
+
+.column__two {
+    grid-column: 2/3;
+    margin-left: 15%;
+}
+
+//styling individual input sections (name, address, delivery?, card, order button)
+
+//address
 
 #state {
     border: 2px solid grey;
+    color: grey;
+}
 
+#zip {
+    max-width: 25%;
+}
+
+//card and other payment things
+
+#card_expiration {
+    max-width: 25%;
+}
+
+#cvc {
+    max-width: 15%;
 }
 
 #card_type {
     border: 2px solid grey;
+    color: grey;
+    font-size: 70%;
+}
+
+#save {
+    display: grid;
+    height: 3vw;
+    padding: 0;
+    text-align: left;
+    width: 3vw;
+}
+
+#tip {
+    max-width: 25%;
+}
+
+//delivery or pickup radio button
+
+//reset radio button default styles
+#delivery {
+    cursor: grabbing;
+    display: none;
+}
+
+#pickup {
+    cursor: grabbing;
+    display: none;
+}
+
+//style new radio button
+.radio_buttons {
+    display: inline-block;
+    margin-top: 5%;
+    margin: 0;
+    overflow: hidden;
+    padding: 1%;
+    text-align: center;
+    width: 40%;
+    margin-top: 5%;
+}
+
+.radio {
+    border: 2px solid grey;
+    color: grey;
+    font-size: 80%;
+    height: 6vw;
+    margin-left: 5.5%;
+    margin-top: 5%;
+    overflow: hidden;
+    text-align: center;
+    width: 60%;
+}
+
+input[type="radio"]:checked+label {
+    border-radius: 25px;
+    border: solid 2px red;
+    color: black;
+    text-align: center;
+}
+
+//styling order button 
+.order_button {
+    background-color: white;
+    border-color: white;
+    border-radius: 25px;
+    box-shadow: 2px 3px grey;
+    color: black;
+    font-size: 60%;
+    font-weight: 600;
+    margin-bottom: 15%;
+    margin-top: 10%;
+    padding: 8px 25px 8px 25px;
+    text-transform: uppercase;
+}
+
+//media querys
+
+@media screen and (min-width:481px) and (max-width:850px) {
+
+    //styling elements
+    img {
+        min-width: 150%;
+    }
+
+    label {
+        margin-left: 0;
+    }
+
+    input {
+        height: 6vw;
+        margin-left: 0;
+        width: 60vw;
+    }
+
+    textarea {
+        max-height: 15vw;
+        max-width: 60vw;
+    }
+
+    //general layout
+    .order-form {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        text-align: center;
+    }
+
+    .column__one {
+        display: inline-block;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-left: 4%;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .column__two {
+        display: inline-block;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-left: 4%;
+        margin-top: 0;
+        text-align: center;
+    }
+
+
+    //resizing address input fields
+    #state {
+        height: 6vw;
+        width: 10vw;
+    }
+
+    //restyling card 
+    #card_type {
+        height: 6vw;
+        min-width: 25%;
+        padding-left: 1%;
+        text-align: left;
+    }
+
+    //restyling radio button
+    .radio_buttons {
+        margin-left: 0;
+        margin: 0;
+        max-height: 6vw;
+        padding: 1%;
+        text-align: center;
+        width: 10vw;
+    }
+
+    .radio {
+        border: none;
+        height: 10vw;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-top: 5vw;
+        text-align: left;
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    //restyling elements 
+
+    label {
+        margin-left: 0;
+    }
+
+    input {
+        height: 10vw;
+        margin-left: 0;
+    }
+
+    textarea {
+        max-width: 100%;
+        height: 20%;
+    }
+
+    //general layout 
+
+    .order-form {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .column__one {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-left: 4%;
+        margin-top: 0;
+    }
+
+    .column__two {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-left: 4%;
+        margin-top: 0;
+    }
+
+
+    //resizing state input 
+
+    #state {
+        height: 10vw;
+        width: 10vw;
+    }
+
+
+    //restyling radio button
+
+    .radio_buttons {
+        padding: 1%;
+    }
+
+    .radio {
+        border: 2px solid grey;
+        height: 15vw;
+        margin-left: 0;
+        margin-top: 5%;
+        width: 50vw;
+    }
+
+    //resizing card input
+
+    #card_type {
+        height: 10vw;
+        min-width: 25%;
+        padding-left: 1%;
+        text-align: left;
+    }
 }

@@ -1,60 +1,79 @@
 @import "shared/header", "shared/footer";
 
+//styling elements
+
 * {
     background-color: whitesmoke;
 }
 
-/*why are the nav buttons slightly higher on this page??*/
+p {
+    color: black;
+    font-size: 55%;
+    font-weight: 200;
+    z-index: 1;
+}
+
+h4 {
+    color: red;
+    font-size: 75%;
+    font-weight: 200;
+}
+
+h5 {
+    font-size: 45%;
+    font-weight: 200;
+}
+
+//general layout
 
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 5%;
-    margin-bottom: 5%;
-
-
 }
 
+//nav
+
 .navbar {
+    display: grid;
     grid-column: 2/3;
     text-align: center;
-    display: grid;
-
 }
 
 .dropbtn {
-
-    color: white;
     background-color: black;
-    font-size: 75%;
     border: none;
-
+    color: white;
+    font-size: 75%;
     margin: 5%;
 }
 
+//nav buttons
+
 .starters {
     color: white;
-    text-align: center;
     padding: 3%;
+    text-align: center;
 }
 
 .burgers {
     color: white;
-    text-align: center;
     padding: 3%;
+    text-align: center;
 }
 
 .fountain {
     color: white;
-    text-align: center;
     padding: 3%;
+    text-align: center;
 }
 
 .brunch {
     color: white;
-    text-align: center;
     padding: 3%;
+    text-align: center;
 }
+
+//nav animations
 
 .dropbtn:hover,
 .dropbtn:focus {
@@ -62,63 +81,33 @@
 }
 
 .dropdown {
-
     display: inline-block;
-
 }
 
 .dropdown-content {
-    display: none;
-
-
-
-    z-index: 1;
     color: black;
-
-
-
+    display: none;
+    z-index: 1;
 }
 
 .dropdown-content a {
     color: black;
     display: block;
     z-index: 1;
-
 }
 
 .dropdown a:hover {
-    display: block;
     color: black;
+    display: block;
     margin-top: 50%;
 }
 
 .show {
+    color: black;
     display: block;
-    color: black;
 }
 
-p {
-    color: black;
-    z-index: 1;
-    font-size: 55%;
-    font-weight: 200;
-
-}
-
-h4 {
-    color: red;
-    font-size: 75%;
-    font-weight: 200;
-
-}
-
-h5 {
-    font-size: 45%;
-    font-weight: 200;
-
-
-}
-
+//style within dropdowns
 #starters,
 #burgers,
 #fountain,
@@ -126,26 +115,60 @@ h5 {
     text-align: left;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.dropdown-content ul {
     margin: 0;
-
-
 }
 
+//styling list items on menues
 .on-menu {
     font-size: 45%;
     font-weight: 200;
 }
 
+//styling menu descriptions
+
 .top-description {
     font-size: 45%;
-    font-weight: 200;
     font-style: italic;
-    padding: 0;
+    font-weight: 200;
     margin-bottom: 5%;
     margin-left: 0;
+    padding: 0;
+}
 
+//media querys
 
+@media screen and (min-width:481px) and (max-width:850px) {
+
+    //image re-size
+    img {
+        min-width: 150%;
+    }
+
+    //general layout
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        display: grid;
+        grid-column: 1/2;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    //general layout
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        display: grid;
+        grid-column: 1/2;
+        text-align: center;
+    }
 }

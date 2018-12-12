@@ -3,23 +3,66 @@
 
 }
 
-.footer-wrapper {
+//style elements
+h3 {
+    color: black;
+    font-size: 60%;
+    font-weight: 200;
+    margin-left: 30%;
+    text-align: left;
+    text-decoration: none;
+    text-transform: capitalize;
+}
 
+//general layout
+.footer-wrapper {
+    background-color: whitesmoke;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    ;
-    margin-right: 5%;
     margin-left: 5%;
-    background-color: whitesmoke;
+    margin-right: 5%;
+}
+
+//media querys
+
+@media screen and (min-width:481px) and (max-width:850px) {
+
+    //restyle elements
+    h3 {
+        color: black;
+        font-size: 50%;
+        font-weight: 400;
+        margin-left: 0;
+        text-align: left;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+
+    //add margin
+    .footer-wrapper {
+        margin: 5%;
+    }
+
 
 }
 
-h3 {
-    font-size: 60%;
-    font-weight: 200;
-    color: black;
-    text-transform: capitalize;
-    text-decoration: none;
-    text-align: left;
-    margin-left: 30%;
+@media screen and (max-width:480px) {
+
+    //redeclare element stylings    
+    h3 {
+        color: black;
+        font-size: 40%;
+        font-weight: 400;
+        margin-left: 0;
+        text-align: left;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+
+    //change layout
+    .footer-wrapper {
+        display: block;
+        margin-left: 10%;
+    }
+
 }
