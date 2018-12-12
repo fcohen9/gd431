@@ -4,12 +4,13 @@ body {
     background-color: whitesmoke;
 }
 
+
 //general layout
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 2fr;
+    //grid-template-rows: auto;
 }
 
 .writing {
@@ -26,27 +27,31 @@ body {
     font-weight: 400;
     margin-left: 15%;
     margin-bottom: 0;
+
 }
 
 //slideshow
 
-.slideshow__about {
-    grid-column: 2/4;
-    grid-row: 1/4;
+.slideshow__about--container {
+    grid-column: 2/3;
+
     text-align: center;
 }
 
-.slideshow__about--container {
+.slideshow__about {
     display: inline-block;
-    grid-column: 2/4;
-    grid-row: 1/4;
     margin-top: 5vw;
+    text-align: center;
 }
 
 .mySlides {
     background-color: whitesmoke;
     height: 40vw;
     width: 40vw;
+    margin-left: 1vw;
+    min-width: 100%;
+
+
 }
 
 .button__slideshow {
@@ -55,9 +60,8 @@ body {
     border-radius: 25px;
     box-shadow: 2px 3px grey;
     color: black;
-    display: inline-block;
     font-size: 55%;
-    margin: 2vw;
+    margin: 5%;
     padding: 8px 25px 8px 25px;
     text-decoration: none;
 }
