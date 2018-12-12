@@ -1,0 +1,25 @@
+---
+layout: layouts/blank.njk
+title: slideshow
+---
+
+<h1>slideshow</h1>
+
+{% include "_slider-icons.html" %}
+
+{% import "_slideshow-slide.njk" as slide %}
+
+<section id="js-slideshow" class="u-mx-auto slideshow">
+    <div class="u-mx-auto slideshow-container">
+        <ul class="u-fit u-list-reset slideshow__list">
+            {#filename caption alt#}
+            {{slide.item("burger", "yummy burger", "photo of burger")}}
+            {{slide.item("fries", "delicious fries", "photo of fries")}}
+            {{slide.item("milkshake", "sweet milkshake", "photo of milkshake")}}
+            {{slide.item("grilledcheese", "grilled cheese", "photo of grilled cheese")}}
+
+        </ul>
+    </div>
+</section>
+
+{% include "_slideshow-controls.html" %}

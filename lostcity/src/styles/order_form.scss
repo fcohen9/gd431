@@ -1,9 +1,9 @@
 @import "shared/header", "shared/footer";
 
 * {
-    background-color: black;
+    background-color: whitesmoke;
     font-family: sans-serif;
-    color: white;
+
 
 }
 
@@ -19,6 +19,8 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 40% 20% 20% 20% 10%;
+    background-color: whitesmoke;
+    font-family: sans-serif;
 }
 
 label {
@@ -26,6 +28,7 @@ label {
     font-size: 60%;
     display: block;
     text-align: left;
+
 }
 
 input {
@@ -36,17 +39,21 @@ input {
     margin-right: 5%;
     font-size: 60%;
     display: block;
+    border: 2px solid grey;
+
 }
 
 textarea {
     margin-top: 1%;
-    max-width: 25%;
+    max-width: 45%;
     height: auto;
     padding: 1%;
     box-sizing: border-box;
     margin-right: 5%;
     font-size: 60%;
     display: block;
+    border: 2px solid grey;
+
 }
 
 ::placeholder {
@@ -97,6 +104,7 @@ h1 {
     grid-row: 2/3;
     display: flex;
 
+
 }
 
 #delivery {
@@ -115,13 +123,16 @@ h1 {
 
 .radio_buttons {
     max-width: 20%;
-    border: solid 2px red;
+
     padding: 1%;
+    text-align: center;
 
 }
 
 input[type="radio"]:checked+label {
-    border: solid 2px green;
+    border: solid 2px red;
+    border-radius: 25px;
+
 }
 
 
@@ -143,10 +154,7 @@ input[type="radio"]:checked+label {
     grid-row: 2/3;
 }
 
-.end2 {
-    grid-column: 2/3;
-    grid-row: 4/5;
-}
+
 
 
 /*yes/no*/
@@ -182,12 +190,44 @@ input[type="radio"]:checked+label {
 .radio_buttons-1 {
     max-width: 7.5%;
 
-    border: solid 2px red;
+
 
 
 
 }
 
 input[type="radio"]:checked+label {
-    border: solid 2px green;
+    border: solid 2px red;
+    border-radius: 25px;
+
+
+}
+
+.order_button {
+    grid-column: 2/3;
+    grid-row: 4/5;
+
+    color: red;
+    background-color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    border-color: white;
+    text-align: left;
+    padding: 3%;
+    text-align: bottom;
+    box-shadow: 3px 5px grey;
+    margin-top: 5%;
+
+
+
+
+}
+
+#state {
+    border: 2px solid grey;
+
+}
+
+#card_type {
+    border: 2px solid grey;
 }

@@ -1,19 +1,22 @@
 * {
-    background-color: black;
+
     font-family: sans-serif;
 
 
 }
 
-@import "shared/header", "shared/footer";
 
 
 
+body {
+    background-color: whitesmoke;
+}
 
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: .5fr 1fr;
+    background-color: whitesmoke;
 
 }
 
@@ -21,74 +24,30 @@
 .des {
     grid-column: 1/2;
     grid-row: 1/2;
-    color: white;
+    color: black;
     line-height: 100%;
     margin-top: 15%;
+
+
+
 }
 
 
 .text {
     grid-column: 1/2;
     grid-row: 2/3;
-    margin-left: 20%;
+
+
 
 }
 
-
-
-.assets {
-    margin-top: 10%;
-    margin-left: 20%;
-    grid-column: 2/4;
-    grid-row: 1/3;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-
-.assets__milkshake {
+.open {
+    background-color: white;
+    box-shadow: 3px 5px grey;
     grid-column: 1/2;
-    grid-row: 1/2;
-    z-index: 0;
-    transform: rotate(20deg);
-
-
+    grid-row: 2/3;
 }
 
-.assets__burger {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    z-index: 0;
-    transform: rotate(10deg) scale(2, 2);
-
-}
-
-.assets__fries {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    transform: rotate(-10deg);
-}
-
-.assets__milkshake--1 {
-    grid-column: 3/4;
-    grid-row: 3/4;
-    z-index: 0;
-    transform: rotate(-15deg) scale(1.5, 1.5);
-}
-
-.assets__burger--1 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    z-index: 0;
-    transform: rotate(10deg);
-}
-
-.assets__fries--1 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-    z-index: 0;
-    transform: rotate(5deg) scale(.75, .75);
-}
 
 
 
@@ -97,83 +56,23 @@ img {
     max-width: 30%;
 }
 
-/*why isn't my pulse working?
-animation: pulse 1s infinite;
-
-}
-
-@keyframes pulse {
-  0% {transform: scale (.5, .5);}
-  100%{transform: scale (1, 1);}
-}
-*/
-
-
-img:hover {
-
-
-    animation: shake 1.0s;
-
-    animation-iteration-count: infinite;
-
-
-    @keyframes shake {
-        0% {
-            transform: translate(1px, 1px) rotate(0deg);
-        }
-
-        10% {
-            transform: translate(-1px, -2px) rotate(-1deg);
-        }
-
-        20% {
-            transform: translate(-3px, 0px) rotate(1deg);
-        }
-
-        30% {
-            transform: translate(3px, 2px) rotate(0deg);
-        }
-
-        40% {
-            transform: translate(1px, -1px) rotate(1deg);
-        }
-
-        50% {
-            transform: translate(-1px, 2px) rotate(-1deg);
-        }
-
-        60% {
-            transform: translate(-3px, 1px) rotate(0deg);
-        }
-
-        70% {
-            transform: translate(3px, 1px) rotate(-1deg);
-        }
-
-        80% {
-            transform: translate(-1px, -1px) rotate(1deg);
-        }
-
-        90% {
-            transform: translate(1px, 2px) rotate(0deg);
-        }
-
-        100% {
-            transform: translate(1px, -2px) rotate(-1deg);
-        }
-    }
-}
 
 p {
     font-size: 50%;
     font-weight: 100;
     text-align: left;
-    color: white;
+    color: black;
     margin-left: 30%;
 }
 
+.des__1 {
+    background-color: white;
+    padding: 5%;
+    box-shadow: 3px 5px grey;
+}
+
 h1 {
-    color: white;
+    color: black;
     font-weight: 500;
     text-transform: capitalize;
     list-style-type: none;
@@ -186,7 +85,7 @@ h1 {
 h2 {
     font-size: 70%;
     font-weight: 200;
-    color: white;
+    color: black;
     text-transform: capitalize;
     text-decoration: none;
     text-align: left;
@@ -196,15 +95,45 @@ h2 {
 h3 {
     font-size: 55%;
     font-weight: 200;
-    color: white;
+    color: black;
     text-transform: capitalize;
     text-decoration: none;
     text-align: left;
     margin-left: 30%;
 }
 
+.assets {
 
-@media (max-width: 499px) {
+    width: 100%;
+    height: 100%;
+    margin: -280px 40px 54px -34px;
+
+    animation: falling 10s infinite linear;
+
+    -webkit-animation: falling 10s infinite linear;
+    -moz-animation: falling 10s infinite linear;
+    color: transparent;
+
+}
+
+@keyframes falling {
+    0% {
+        opacity: 1;
+        -webkit-transform: translate(0, 0px) rotateZ(0deg);
+    }
+
+    75% {
+        opacity: 1;
+        -webkit-transform: translate(50%, 50%) rotateZ(270deg);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate(100%, 100%) rotateZ(360deg);
+    }
+}
+
+@media screen and (max-width: 480px) {
 
     img {
         max-width: 20%;
@@ -220,13 +149,13 @@ h3 {
         font-size: 50%;
         font-weight: 100;
         text-align: left;
-        color: white;
+        color: black;
         text-transform: capitalize;
         margin-left: 10%;
     }
 
     h1 {
-        color: white;
+        color: black;
         font-weight: 500;
         text-transform: capitalize;
         list-style-type: none;
@@ -236,7 +165,7 @@ h3 {
     h2 {
         font-size: 75%;
         font-weight: 200;
-        color: white;
+        color: black;
         text-transform: capitalize;
         text-decoration: none;
         text-align: left;
@@ -246,7 +175,7 @@ h3 {
     h3 {
         font-size: 60%;
         font-weight: 200;
-        color: white;
+        color: black;
         text-transform: capitalize;
         text-decoration: none;
         text-align: left;

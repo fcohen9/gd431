@@ -5,22 +5,37 @@
       grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
   margin-right: 5%;
   margin-left: 5%;
+  background-color: whitesmoke;
 }
 
-button {
-  color: white;
-  background-color: red;
+.header-wrapper nav {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/ span 4;
+}
+
+.header-wrapper nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.button__header {
+  color: black;
+  background-color: white;
   border-radius: 25px;
   text-decoration: none;
-  border-color: red;
-  margin: 20%;
-}
-
-a {
-  color: white;
-  background-color: red;
-  text-decoration: none;
+  border-color: white;
+  padding: 8px 25px 8px 25px;
+  -webkit-box-shadow: 3px 5px grey;
+          box-shadow: 3px 5px grey;
   font-size: 75%;
+  display: block;
+  margin: 20% 0;
+  background-color: whitesmoke;
 }
 
 .logo {
@@ -28,8 +43,13 @@ a {
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   max-width: 100%;
-  padding-top: 7%;
+  padding-top: 10%;
   width: 80%;
+  background-color: whitesmoke;
+}
+
+* {
+  font-family: sans-serif;
 }
 
 .footer-wrapper {
@@ -39,23 +59,31 @@ a {
       grid-template-columns: 1fr 2fr;
   margin-right: 5%;
   margin-left: 5%;
+  background-color: whitesmoke;
 }
 
 h3 {
   font-size: 60%;
   font-weight: 200;
-  color: white;
+  color: black;
   text-transform: capitalize;
   text-decoration: none;
   text-align: left;
   margin-left: 30%;
 }
 
+* {
+  background-color: whitesmoke;
+}
+
+/*why are the nav buttons slightly higher on this page??*/
 .wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .navbar {
@@ -63,40 +91,45 @@ h3 {
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   text-align: center;
+  display: -ms-grid;
+  display: grid;
 }
 
 .dropbtn {
   color: white;
-  background-color: red;
-  font-size: 16px;
+  background-color: black;
+  font-size: 75%;
   border: none;
-  border-radius: 25px;
   margin: 5%;
 }
 
 .starters {
-  color: pink;
+  color: white;
   text-align: center;
+  padding: 3%;
 }
 
 .burgers {
-  color: purple;
+  color: white;
   text-align: center;
+  padding: 3%;
 }
 
 .fountain {
-  color: yellow;
+  color: white;
   text-align: center;
+  padding: 3%;
 }
 
 .brunch {
-  color: orange;
+  color: white;
   text-align: center;
+  padding: 3%;
 }
 
 .dropbtn:hover,
 .dropbtn:focus {
-  background-color: #2980B9;
+  background-color: grey;
 }
 
 .dropdown {
@@ -124,5 +157,50 @@ h3 {
 .show {
   display: block;
   color: black;
+}
+
+p {
+  color: black;
+  z-index: 1;
+  font-size: 55%;
+  font-weight: 200;
+}
+
+h4 {
+  color: red;
+  font-size: 75%;
+  font-weight: 200;
+}
+
+h5 {
+  font-size: 45%;
+  font-weight: 200;
+}
+
+#starters,
+#burgers,
+#fountain,
+#brunch {
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.on-menu {
+  font-size: 45%;
+  font-weight: 200;
+}
+
+.top-description {
+  font-size: 45%;
+  font-weight: 200;
+  font-style: italic;
+  padding: 0;
+  margin-bottom: 5%;
+  margin-left: 0;
 }
 /*# sourceMappingURL=menu_page.css.map */
