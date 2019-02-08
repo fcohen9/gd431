@@ -1,8 +1,0 @@
-{#<button class="button__header"><a href="/">home</a></button> #}
-<nav>
-<ul class="u-list-reset">
-{% for nav in collections.nav %}
-<li> <a class="button__header {% if (page.url==nav.url) %}is-active {% endif %}" href="{{ nav.url}}"> {{nav.data.title}}</a> </li>
-{% endfor %}
-</ul>
-</nav>
