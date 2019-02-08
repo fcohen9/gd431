@@ -1,0 +1,11 @@
+@import "utilities", "shared/shared", "slideshow";
+
+* {
+    font-size: 32px;
+
+
+}
+
+.is-active {
+    color: red !important;
+}

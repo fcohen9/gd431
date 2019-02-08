@@ -1,0 +1,49 @@
+.header-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    margin-right: 5%;
+    margin-left: 5%;
+
+    nav {
+        grid-column: 2/ span 4;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    background-color: whitesmoke;
+
+
+}
+
+.button__header {
+    color: black;
+    background-color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    border-color: white;
+
+    padding: 8px 25px 8px 25px;
+    box-shadow: 3px 5px grey;
+    font-size: 75%;
+    display: block;
+    margin: 20% 0;
+    background-color: whitesmoke;
+
+
+}
+
+
+
+
+.logo {
+    grid-column: 1/2;
+    max-width: 100%;
+    padding-top: 10%;
+    width: 80%;
+    background-color: whitesmoke;
+
+
+}
